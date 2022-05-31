@@ -10759,7 +10759,7 @@
                     })
                     .concat(t.classes)
                     .join(" "),
-                V = { children: [], attributes: X({}, t.attributes, { "data-prefix": v, "data-icon": a, class: o, role: "img", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 ".concat(n, " ").concat(H) }) };
+                V = { children: [], attributes: X({}, t.attributes, { "data-prefix": v, "data-icon": a, class: o, role: "img", xmlns: "https://www.w3.org/2000/svg", viewBox: "0 0 ".concat(n, " ").concat(H) }) };
             f && (V.attributes[B] = ""), e && V.children.push({ tag: "title", attributes: { id: V.attributes["aria-labelledby"] || "title-".concat(dc()) }, children: [e] });
             var C,
                 L,
