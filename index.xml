@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Santiago Paz | Software Engineer</title>
-    <link>https://santiago-paz.github.io/</link>
+    <link>https://santiagopaz.me/</link>
     <description>Recent content on Santiago Paz | Software Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://santiago-paz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://santiagopaz.me/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
