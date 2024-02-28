@@ -12,6 +12,10 @@
         * {
             font-family: Manrope;
         }
+        body {
+            background-color: rgb(2 39 55);
+            color: #FDFEFF;
+        }
     </style>
 </head>
 
@@ -34,7 +38,7 @@
                     </ul>
                 </h2>
                 <audio id="audio" style="display: none;" src="/assets/images/noticia-3/noticia_3.mp3"></audio>
-                <img id="player_prototype" src="/assets/images/player_prototype_1.png" style="width: 100%;" alt="">
+                <img id="player_prototype" src="/assets/images/player_prototype_1.svg" style="width: 100%;" alt="">
                 <section>
                     <article id="storyBody">
                         <div data-mrf-recirculation="Article Body">
@@ -150,10 +154,10 @@
     <script>
         document.getElementById('player_prototype').addEventListener('click', () => {
             if (document.getElementById('player_prototype').src.includes('player_prototype_1')) {
-                document.getElementById('player_prototype').src = '/assets/images/player_prototype_2.png';
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_2.svg';
                 document.getElementById('audio').play();
             } else {
-                document.getElementById('player_prototype').src = '/assets/images/player_prototype_1.png';
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_1.svg';
                 document.getElementById('audio').pause();
             }
         });
