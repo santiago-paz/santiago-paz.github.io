@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticia 3</title>
-    <script
-        src="https://trinitymedia.ai/player/trinity/2900016424/?pageURL=https%3A%2F%2Fsantiagopaz.com%2Fnoticia-3.html%3F2222"
-        charset="UTF-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: Manrope;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,18 +33,10 @@
                         </li>
                     </ul>
                 </h2>
+                <audio id="audio" style="display: none;" src="/assets/images/noticia-3/noticia_3.mp3"></audio>
+                <img id="player_prototype" src="/assets/images/player_prototype_1.png" style="width: 100%;" alt="">
                 <section>
                     <article id="storyBody">
-                        <section>
-                            Redacción Clarín
-                        </section>
-                        <script>
-                            const trinityScript = document.createElement('script');
-
-                            trinityScript.setAttribute('fetchpriority', 'high');
-                            trinityScript.src = 'https://trinitymedia.ai/player/trinity/2900016425/?pageURL=' + encodeURIComponent(window.location.href);
-                            document.currentScript.parentNode.insertBefore(trinityScript, document.currentScript);
-                        </script>
                         <div data-mrf-recirculation="Article Body">
                             <div>
                                 <p>
@@ -47,10 +44,7 @@
                                     programación o contenidos exclusivos, que se renuevan año tras año, sino también a
                                     nivel estructural, con servicios que se fusionan o le dan definitivamente paso a
                                     suscripciones con publicidades.
-
-
                                 </p>
-
                             </div>
                             <div>
                                 <p>
@@ -59,10 +53,6 @@
                                     brindarán una experiencia de usuario completa y con un catálogo finalmente
                                     unificado. Por su parte, Netflix y Prime Video no sufrieron grandes modificaciones
                                     (más allá de su precio) en Argentina.
-
-
-
-
                                 </p>
                             </div>
                             <div>
@@ -77,8 +67,6 @@
                                 <p>
                                     A continuación, un pantallazo a la oferta de plataformas de streaming en febrero de
                                     2024.
-
-
                                 </p>
                             </div>
                             <div>
@@ -91,8 +79,6 @@
                                     Los usuarios argentinos experimentarán a partir del 27 de febrero de la renovada
                                     plataforma Max de contenidos en streaming, como parte de su despliegue en Argentina
                                     y el resto de Latinoamérica, luego de haber debutado con éxito en Estados Unidos.
-
-
                                 </p>
                             </div>
                             <div>
@@ -101,8 +87,6 @@
                                     con más de 37.000 horas de contenidos, más del doble de la cantidad que tenía en su
                                     versión anterior, para robustecer e incrementar aún más la base de suscriptores que
                                     tiene en el país, donde ocupa el tercer puesto del mercado.
-
-
                                 </p>
                             </div>
                             <div>
@@ -136,8 +120,6 @@
                                     acceso al catálogo con publicidad, dos dispositivos simultáneos con resolución Full
                                     HD y una tarifa mensual de $2.649. En caso de optar por la anual, el valor será de
                                     19.347,90 pesos.
-
-
                                 </p>
                             </div>
                             <div>
@@ -165,6 +147,17 @@
             </section>
         </container>
     </section>
+    <script>
+        document.getElementById('player_prototype').addEventListener('click', () => {
+            if (document.getElementById('player_prototype').src.includes('player_prototype_1')) {
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_2.png';
+                document.getElementById('audio').play();
+            } else {
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_1.png';
+                document.getElementById('audio').pause();
+            }
+        });
+    </script>
 </body>
 
 </html>

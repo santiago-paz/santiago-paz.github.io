@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticia 2</title>
-    <script
-        src="https://trinitymedia.ai/player/trinity/2900016424/?pageURL=https%3A%2F%2Fsantiagopaz.com%2Fnoticia-2.html%3F2222"
-        charset="UTF-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: Manrope;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,18 +31,11 @@
                         </li>
                     </ul>
                 </h2>
+                <audio id="audio" style="display: none;" src="/assets/images/noticia-2/noticia_2.mp3"></audio>
+                <img id="player_prototype" src="/assets/images/player_prototype_1.png" style="width: 100%;" alt="">
                 <section>
                     <article id="storyBody">
-                        <section>
-                            Redacción Clarín
-                        </section>
-                        <script>
-                            const trinityScript = document.createElement('script');
 
-                            trinityScript.setAttribute('fetchpriority', 'high');
-                            trinityScript.src = 'https://trinitymedia.ai/player/trinity/2900016425/?pageURL=' + encodeURIComponent(window.location.href);
-                            document.currentScript.parentNode.insertBefore(trinityScript, document.currentScript);
-                        </script>
                         <div data-mrf-recirculation="Article Body">
                             <div>
                                 <p>
@@ -161,6 +159,17 @@
             </section>
         </container>
     </section>
+    <script>
+        document.getElementById('player_prototype').addEventListener('click', () => {
+            if (document.getElementById('player_prototype').src.includes('player_prototype_1')) {
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_2.png';
+                document.getElementById('audio').play();
+            } else {
+                document.getElementById('player_prototype').src = '/assets/images/player_prototype_1.png';
+                document.getElementById('audio').pause();
+            }
+        });
+    </script>
 </body>
 
 </html>
