@@ -9,22 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #e0e0e0;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: #fff;
+            background: #1e1e1e;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
         .titulo {
             text-align: center;
-            color: #333;
+            color: #ffffff;
         }
         .fecha {
             text-align: right;
-            color: #888;
+            color: #bbbbbb;
             margin-bottom: 20px;
         }
         .imagen {
@@ -34,15 +35,26 @@
         .imagen img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
         }
         .contenido {
             text-align: justify;
+        }
+        .contenido p {
+            margin-bottom: 15px;
         }
         .autor {
             margin-top: 30px;
             font-style: italic;
             text-align: right;
-            color: #555;
+            color: #aaaaaa;
+        }
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -54,7 +66,38 @@
         <div class="imagen">
             <img src="https://placehold.co/600x400" alt="Paneles solares en funcionamiento">
         </div>
-                <style> #reema-player-container { position: relative; width: 100%; height: 102px; } #reema-player { border: none; position: absolute; width: 100%; height: 250px; } @media (min-width: 640px) { #reema-player-container { height: 132px; } #reema-player { height: 360px; } } </style> <div id="reema-player-container"></div> <script> document.addEventListener("DOMContentLoaded", () => { const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=d15cf2d7-0c78-4525-b494-4f3a2bead56c&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); }); </script>
+        <style>
+            #reema-player-container {
+                position: relative;
+                width: 100%;
+                height: 102px;
+            }
+            #reema-player {
+                border: none;
+                position: absolute;
+                width: 100%;
+                height: 250px;
+            }
+            @media (min-width: 640px) {
+                #reema-player-container {
+                    height: 132px;
+                }
+                #reema-player {
+                    height: 360px;
+                }
+            }
+        </style>
+        <div id="reema-player-container"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const iframe = document.createElement("iframe");
+                const articleUrl = window.location.href;
+                const playerContainer = document.getElementById("reema-player-container");
+                iframe.src = "https://player.reema.ar/player.html?playerId=d15cf2d7-0c78-4525-b494-4f3a2bead56c&articleUrl=" + articleUrl;
+                iframe.setAttribute("id", "reema-player");
+                playerContainer?.appendChild(iframe);
+            });
+        </script>
 
         <div class="contenido">
             <p>En un avance significativo para la sostenibilidad energética, la empresa SolarFuture ha anunciado el lanzamiento de su nuevo proyecto de energía solar que promete transformar la manera en que se genera y distribuye la electricidad a nivel mundial.</p>
