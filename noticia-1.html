@@ -8,6 +8,17 @@
 <body>
     <h1>Noticia 1</h1>
     <h2>El subtitulo de la noticia</h2>
+    
+      <div id="player-container"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const iframe = document.createElement("iframe");
+          const articleUrl = window.location.href;
+          const playerContainer = document.getElementById("player-container");
+          iframe.src = "https://player.reema.ar/player.html?playerId=6efba9d7-68be-41ea-b8a6-5d021ce4253b&articleUrl=" + articleUrl;
+          playerContainer?.appendChild(iframe);
+        });
+      </script>
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores distinctio ut officia doloribus provident saepe officiis incidunt temporibus. Temporibus voluptas, mollitia officia, impedit doloribus nobis odit necessitatibus deserunt possimus quo nesciunt ex! Nam repudiandae beatae accusamus voluptatem possimus, corporis eveniet atque. Vel itaque hic unde consequuntur repellat optio facilis!
     </p>
