@@ -9,6 +9,7 @@
     <h1>Noticia 1</h1>
     <h2>El subtitulo de la noticia</h2>
     
+
       <div id="player-container"></div>
       <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -16,6 +17,8 @@
           const articleUrl = window.location.href;
           const playerContainer = document.getElementById("player-container");
           iframe.src = "https://player.reema.ar/player.html?playerId=6efba9d7-68be-41ea-b8a6-5d021ce4253b&articleUrl=" + articleUrl;
+          iframe.style.border = "none";
+          iframe.style.width = "100%";
           playerContainer?.appendChild(iframe);
         });
       </script>
