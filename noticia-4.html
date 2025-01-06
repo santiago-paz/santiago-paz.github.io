@@ -1,72 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias de Ejemplo para Reema</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .titulo {
-            text-align: center;
-            color: #333;
-        }
-        .fecha {
-            text-align: right;
-            color: #888;
-            margin-bottom: 20px;
-        }
-        .imagen {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .imagen img {
-            max-width: 100%;
-            height: auto;
-        }
-        .contenido {
-            text-align: justify;
-        }
-        .autor {
-            margin-top: 30px;
-            font-style: italic;
-            text-align: right;
-            color: #555;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .titulo {
+        text-align: center;
+        color: #333;
+      }
+      .fecha {
+        text-align: right;
+        color: #888;
+        margin-bottom: 20px;
+      }
+      .imagen {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .imagen img {
+        max-width: 100%;
+        height: auto;
+      }
+      .contenido {
+        text-align: justify;
+      }
+      .autor {
+        margin-top: 30px;
+        font-style: italic;
+        text-align: right;
+        color: #555;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 class="titulo">Avances en Medicina Genómica Prometen Tratamientos Personalizados</h1>
-        <p class="fecha">04 de enero de 2025</p>
-      
-        <div class="imagen">
-            <img src="https://placehold.co/600x400" alt="Secuenciación del genoma humano">
-        </div>
-        <style> #reema-player-container { position: relative; width: 100%; height: 102px; } #reema-player { border: none; position: absolute; width: 100%; height: 250px; } @media (min-width: 640px) { #reema-player-container { height: 132px; } #reema-player { height: 360px; } } </style> <div id="reema-player-container"></div> <script> document.addEventListener("DOMContentLoaded", () => { const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=43e3c09d-81e3-47cf-b2ea-40011647826e&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); }); </script>
-        <div class="contenido">
-            <p>La medicina genómica está dando pasos agigantados hacia la personalización de tratamientos médicos, gracias a los recientes avances en secuenciación del ADN y análisis de datos. Instituciones de investigación de todo el mundo están colaborando para desarrollar terapias adaptadas al perfil genético de cada individuo.</p>
+      <h1 class="titulo">
+        Innovador Proyecto de Energía Solar Revoluciona la Industria
+      </h1>
+      <p class="fecha">04 de enero de 2025</p>
 
-            <p>El proyecto "GenomaSalud" liderado por el Instituto de Investigación Biomédica de Barcelona ha logrado identificar múltiples variantes genéticas asociadas a enfermedades crónicas como la diabetes y enfermedades cardiovasculares. Estos hallazgos permiten a los médicos diseñar planes de tratamiento específicos que aumentan la eficacia y reducen los efectos secundarios.</p>
+      <div class="imagen">
+        <img
+          src="https://placehold.co/600x400"
+          alt="Paneles solares en funcionamiento"
+        />
+      </div>
+      <style>
+        #reema-player-container {
+          position: relative;
+          width: 100%;
+          height: 102px;
+        }
+        #reema-player {
+          border: none;
+          position: absolute;
+          width: 100%;
+          height: 250px;
+        }
+        @media (min-width: 640px) {
+          #reema-player-container {
+            height: 132px;
+          }
+          #reema-player {
+            height: 360px;
+          }
+        }
+      </style>
+      <div id="reema-player-container"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const iframe = document.createElement("iframe");
+          const articleUrl = window.location.href;
+          const playerContainer = document.getElementById(
+            "reema-player-container"
+          );
+          iframe.src =
+            "https://player.reema.ar/player.html?playerId=43e3c09d-81e3-47cf-b2ea-40011647826e&articleUrl=" +
+            articleUrl;
+          iframe.setAttribute("id", "reema-player");
+          playerContainer?.appendChild(iframe);
+        });
+      </script>
 
-            <p>La doctora Ana Martínez, líder del proyecto, comentó: "Estamos en una era donde la información genética puede transformar completamente la manera en que abordamos la salud. La capacidad de personalizar tratamientos no solo mejora los resultados clínicos, sino que también optimiza el uso de recursos en el sistema de salud."</p>
+      <script>
+        const scriptEl = document.createElement("script");
+        scriptEl.setAttribute("fetchpriority", "high");
+        scriptEl.setAttribute("charset", "UTF-8");
 
-            <p>Además, la integración de inteligencia artificial en el análisis de datos genómicos está acelerando el descubrimiento de nuevas terapias y medicamentos. Empresas farmacéuticas están invirtiendo significativamente en esta área, anticipando una revolución en el desarrollo de fármacos personalizados.</p>
+        const scriptURL = new URL(
+          "https://trinitymedia.ai/player/trinity/2900016425/?"
+        );
+        scriptURL.searchParams.set("pageURL", window.location.href);
 
-            <p>Se espera que para finales de 2026, varias terapias personalizadas basadas en genómica estén disponibles en el mercado, ofreciendo nuevas esperanzas a millones de pacientes con condiciones médicas difíciles de tratar con enfoques tradicionales.</p>
-        </div>
-        <p class="autor">Por Laura Gómez, Redactora de Salud</p>
+        scriptEl.src = scriptURL.toString();
+
+        document.currentScript.parentNode.insertBefore(
+          scriptEl,
+          document.currentScript
+        );
+      </script>
+      <div
+        class="trinity-tts-pb"
+        dir="ltr"
+        style="
+          font: 12px / 18px Verdana, Arial;
+          height: 80px;
+          line-height: 80px;
+          text-align: left;
+          margin: 0 0 0 82px;
+        "
+      >
+        <strong style="font-weight: 400"
+          >Getting your
+          <a
+            href="//trinityaudio.ai"
+            style="color: #4b4a4a; text-decoration: none; font-weight: 700"
+            >Trinity Audio</a
+          >
+          player ready...</strong
+        >
+      </div>
+      <div class="contenido">
+        <p>
+          En un hito histórico para la industria automotriz, la empresa
+          TechDrive ha anunciado el lanzamiento de su primer vehículo autónomo
+          comercial en Europa. Este innovador automóvil, denominado "AutoPilot
+          Pro", está diseñado para ofrecer una experiencia de conducción
+          completamente autónoma, combinando seguridad, eficiencia y comodidad.
+        </p>
+
+        <p>
+          El AutoPilot Pro utiliza una combinación avanzada de sensores, cámaras
+          de alta resolución y algoritmos de inteligencia artificial para
+          navegar por las calles de manera segura y eficiente. Además, cuenta
+          con conectividad 5G que permite actualizaciones en tiempo real y
+          comunicación con otros vehículos e infraestructuras urbanas
+          inteligentes.
+        </p>
+
+        <p>
+          El CEO de TechDrive, Carlos Fernández, afirmó: "Estamos emocionados de
+          presentar AutoPilot Pro al mercado europeo. Este vehículo representa
+          el futuro de la movilidad, donde la tecnología trabaja para mejorar la
+          seguridad vial y reducir el impacto ambiental de los desplazamientos
+          diarios."
+        </p>
+
+        <p>
+          Las pruebas iniciales realizadas en ciudades como Barcelona, Berlín y
+          París han demostrado una notable reducción en los tiempos de viaje y
+          una mejora significativa en la gestión del tráfico. Además, el
+          AutoPilot Pro está equipado con sistemas de asistencia al conductor
+          que permiten una transición fluida entre la conducción manual y
+          automática.
+        </p>
+
+        <p>
+          Se espera que el AutoPilot Pro esté disponible para el público general
+          a partir de mediados de 2025, con planes de expansión a otras ciudades
+          europeas en el transcurso del año. Este lanzamiento no solo posiciona
+          a TechDrive como líder en la innovación automotriz, sino que también
+          marca un paso crucial hacia la adopción masiva de vehículos autónomos
+          en el continente.
+        </p>
+      </div>
+      <p class="autor">Por Marta Ruiz, Redactora de Tecnología</p>
     </div>
-</body>
+  </body>
 </html>
