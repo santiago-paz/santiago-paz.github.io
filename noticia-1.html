@@ -109,43 +109,7 @@
       })"
       ></script>
       <h3>Reema</h3>
-      <style>
-        #reema-player-container {
-          position: relative;
-          width: 100%;
-          height: 102px;
-        }
-        #reema-player {
-          border: none;
-          position: absolute;
-          width: 100%;
-          height: 250px;
-        }
-        @media (min-width: 640px) {
-          #reema-player-container {
-            height: 132px;
-          }
-          #reema-player {
-            height: 360px;
-          }
-        }
-      </style>
-
-      <div id="reema-player-container"></div>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const iframe = document.createElement("iframe");
-          const articleUrl = window.location.href;
-          const playerContainer = document.getElementById(
-            "reema-player-container"
-          );
-          iframe.src =
-            "https://player.reema.ar/player.html?playerId=43e3c09d-81e3-47cf-b2ea-40011647826e&articleUrl=" +
-            articleUrl;
-          iframe.setAttribute("id", "reema-player");
-          playerContainer?.appendChild(iframe);
-        });
-      </script>
+       <style> #reema-player-container { position: relative; width: 100%; height: 102px; } #reema-player { border: none; position: absolute; width: 100%; height: 250px; } @media (min-width: 640px) { #reema-player-container { height: 132px; } #reema-player { height: 360px; } } </style> <div id="reema-player-container"></div> <script> const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=a1ee92ad-77c7-4770-887f-a955fee9b5f5&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); </script>
       <hr />
       <div class="contenido" id="NewsContainer">
         <ul>
