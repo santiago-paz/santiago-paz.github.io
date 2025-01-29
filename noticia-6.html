@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noticias de Ejemplo para Reema</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .titulo {
+        text-align: center;
+        color: #333;
+      }
+      .fecha {
+        text-align: right;
+        color: #888;
+        margin-bottom: 20px;
+      }
+      .imagen {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .imagen img {
+        max-width: 100%;
+        height: auto;
+      }
+      .contenido {
+        text-align: justify;
+      }
+      .autor {
+        margin-top: 30px;
+        font-style: italic;
+        text-align: right;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="articleTitle titulo">
+        Reema Lanza su Nueva Aplicación Móvil para Mejorar la Productividad
+      </h1>
+      <p class="fecha">28 de enero de 2025</p>
+
+      <div class="imagen">
+        <img src="lanzamiento_app.avif" alt="Nueva aplicación móvil de Reema" />
+      </div>
+      <hr />
+      <h3>Trinity</h3>
+      <script>
+        const scriptEl = document.createElement("script");
+        scriptEl.setAttribute("fetchpriority", "high");
+        scriptEl.setAttribute("charset", "UTF-8");
+
+        const scriptURL = new URL(
+          "https://trinitymedia.ai/player/trinity/2900016425/?"
+        );
+        scriptURL.searchParams.set("pageURL", window.location.href);
+
+        scriptEl.src = scriptURL.toString();
+
+        document.currentScript.parentNode.insertBefore(
+          scriptEl,
+          document.currentScript
+        );
+      </script>
+      <div
+        class="trinity-tts-pb"
+        dir="ltr"
+        style="
+          font: 12px / 18px Verdana, Arial;
+          height: 80px;
+          line-height: 80px;
+          text-align: left;
+          margin: 0 0 0 82px;
+        "
+      >
+        <strong style="font-weight: 400"
+          >Preparando tu
+          <a
+            href="//trinityaudio.ai"
+            style="color: #4b4a4a; text-decoration: none; font-weight: 700"
+            >Reproductor Trinity Audio</a
+          >
+          ...
+        </strong>
+      </div>
+      <h3>BeyondWords</h3>
+      <script
+        async
+        defer
+        src="https://proxy.beyondwords.io/npm/@beyondwords/player@latest/dist/umd.js"
+        onload="new BeyondWords.Player({
+        target: this,
+        projectId: 47452,
+        contentId: '06c21c27-521b-4d3a-8f62-fa3ce6f082d7',
+        playerStyle: 'standard'
+      })"
+      ></script>
+      <h3>Reema</h3>
+       <style> #reema-player-container { position: relative; width: 100%; height: 102px; } #reema-player { border: none; position: absolute; width: 100%; height: 250px; } @media (min-width: 640px) { #reema-player-container { height: 132px; } #reema-player { height: 360px; } } </style> <div id="reema-player-container"></div> <script> const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=a1ee92ad-77c7-4770-887f-a955fee9b5f5&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); </script>
+      <hr />
+      <div class="contenido" id="NewsContainer">
+        <ul>
+          <li>
+            Disponible para dispositivos iOS y Android
+          </li>
+          <li>
+            Incluye herramientas de gestión de tareas y calendarios integrados
+          </li>
+        </ul>
+        <div id="storyBody">
+          <section>
+            <p>
+              Reema ha anunciado el lanzamiento de su nueva aplicación móvil diseñada para optimizar la productividad personal y profesional. Disponible tanto para dispositivos iOS como Android, la aplicación promete transformar la manera en que los usuarios gestionan sus tareas diarias.
+            </p>
+
+            <p>
+              La aplicación, denominada "Reema Productivity", integra herramientas avanzadas de gestión de tareas, calendarios sincronizados y recordatorios inteligentes que se adaptan a las necesidades individuales de cada usuario. Además, incluye funcionalidades de colaboración que permiten a los equipos coordinarse de manera más eficiente.
+            </p>
+
+            <p>
+              María López, directora de desarrollo de productos en Reema, comentó: "Con 'Reema Productivity', buscamos ofrecer una solución integral que no solo ayude a las personas a organizarse mejor, sino que también fomente una colaboración más efectiva en entornos laborales."
+            </p>
+
+            <p>
+              Una de las características destacadas de la aplicación es su capacidad para integrarse con otras herramientas populares como Slack, Google Calendar y Microsoft Teams, facilitando una experiencia de usuario fluida y conectada.
+            </p>
+
+            <p>
+              Se espera que "Reema Productivity" se convierta en una herramienta esencial para profesionales y equipos que buscan maximizar su eficiencia y alcanzar sus objetivos con mayor facilidad. La aplicación ya está disponible para descarga en las principales tiendas de aplicaciones y recibirá actualizaciones periódicas con nuevas funcionalidades basadas en el feedback de los usuarios.
+            </p>
+          </section>
+        </div>
+        <div id="storyFooter">
+          <p class="autor">Por Carlos Martínez, Redactor de Innovación Tecnológica</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
