@@ -57,59 +57,29 @@
         <img src="energia_solar.avif" alt="Paneles solares en funcionamiento" />
       </div>
       <hr />
-      <h3>Trinity</h3>
-      <script>
-        const scriptEl = document.createElement("script");
-        scriptEl.setAttribute("fetchpriority", "high");
-        scriptEl.setAttribute("charset", "UTF-8");
 
-        const scriptURL = new URL(
-          "https://trinitymedia.ai/player/trinity/2900016425/?"
-        );
-        scriptURL.searchParams.set("pageURL", window.location.href);
-
-        scriptEl.src = scriptURL.toString();
-
-        document.currentScript.parentNode.insertBefore(
-          scriptEl,
-          document.currentScript
-        );
-      </script>
-      <div
-        class="trinity-tts-pb"
-        dir="ltr"
-        style="
-          font: 12px / 18px Verdana, Arial;
-          height: 80px;
-          line-height: 80px;
-          text-align: left;
-          margin: 0 0 0 82px;
-        "
-      >
-        <strong style="font-weight: 400"
-          >Getting your
-          <a
-            href="//trinityaudio.ai"
-            style="color: #4b4a4a; text-decoration: none; font-weight: 700"
-            >Trinity Audio</a
-          >
-          player ready...</strong
-        >
-      </div>
-      <h3>BeyondWords</h3>
-      <script
-        async
-        defer
-        src="https://proxy.beyondwords.io/npm/@beyondwords/player@latest/dist/umd.js"
-        onload="new BeyondWords.Player({
-        target: this,
-        projectId: 47452,
-        contentId: '06c21c27-521b-4d3a-8f62-fa3ce6f082d7',
-        playerStyle: 'standard'
-      })"
-      ></script>
       <h3>Reema</h3>
-       <style> #reema-player-container { position: relative; width: 100%; height: 102px; } #reema-player { border: none; position: absolute; width: 100%; height: 250px; } @media (min-width: 640px) { #reema-player-container { height: 132px; } #reema-player { height: 360px; } } </style> <div id="reema-player-container"></div> <script> const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=a1ee92ad-77c7-4770-887f-a955fee9b5f5&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); </script>
+      <style>
+        #reema-player-container {
+          position: relative;
+          width: 100%;
+        }
+        #reema-player {
+          border: none;
+          width: 100%;
+        }
+      </style>
+      <div id="reema-player-container"></div>
+      <script>
+        const iframe = document.createElement("iframe");
+        const playerContainer = document.getElementById(
+          "reema-player-container"
+        );
+        iframe.src =
+          "https://reema-player-ssg.vercel.app/player/8910cb01-0561-48b8-9513-ded5b59040cd?articleUrl=https%3A%2F%2Fwww.reema.ar%2Fblog%2Fpost%2Fcomo-la-tecnologia&theme=dark";
+        iframe.setAttribute("id", "reema-player");
+        playerContainer?.appendChild(iframe);
+      </script>
       <hr />
       <div class="contenido" id="NewsContainer">
         <ul>
