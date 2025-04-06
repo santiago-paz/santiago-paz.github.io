@@ -59,27 +59,7 @@
       <hr />
 
       <h3>Reema</h3>
-      <style>
-        #reema-player-container {
-          position: relative;
-          width: 100%;
-        }
-        #reema-player {
-          border: none;
-          width: 100%;
-        }
-      </style>
-      <div id="reema-player-container"></div>
-      <script>
-        const iframe = document.createElement("iframe");
-        const playerContainer = document.getElementById(
-          "reema-player-container"
-        );
-        iframe.src =
-          "https://player-ssg.reema.ar/player/8910cb01-0561-48b8-9513-ded5b59040cd?articleUrl=https%3A%2F%2Fwww.reema.ar%2Fblog%2Fpost%2Fcomo-la-tecnologia&theme=dark";
-        iframe.setAttribute("id", "reema-player");
-        playerContainer?.appendChild(iframe);
-      </script>
+         <style> #reema-player { border: none; width: 100%; } </style> <div id="reema-player-container"></div> <script> const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player.reema.ar/player.html?playerId=96abe292-0877-4d8f-b488-949e4356b932&articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); </script>
       <hr />
       <div class="contenido" id="NewsContainer">
         <ul>
