@@ -1065,7 +1065,7 @@ function endGame(catchingNinja) {
 
     // Cambiar el mensaje para dispositivos móviles y de escritorio
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    const restartText = isMobile ? "Toca para jugar de nuevo" : "Click para jugar de nuevo";
+    const restartText = isMobile ? "Soltá para jugar de nuevo" : "Click para jugar de nuevo";
 
     gameOverMessage.innerHTML = `¡Te atrapó!<br>Recolectaste ${orbsCollected} orbes<br><br>${restartText}`;
 
