@@ -413,84 +413,6 @@ function checkOrbCollision() {
     }
 }
 
-// --- Configuración Inicial --- //
-
-function initializeGame() {
-    orbsCollected = 0;
-    gameActive = true;
-    scoreDisplay.textContent = orbsCollected;
-    gameOverMessage.style.display = 'none';
-
-    customCursor.style.transition = 'none';
-
-    // Ahora la llamada a initializeNinjaObject es válida
-    ninjas = [
-        initializeNinjaObject(ninjaElements[0], 0, true),
-        initializeNinjaObject(ninjaElements[1], 1, false)
-    ];
-
-    ninjas.forEach(ninja => {
-        // Resetear estilos visuales
-        ninja.element.style.display = ninja.isActive ? 'block' : 'none';
-        ninja.element.style.transform = 'translate(-50%, -50%)';
-        ninja.element.className = 'ninja'; // Resetear clases de estrategia
-
-        // Establecer el color inicial (verde)
-        ninja.aggressionFactor = BASE_AGGRESSION_FACTOR; // Agresividad base
-        updateNinjaColor(ninja); // Establecer el color inicial basado en agresividad
-
-        if (ninja.isActive) {
-            updateNinjaVisualPosition(ninja); // Posicionar visualmente
-        }
-        // Limpiar trails anteriores
-        clearTrails(ninja);
-    });
-
-    // Reiniciar dificultad base (compartida)
-    BASE_CURVE_FACTOR = 0.25;
-    BASE_AGGRESSION_FACTOR = 1.2;
-    updateDifficulty(0); // Aplicar valores iniciales a ninjas activos
-
-    futureOrbPositions = [];
-    populateFutureOrbs();
-
-    clearOrbs();
-    orbCount = 0;
-    spawnOrb();
-
-    // *** Corregir Inicialización del Cursor ***
-    // Forzar la posición inicial al centro después de un breve retraso
-    // para asegurar que las dimensiones del contenedor estén listas.
-    setTimeout(() => {
-        if (gameContainer) { // Asegurarse que el contenedor existe
-            cursorX = gameContainer.offsetWidth / 2;
-            cursorY = gameContainer.offsetHeight / 2;
-            prevCursorX = cursorX;
-            prevCursorY = cursorY;
-            if (customCursor) { // Asegurarse que el cursor existe
-                customCursor.style.left = `${cursorX}px`;
-                customCursor.style.top = `${cursorY}px`;
-            }
-        } else {
-            console.error("#game-area no encontrado para centrar cursor");
-            cursorX = 0; cursorY = 0; prevCursorX = 0; prevCursorY = 0;
-        }
-    }, 10); // Un pequeño delay de 10ms
-
-    // Resetear historial y skill del jugador
-    cursorHistory.length = 0;
-    lastPlayerPos = [];
-    playerAvoidScore = 0;
-
-    // Asegurarse de que el cursor sigue al mouse desde el inicio
-    document.removeEventListener('mousemove', updateCursorPosition);
-    document.addEventListener('mousemove', updateCursorPosition);
-
-    // Iniciar ciclo del juego
-    cancelAnimationFrame(animationFrameId);
-    gameLoop();
-}
-
 // --- Movimiento del Cursor --- //
 
 function updateCursorPosition(event) {
@@ -498,8 +420,7 @@ function updateCursorPosition(event) {
 
     const rect = gameContainer.getBoundingClientRect();
 
-    // *** LOGGING PARA DIAGNÓSTICO ***
-
+    // Guardar posición anterior
     prevCursorX = cursorX;
     prevCursorY = cursorY;
     lastCursorX = cursorX;
@@ -507,24 +428,44 @@ function updateCursorPosition(event) {
     lastVelX = cursorVelX;
     lastVelY = cursorVelY;
 
-    let calculatedX = event.clientX - rect.left;
-    let calculatedY = event.clientY - rect.top;
+    // Obtener coordenadas según el tipo de evento (mouse o toque)
+    let clientX, clientY;
 
+    if (event.type === 'touchmove' || event.type === 'touchstart') {
+        // Prevenir el desplazamiento de la página
+        event.preventDefault();
 
+        // Usar la primera posición táctil
+        const touch = event.touches[0];
+        clientX = touch.clientX;
+        clientY = touch.clientY;
+    } else {
+        // Evento de mouse normal
+        clientX = event.clientX;
+        clientY = event.clientY;
+    }
+
+    // Calcular posición relativa al contenedor del juego
+    let calculatedX = clientX - rect.left;
+    let calculatedY = clientY - rect.top;
+
+    // Limitar las coordenadas al área del juego
     cursorX = Math.max(0, Math.min(calculatedX, gameContainer.offsetWidth));
     cursorY = Math.max(0, Math.min(calculatedY, gameContainer.offsetHeight));
 
-
+    // Actualizar la posición visual del cursor
     requestAnimationFrame(() => {
-    customCursor.style.left = `${cursorX}px`;
-    customCursor.style.top = `${cursorY}px`;
+        customCursor.style.left = `${cursorX}px`;
+        customCursor.style.top = `${cursorY}px`;
     });
 
+    // Calcular velocidad y aceleración
     cursorVelX = cursorX - lastCursorX;
     cursorVelY = cursorY - lastCursorY;
     cursorAccX = cursorVelX - lastVelX;
     cursorAccY = cursorVelY - lastVelY;
 
+    // Guardar el historial de movimiento
     cursorHistory.push({
         x: cursorX,
         y: cursorY,
@@ -1138,7 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p>Proyecto profesional: <a href="https://www.reema.ar" target="_blank">Reema</a></p>
     `;
 
-    // Agregar estilos para el footer
+    // Agregar estilos para el footer y optimización móvil
     const footerStyle = document.createElement('style');
     footerStyle.textContent = `
         .game-footer {
@@ -1177,6 +1118,57 @@ document.addEventListener('DOMContentLoaded', () => {
             justify-content: flex-start;
             min-height: 100vh;
             padding: 20px 0;
+            touch-action: none; /* Prevenir acciones táctiles del navegador */
+            overflow: hidden; /* Prevenir desplazamiento en móviles */
+        }
+
+        /* Estilos responsive para móviles */
+        @media (max-width: 768px) {
+            #game-container {
+                width: 95vw !important;
+                height: 70vh !important;
+                border-radius: 10px;
+                margin: 0 auto;
+            }
+
+            #custom-cursor {
+                width: 24px !important;
+                height: 24px !important;
+                box-shadow: 0 0 15px rgba(255, 0, 0, 0.7) !important;
+            }
+
+            .ninja {
+                width: 50px !important;
+                height: 50px !important;
+            }
+
+            .orb {
+                width: 18px !important;
+                height: 18px !important;
+            }
+
+            #score-display {
+                font-size: 1.2em !important;
+                padding: 8px 12px !important;
+            }
+
+            #game-over-message {
+                font-size: 1.8em !important;
+                padding: 20px !important;
+            }
+
+            .game-footer {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+        }
+
+        /* Prevenir arrastrar en toda la pantalla */
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
     `;
     document.head.appendChild(footerStyle);
@@ -1191,7 +1183,28 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(footer);
     }
 
+    // Añadir meta viewport para dispositivos móviles
+    const viewport = document.createElement('meta');
+    viewport.name = 'viewport';
+    viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    document.head.appendChild(viewport);
+
+    // Prevenir el zoom y desplazamiento en iOS
+    document.addEventListener('touchmove', function(event) {
+        if (event.scale !== 1) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+
     initializeGame();
+
+    // Manejar la orientación en dispositivos móviles
+    window.addEventListener('orientationchange', function() {
+        setTimeout(() => {
+            // Reajustar el tamaño después de un pequeño retardo
+            initializeGame();
+        }, 300);
+    });
 });
 
 window.addEventListener('resize', () => {
@@ -1268,4 +1281,88 @@ function calculateInterceptionPoint(ninja) {
     // Asegurar que el punto de intercepción esté dentro de los límites del juego
     ninja.interceptPoint.x = Math.max(0, Math.min(ninja.interceptPoint.x, gameContainer.offsetWidth));
     ninja.interceptPoint.y = Math.max(0, Math.min(ninja.interceptPoint.y, gameContainer.offsetHeight));
+}
+
+// --- Configuración Inicial --- //
+
+function initializeGame() {
+    orbsCollected = 0;
+    gameActive = true;
+    scoreDisplay.textContent = orbsCollected;
+    gameOverMessage.style.display = 'none';
+
+    customCursor.style.transition = 'none';
+
+    // Ahora la llamada a initializeNinjaObject es válida
+    ninjas = [
+        initializeNinjaObject(ninjaElements[0], 0, true),
+        initializeNinjaObject(ninjaElements[1], 1, false)
+    ];
+
+    ninjas.forEach(ninja => {
+        // Resetear estilos visuales
+        ninja.element.style.display = ninja.isActive ? 'block' : 'none';
+        ninja.element.style.transform = 'translate(-50%, -50%)';
+        ninja.element.className = 'ninja'; // Resetear clases de estrategia
+
+        // Establecer el color inicial (verde)
+        ninja.aggressionFactor = BASE_AGGRESSION_FACTOR; // Agresividad base
+        updateNinjaColor(ninja); // Establecer el color inicial basado en agresividad
+
+        if (ninja.isActive) {
+            updateNinjaVisualPosition(ninja); // Posicionar visualmente
+        }
+        // Limpiar trails anteriores
+        clearTrails(ninja);
+    });
+
+    // Reiniciar dificultad base (compartida)
+    BASE_CURVE_FACTOR = 0.25;
+    BASE_AGGRESSION_FACTOR = 1.2;
+    updateDifficulty(0); // Aplicar valores iniciales a ninjas activos
+
+    futureOrbPositions = [];
+    populateFutureOrbs();
+
+    clearOrbs();
+    orbCount = 0;
+    spawnOrb();
+
+    // *** Corregir Inicialización del Cursor ***
+    // Forzar la posición inicial al centro después de un breve retraso
+    // para asegurar que las dimensiones del contenedor estén listas.
+    setTimeout(() => {
+        if (gameContainer) { // Asegurarse que el contenedor existe
+            cursorX = gameContainer.offsetWidth / 2;
+            cursorY = gameContainer.offsetHeight / 2;
+            prevCursorX = cursorX;
+            prevCursorY = cursorY;
+            if (customCursor) { // Asegurarse que el cursor existe
+                customCursor.style.left = `${cursorX}px`;
+                customCursor.style.top = `${cursorY}px`;
+            }
+        } else {
+            console.error("#game-area no encontrado para centrar cursor");
+            cursorX = 0; cursorY = 0; prevCursorX = 0; prevCursorY = 0;
+        }
+    }, 10); // Un pequeño delay de 10ms
+
+    // Resetear historial y skill del jugador
+    cursorHistory.length = 0;
+    lastPlayerPos = [];
+    playerAvoidScore = 0;
+
+    // Eliminar los listeners de eventos previos
+    document.removeEventListener('mousemove', updateCursorPosition);
+    document.removeEventListener('touchmove', updateCursorPosition);
+    document.removeEventListener('touchstart', updateCursorPosition);
+
+    // Añadir listeners para mouse y touch
+    document.addEventListener('mousemove', updateCursorPosition);
+    document.addEventListener('touchmove', updateCursorPosition, { passive: false });
+    document.addEventListener('touchstart', updateCursorPosition, { passive: false });
+
+    // Iniciar ciclo del juego
+    cancelAnimationFrame(animationFrameId);
+    gameLoop();
 }
