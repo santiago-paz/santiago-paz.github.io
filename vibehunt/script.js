@@ -933,9 +933,9 @@ function captureCursor(catchingNinja) { // Acepta el ninja que captura
 }
 
 function updateDifficulty(collectedCount) {
-    // Calcular nuevos valores base compartidos
-    const newStalkingSpeed = Math.min(BASE_STALKING_SPEED + collectedCount * 0.06, 5.0);
-    const newDashSpeed = Math.min(BASE_DASH_SPEED + collectedCount * 0.12, 42);
+    // Calcular nuevos valores base compartidos con una curva más suave al inicio
+    const newStalkingSpeed = Math.min(BASE_STALKING_SPEED * (0.5 + collectedCount * 0.1), 5.0);
+    const newDashSpeed = Math.min(BASE_DASH_SPEED * (0.5 + collectedCount * 0.1), 42);
     const newDashCooldown = Math.max(BASE_DASH_COOLDOWN - collectedCount * 0.4, 12);
     const newPredictionFactor = Math.min(BASE_PREDICTION_FACTOR + collectedCount * 0.01, 0.95);
     BASE_CURVE_FACTOR = Math.min(0.25 + collectedCount * 0.015, 0.8);
@@ -946,7 +946,6 @@ function updateDifficulty(collectedCount) {
         if (ninja.isActive) {
             ninja.stalkingSpeed = newStalkingSpeed;
             ninja.dashSpeed = newDashSpeed;
-            // BASE_DASH_COOLDOWN se usa directamente en prepareDash/moveNinja
             ninja.predictionFactor = newPredictionFactor;
             ninja.curveFactor = BASE_CURVE_FACTOR;
             ninja.aggressionFactor = BASE_AGGRESSION_FACTOR;
