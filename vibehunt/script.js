@@ -1062,9 +1062,23 @@ function endGame(catchingNinja) {
     });
 
     gameOverMessage.style.display = 'block';
-    gameOverMessage.innerHTML = `¡Te atrapó!<br>Recolectaste ${orbsCollected} orbes<br><br>Click para jugar de nuevo`;
 
+    // Cambiar el mensaje para dispositivos móviles y de escritorio
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const restartText = isMobile ? "Toca para jugar de nuevo" : "Click para jugar de nuevo";
+
+    gameOverMessage.innerHTML = `¡Te atrapó!<br>Recolectaste ${orbsCollected} orbes<br><br>${restartText}`;
+
+    // Eliminar listeners previos para evitar duplicados
+    gameContainer.removeEventListener('click', initializeGame);
+    gameContainer.removeEventListener('touchend', initializeGame);
+
+    // Añadir listeners tanto para click como para touchend
     gameContainer.addEventListener('click', initializeGame, { once: true });
+    gameContainer.addEventListener('touchend', function(e) {
+        e.preventDefault(); // Prevenir comportamientos por defecto
+        initializeGame();
+    }, { once: true });
 }
 
 // --- Inicio --- //
