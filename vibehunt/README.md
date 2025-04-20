@@ -1,4 +1,4 @@
-# Mouse Chaser
+# Vibe Hunt
 
 Un juego de reflejos donde debes evitar que un ninja capture tu cursor mientras recoges orbes para sumar puntos.
 
