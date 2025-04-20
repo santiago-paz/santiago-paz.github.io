@@ -1300,6 +1300,49 @@ function calculateInterceptionPoint(ninja) {
 // --- Configuración Inicial --- //
 
 function initializeGame() {
+    // Ocultar el mensaje de Game Over
+    gameOverMessage.style.display = 'none';
+
+    // Ocultar el ninja y el cursor durante el contador
+    ninjaElements[0].style.display = 'none';
+    customCursor.style.display = 'none';
+
+    // Mostrar contador regresivo
+    const countdownElement = document.createElement('div');
+    countdownElement.id = 'countdown';
+    countdownElement.style.cssText = `
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4em;
+        color: #333;
+        font-weight: bold;
+        z-index: 9999;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    `;
+    gameContainer.appendChild(countdownElement);
+
+    let count = 3;
+    countdownElement.textContent = count;
+
+    const countdownInterval = setInterval(() => {
+        count--;
+        countdownElement.textContent = count;
+
+        if (count <= 0) {
+            clearInterval(countdownInterval);
+            countdownElement.remove();
+            startGame();
+        }
+    }, 1000);
+}
+
+function startGame() {
+    // Mostrar el cursor y el ninja cuando el juego comience
+    customCursor.style.display = 'block';
+    ninjaElements[0].style.display = 'block';
+
     orbsCollected = 0;
     gameActive = true;
     scoreDisplay.textContent = orbsCollected;
