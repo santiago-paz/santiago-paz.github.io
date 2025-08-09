@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Artículo de noticia con formato de diario." />
+    <title>El Diario — Tarifas de transporte: descuentos a usuarios frecuentes</title>
+    <style>
+      :root { --ink:#1f2937; --paper:#fffcf6; --muted:#6b7280; --accent:#b91c1c; --rule:#e5e7eb; }
+      *,*::before,*::after{box-sizing:border-box}
+      html,body{margin:0;padding:0}
+      body{font-family:Georgia,"Times New Roman",Times,serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+      a{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:2px}
+      .page{max-width:1120px;margin:0 auto;padding:1.5rem}
+      header.site-header{border-bottom:3px double var(--rule);margin-bottom:1.25rem}
+      .brand{display:flex;align-items:baseline;gap:.75rem}
+      .brand .logo{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--accent);font-size:1.3rem}
+      .brand .dateline{color:var(--muted);font-size:.9rem}
+      nav.topnav{border-top:1px solid var(--rule);margin-top:.75rem;padding-top:.5rem}
+      nav.topnav a{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;font-size:.78rem;letter-spacing:.06em;margin-right:1rem;color:#374151;text-decoration:none}
+      nav.topnav a:hover{color:var(--accent);text-decoration:underline}
+      .content{display:grid;grid-template-columns:2fr 1fr;gap:2rem}
+      @media (max-width:960px){.content{grid-template-columns:1fr}}
+      article.story{border-top:3px double var(--rule);padding-top:1rem}
+      .kicker{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-size:.8rem;font-weight:700}
+      h1.headline{font-size:clamp(1.9rem,4.2vw,3.2rem);line-height:1.15;margin:.25rem 0 .5rem;font-weight:700}
+      .standfirst{font-size:1.15rem;color:#374151;margin:0 0 .75rem;font-style:italic}
+      .meta{color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.9rem;display:flex;flex-wrap:wrap;gap:.75rem}
+      .meta .dot::before{content:"•";margin:0 .5rem;color:#9ca3af}
+      figure.lead-media{margin:1rem 0}
+      figure.lead-media img{width:100%;height:auto;display:block;border:1px solid var(--rule);background:#fff}
+      figure.lead-media figcaption{color:var(--muted);font-size:.9rem;margin-top:.35rem}
+      .audio-block{margin:1.25rem 0;padding:1rem;background:#fff;border:1px solid var(--rule)}
+      .audio-block h3{margin:0 0 .5rem;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;letter-spacing:.02em;text-transform:uppercase}
+      .audio-placeholder{border:2px dashed #d1d5db;border-radius:6px;background:#f9fafb;color:#6b7280;display:grid;place-items:center;min-height:110px;padding:.75rem;text-align:center}
+      .audio-placeholder small{display:block;margin-top:.25rem}
+      .article-body{column-gap:2rem}
+      @media (min-width:960px){.article-body{column-count:2}}
+      .article-body p{margin:0 0 1rem}
+      .article-body p:first-of-type::first-letter{float:left;font-size:3.2rem;line-height:.9;padding-right:.3rem;padding-top:.15rem;font-weight:700;color:#111827}
+      aside.sidebar{border-top:3px double var(--rule);padding-top:1rem}
+      .related h3{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;margin:0 0 .5rem}
+      .related ul{list-style:none;padding:0;margin:0}
+      .related li{padding:.65rem 0;border-bottom:1px solid var(--rule)}
+      .related a{text-decoration:none;display:block}
+      .related a:hover{text-decoration:underline;color:var(--accent)}
+      .related .tag{color:var(--accent);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-right:.5rem;font-family:"Helvetica Neue",Arial,sans-serif}
+      .related .teaser{color:#374151}
+      .related time{color:var(--muted);font-size:.85rem;display:block;margin-top:.25rem}
+      footer.site-footer{margin:2rem 0 0;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <div class="logo">El Diario</div>
+          <div class="dateline">Edición digital</div>
+        </div>
+        <nav class="topnav" aria-label="Secciones">
+          <a href="#">Política</a>
+          <a href="#">Economía</a>
+          <a href="#">Sociedad</a>
+          <a href="#">Deportes</a>
+          <a href="#">Cultura</a>
+          <a href="#">Tecnología</a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <article class="story" aria-labelledby="headline">
+          <div class="kicker">Economía</div>
+          <h1 id="headline" class="headline">Tarifas de transporte: anuncian descuentos para usuarios frecuentes</h1>
+          <p class="standfirst">Habrá escalas de ahorro por cantidad de viajes mensuales y beneficios integrados entre tren, subte y colectivos.</p>
+          <div class="meta">
+            <div class="by">Por <strong>Redacción</strong></div>
+            <div class="dot"></div>
+            <time datetime="2025-08-06">6 de agosto de 2025</time>
+            <div class="dot"></div>
+            <div class="readtime">4 min de lectura</div>
+          </div>
+
+          <figure class="lead-media">
+            <img src="https://picsum.photos/seed/transporte/1200/675" alt="Usuarios esperando transporte urbano en una plataforma" />
+            <figcaption>El esquema premia a quienes usan el transporte público con mayor frecuencia. Foto: Archivo.</figcaption>
+          </figure>
+
+          <section class="audio-block" aria-labelledby="audio-title">
+            <h3 id="audio-title">Escuchá esta noticia</h3>
+            <div class="audio-placeholder" id="audio-player" role="region" aria-label="Espacio para reproductor de audio">
+              Pegá acá tu iframe del reproductor de audio
+              <small>(por ejemplo, de tu servicio TTS o podcast)</small>
+            </div>
+          </section>
+
+          <div class="article-body">
+            <p>El nuevo cuadro tarifario define umbrales de viajes a partir de los cuales se aplican descuentos automáticos en la tarjeta.</p>
+            <p>La autoridad regulatoria explicó que la interoperabilidad permitirá combinar modos sin costos adicionales en trasbordos.</p>
+            <p>Entidades de usuarios valoraron la medida, aunque pidieron mejorar la frecuencia en horas pico.</p>
+            <p>El esquema será revisado trimestralmente para ajustar beneficios en función de la inflación y la demanda.</p>
+            <p>Habrá una app para consultar el ahorro acumulado y planificar recorridos con tiempos estimados.</p>
+          </div>
+        </article>
+
+        <aside class="sidebar">
+          <section class="related" aria-labelledby="related-title">
+            <h3 id="related-title">Más noticias</h3>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="tag">Medioambiente</span>
+                  <span class="teaser">La ciudad inaugura un corredor verde en la ribera</span>
+                  <time datetime="2025-08-09">9 Ago 2025</time>
+                </a>
+              </li>
+              <li>
+                <a href="ciclovias.html">
+                  <span class="tag">Sociedad</span>
+                  <span class="teaser">Nueva red de ciclovías: cómo cambiarán los accesos al centro</span>
+                  <time datetime="2025-08-07">7 Ago 2025</time>
+                </a>
+              </li>
+              <li>
+                <a href="festival-aire-libre.html">
+                  <span class="tag">Cultura</span>
+                  <span class="teaser">Festival al aire libre: programación completa del fin de semana</span>
+                  <time datetime="2025-08-05">5 Ago 2025</time>
+                </a>
+              </li>
+              <li>
+                <a href="proyecto-veredas.html">
+                  <span class="tag">Política</span>
+                  <span class="teaser">Presentan proyecto para ampliar veredas en avenidas clave</span>
+                  <time datetime="2025-08-04">4 Ago 2025</time>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+
+      <footer class="site-footer">
+        © 2025 El Diario — Todos los derechos reservados · <a href="#">Redacción</a> · <a href="#">Contacto</a>
+      </footer>
+    </div>
+  </body>
+  </html>
+
+
