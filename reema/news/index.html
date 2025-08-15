@@ -304,28 +304,25 @@
             </figcaption>
           </figure>
 
-          <section class="audio-block" aria-labelledby="audio-title">
-            <h3 id="audio-title">Escuchá esta noticia</h3>
-            <style>
-              #reema-player {
-                border: none;
-                width: 100%;
-              }
-            </style>
-            <div id="reema-player-container"></div>
-            <script>
-              const iframe = document.createElement("iframe");
-              const articleUrl = window.location.href;
-              const playerContainer = document.getElementById(
-                "reema-player-container"
-              );
-              iframe.src =
-                "http://localhost:3000/player/dev-player?articleUrl=" +
-                articleUrl;
-              iframe.setAttribute("id", "reema-player");
-              playerContainer?.appendChild(iframe);
-            </script>
-            </div>
+          <style>
+            #reema-player {
+              border: none;
+              width: 100%;
+            }
+          </style>
+          <div id="reema-player-container"></div>
+          <script>
+            const iframe = document.createElement("iframe");
+            const articleUrl = window.location.href;
+            const playerContainer = document.getElementById(
+              "reema-player-container"
+            );
+            iframe.src =
+              "http://localhost:3000/player/dev-player?articleUrl=" +
+              articleUrl;
+            iframe.setAttribute("id", "reema-player");
+            playerContainer?.appendChild(iframe);
+          </script>
 
           </section>
 

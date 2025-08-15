@@ -87,18 +87,29 @@
 
           <section class="audio-block" aria-labelledby="audio-title">
             <h3 id="audio-title">Escuchá esta noticia</h3>
-            <div class="audio-placeholder" id="audio-player" role="region" aria-label="Espacio para reproductor de audio">
-              Pegá acá tu iframe del reproductor de audio
-              <small>(por ejemplo, de tu servicio TTS o podcast)</small>
+            <style>
+              #reema-player {
+                border: none;
+                width: 100%;
+              }
+            </style>
+            <div id="reema-player-container"></div>
+            <script>
+              const iframe = document.createElement("iframe");
+              const articleUrl = window.location.href;
+              const playerContainer = document.getElementById(
+                "reema-player-container"
+              );
+              iframe.src =
+                "http://localhost:3000/player/dev-player?articleUrl=" +
+                articleUrl;
+              iframe.setAttribute("id", "reema-player");
+              playerContainer?.appendChild(iframe);
+            </script>
             </div>
-          </section>
 
           <div class="article-body">
             <p>El trazado incorpora carriles protegidos y bicicleteros en nodos estratégicos para fomentar viajes de corta y media distancia.</p>
-            <p>Según datos oficiales, más del 20% de los traslados diarios podrían realizarse en bicicleta si existieran condiciones de seguridad adecuadas.</p>
-            <p>El plan contempla la priorización semafórica en intersecciones críticas, nueva señalética horizontal y campañas de convivencia vial.</p>
-            <p>Organizaciones ciclistas celebraron la medida, aunque pidieron reforzar el mantenimiento y la fiscalización de los carriles.</p>
-            <p>La etapa siguiente sumará estacionamientos para bicicletas en edificios públicos y paradores con reparación básica.</p>
           </div>
         </article>
 

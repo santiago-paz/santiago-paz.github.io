@@ -86,12 +86,25 @@
           </figure>
 
           <section class="audio-block" aria-labelledby="audio-title">
-            <h3 id="audio-title">Escuchá esta noticia</h3>
-            <div class="audio-placeholder" id="audio-player" role="region" aria-label="Espacio para reproductor de audio">
-              Pegá acá tu iframe del reproductor de audio
-              <small>(por ejemplo, de tu servicio TTS o podcast)</small>
-            </div>
-          </section>
+            <style>
+              #reema-player {
+                border: none;
+                width: 100%;
+              }
+            </style>
+            <div id="reema-player-container"></div>
+            <script>
+              const iframe = document.createElement("iframe");
+              const articleUrl = window.location.href;
+              const playerContainer = document.getElementById(
+                "reema-player-container"
+              );
+              iframe.src =
+                "http://localhost:3000/player/dev-player?articleUrl=" +
+                articleUrl;
+              iframe.setAttribute("id", "reema-player");
+              playerContainer?.appendChild(iframe);
+            </script>
 
           <div class="article-body">
             <p>El anteproyecto prevé ensanchar veredas entre 1 y 2,5 metros según tramo, con prioridad para calles cercanas a escuelas y hospitales.</p>
