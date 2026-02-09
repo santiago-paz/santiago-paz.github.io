@@ -87,31 +87,15 @@
 
           <section class="audio-block" aria-labelledby="audio-title">
             <h3 id="audio-title">Escuchá esta noticia</h3>
-            <style>
-              #reema-player {
-                border: none;
-                width: 100%;
-              }
-            </style>
-            <div id="reema-player-container"></div>
-            <script>
-              const iframe = document.createElement("iframe");
-              const articleUrl = window.location.href;
-              const playerContainer = document.getElementById(
-                "reema-player-container"
-              );
-              iframe.src =
-                "http://localhost:3000/player/dev-player?articleUrl=" +
-                articleUrl;
-              iframe.setAttribute("id", "reema-player");
-              playerContainer?.appendChild(iframe);
-            </script>
+             <style> #reema-player { border: none; width: 100%; } </style> <div id="reema-player-container"></div> <script> const iframe = document.createElement("iframe"); const articleUrl = window.location.href; const playerContainer = document.getElementById("reema-player-container"); iframe.src = "https://player-ssg.reema.ar/player/8b67a192-8b4d-4a65-8f01-42944aae317c?articleUrl=" + articleUrl; iframe.setAttribute("id", "reema-player"); playerContainer?.appendChild(iframe); </script>
             </div>
 
           <div class="article-body">
             <p>El trazado incorpora carriles protegidos y bicicleteros en nodos estratégicos para fomentar viajes de corta y media distancia.</p>
           </div>
         </article>
+
+        
 
         <aside class="sidebar">
           <section class="related" aria-labelledby="related-title">
