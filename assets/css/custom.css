@@ -1,0 +1,339 @@
+/* ============================================
+   Santiago Paz - Custom Styles
+   Blog, Projects, Home Hero, Navigation
+   ============================================ */
+
+:root {
+  --primary: #17a061;
+  --primary-dark: #138552;
+  --secondary: #4f4f4f;
+  --gray: #767676;
+  --dark: #434343;
+  --light-bg: #f8f9fa;
+  --card-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-display: 'Georgia', 'Times New Roman', serif;
+}
+
+/* ---- Navigation ---- */
+.site-nav {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-nav .nav-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--dark) !important;
+}
+
+.site-nav .nav-link {
+  font-weight: 500;
+  color: var(--secondary) !important;
+  padding: 0.75rem 1rem !important;
+  transition: color var(--transition-smooth);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* ---- Hero Section ---- */
+.home-hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.home-hero .hero-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1.5rem;
+}
+
+.home-hero .hero-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.home-hero .hero-tagline {
+  font-size: 1.125rem;
+  color: var(--gray);
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.home-hero .hero-cta {
+  display: inline-flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-hero .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  transition: all var(--transition-smooth);
+}
+
+.home-hero .btn-outline-primary:hover {
+  background: var(--primary);
+  color: white !important;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* ---- Section Headers ---- */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  margin: 0;
+}
+
+.section-header .section-link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap 0.2s ease;
+}
+
+.section-header .section-link:hover {
+  color: var(--primary-dark);
+  gap: 0.5rem;
+}
+
+/* ---- Blog Cards ---- */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.blog-card .card-image {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  object-fit: cover;
+}
+
+.blog-card .card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card .card-meta {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.blog-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.blog-card .card-excerpt {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ---- Projects Section ---- */
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow var(--transition-smooth);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+.project-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.project-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary) 0%, #20c997 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.project-card .project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.project-card .project-title a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-card .project-title a:hover {
+  color: var(--primary);
+}
+
+.project-card .project-meta {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project-description {
+  font-size: 0.95rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+/* ---- CV Teaser ---- */
+.cv-teaser {
+  background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cv-teaser h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+
+.cv-teaser p {
+  color: var(--gray);
+  margin-bottom: 1.25rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv-teaser .btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  transition: all var(--transition-smooth);
+}
+
+.cv-teaser .btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+/* ---- Page Sections ---- */
+.page-section {
+  padding: 3rem 0;
+}
+
+.page-section:first-of-type {
+  padding-top: 2rem;
+}
+
+/* ---- Blog Page ---- */
+.blog-page .blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.blog-page .blog-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.blog-page .blog-header p {
+  color: var(--gray);
+  font-size: 1.05rem;
+}
+
+/* ---- CV Page ---- */
+.cv-page .resume-wrapper {
+  margin-top: 2rem;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
