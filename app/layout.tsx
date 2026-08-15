@@ -47,6 +47,10 @@ export const metadata: Metadata = {
     'TypeScript',
     'Python',
   ],
+  // Emits <meta name="google-site-verification" ...> for Search Console.
+  verification: {
+    google: 'SBSLMdt8_unat2fEXGHp3ciqeGeM4VCE2Q6w-Y6-nSQ',
+  },
   robots: {
     index: true,
     follow: true,
