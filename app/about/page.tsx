@@ -67,9 +67,9 @@ export default function AboutPage() {
           two-stage AI pipeline;{' '}
           <Link href="/projects/windows-money">Windows Money</Link>, a
           multi-agent LLM trading system; and{' '}
-          <Link href="/projects/reema">Reema</Link> and{' '}
-          <Link href="/projects/pegala">Pegala</Link>, among others. I care about
-          the parts that make AI features actually ship &mdash; evals,
+          <Link href="/projects/pegala">Pegala</Link>, an AI job-search platform;
+          and <Link href="/projects/reema">Reema</Link>, a text-to-speech SaaS. I
+          care about the parts that make AI features actually ship &mdash; evals,
           reliability, latency, and failure modes &mdash; as much as the model
           itself.
         </p>

@@ -11,15 +11,21 @@ describe('data', () => {
 
   it('sorts projects: ai-product before creative-client, then by order', () => {
     const projects = getProjects()
-    expect(projects.length).toBe(9)
+    expect(projects.length).toBeGreaterThan(0)
+
+    // Asserted as an invariant rather than against a fixed count, so curating
+    // the list down doesn't break the test. `creative-client` may be empty.
     const groups = projects.map((p) => p.group)
-    expect(groups.lastIndexOf('ai-product')).toBeLessThan(
-      groups.indexOf('creative-client'),
-    )
-    const aiOrders = projects
-      .filter((p) => p.group === 'ai-product')
-      .map((p) => p.order)
-    expect(aiOrders).toEqual([...aiOrders].sort((a, b) => a - b))
+    const lastAi = groups.lastIndexOf('ai-product')
+    const firstClient = groups.indexOf('creative-client')
+    if (lastAi !== -1 && firstClient !== -1) {
+      expect(lastAi).toBeLessThan(firstClient)
+    }
+
+    for (const group of ['ai-product', 'creative-client'] as const) {
+      const orders = projects.filter((p) => p.group === group).map((p) => p.order)
+      expect(orders).toEqual([...orders].sort((a, b) => a - b))
+    }
   })
 
   it('gets a project by slug and returns undefined for unknown slugs', () => {
