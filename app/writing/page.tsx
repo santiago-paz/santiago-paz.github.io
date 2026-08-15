@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getPosts, formatDate } from '@/lib/posts'
 import { JsonLd } from '@/components/JsonLd'
-import { blogJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
+import { blogJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
   'Notes on building production AI, and the occasional more personal piece.'
@@ -10,7 +10,7 @@ const description =
 export const metadata: Metadata = {
   title: 'Writing',
   description,
-  alternates: { canonical: '/writing' },
+  alternates: alternates('/writing'),
   openGraph: {
     type: 'website',
     title: 'Writing',

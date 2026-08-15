@@ -4,6 +4,23 @@
   "tagline": "I build production AI features end-to-end.",
   "location": "Berlin, Germany",
   "workAuthorization": "EU work authorization (Italian citizen)",
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native or bilingual",
+      "code": "es"
+    },
+    {
+      "name": "English",
+      "level": "Native or bilingual",
+      "code": "en"
+    },
+    {
+      "name": "German",
+      "level": "Elementary",
+      "code": "de"
+    }
+  ],
   "email": "santiago.paz.1992@gmail.com",
   "image": "/santiago-paz.png",
   "about": "Software engineer with 11+ years of experience, focused on shipping production AI/LLM features end-to-end — from agents and evaluation harnesses to the full-stack products around them. EU work-authorized and based in Berlin.",

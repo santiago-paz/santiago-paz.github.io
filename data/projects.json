@@ -1,5 +1,32 @@
 [
   {
+    "slug": "bedrock-genai-labs",
+    "title": "bedrock-genai-labs",
+    "group": "ai-engineering",
+    "order": 1,
+    "summary": "26 runnable labs against live Amazon Bedrock APIs — a FAISS vector store built from scratch, hybrid dense + BM25 retrieval with reranking, an agent loop written by hand, guardrails, and LLM-as-judge evaluation.",
+    "role": "Sole author — labs, reference solutions, shared Bedrock tooling, and a progress tracker.",
+    "stack": [
+      "Python",
+      "boto3",
+      "Amazon Bedrock",
+      "FAISS",
+      "BM25",
+      "Strands Agents SDK",
+      "Bedrock Guardrails"
+    ],
+    "highlights": [
+      "Retrieval built from the primitives rather than a framework — chunking strategies, embedding generation, a FAISS vector store written from scratch, then hybrid dense + BM25 retrieval with reranking on top.",
+      "An agent loop implemented by hand to expose the underlying tool-use mechanics, then the same task rebuilt on the Strands Agents SDK to contrast the two, plus multi-model routing by task shape.",
+      "Safety as a domain in its own right: Bedrock Guardrails, a PII detection and redaction pipeline, a prompt-injection attack suite with hardening exercises, and grounding / hallucination checks.",
+      "Evaluation and cost — LLM-as-judge scoring, RAG-specific retrieval metrics, prompt regression testing to catch quality drift, plus token accounting, prompt caching and a billing guard that runs before any model is invoked."
+    ],
+    "links": {
+      "repo": "https://github.com/santiago-paz/bedrock-genai-labs"
+    },
+    "description": "A hands-on lab suite covering the full generative-AI development lifecycle on **Amazon Bedrock**, built while preparing for the AWS Certified Generative AI Developer — Professional (AIP-C01).\n\nNot summary notes: 26 runnable labs executed against live Bedrock APIs, organised by exam domain, each a scaffold of `TODO(you)` exercises with a reference solution held back. The five domains cover foundation models and RAG, implementation (streaming, resilience, tool use, agents, routing), safety and security, optimization, and testing and evaluation.\n\nThe recurring choice throughout is to build the primitive before reaching for the abstraction — a vector store before FAISS-as-a-service, an agent loop before an agent SDK — because knowing what the framework does for you is what makes it debuggable in production. Written in Python and boto3, with shared infrastructure for the Bedrock client, config, token pricing and a synthetic corpus used as the RAG knowledge base."
+  },
+  {
     "slug": "windows-money",
     "title": "Windows Money",
     "group": "ai-product",

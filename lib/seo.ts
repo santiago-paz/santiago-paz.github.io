@@ -7,12 +7,19 @@ const experience = getExperience()
 const PERSON_ID = `${SITE.baseUrl}/#person`
 
 /**
- * Absolute URL for a site path.
+ * `alternates` for a page — canonical plus feed autodiscovery.
  *
- * `trailingSlash: true` means page routes canonicalise with a trailing slash,
- * so we add one — but only for pages. Paths that name a file (`/llms.txt`,
- * `/santiago-paz.png`) are served as-is and must not gain a slash.
+ * Next merges metadata shallowly, so a page setting `alternates.canonical`
+ * replaces the root layout's whole `alternates` object and silently drops the
+ * RSS `types` entry. Going through this helper keeps both on every page.
  */
+export function alternates(path = '/') {
+  return {
+    canonical: path,
+    types: { 'application/rss+xml': `${SITE.baseUrl}/writing/rss.xml` },
+  }
+}
+
 /**
  * Open Graph image descriptor for a page.
  *
@@ -29,6 +36,13 @@ export function ogImage(path = '', alt = `${profile.name} — ${profile.role}`) 
   return [{ url: `${base}/og.png`, width: 1200, height: 630, alt }]
 }
 
+/**
+ * Absolute URL for a site path.
+ *
+ * `trailingSlash: true` means page routes canonicalise with a trailing slash,
+ * so we add one — but only for pages. Paths that name a file (`/llms.txt`,
+ * `/santiago-paz.png`) are served as-is and must not gain a slash.
+ */
 export function absUrl(path = '/'): string {
   const hasExtension = /\.[a-z0-9]+$/i.test(path)
   const normalized = hasExtension || path.endsWith('/') ? path : `${path}/`
@@ -55,6 +69,11 @@ export function personJsonLd() {
     description: profile.about,
     email: `mailto:${profile.email}`,
     knowsAbout: profile.knowsAbout,
+    knowsLanguage: profile.languages.map((l) => ({
+      '@type': 'Language',
+      name: l.name,
+      alternateName: l.code,
+    })),
     ...(profile.awards.length
       ? { award: profile.awards.map((a) => `${a.title} (${a.org}, ${a.year})`) }
       : {}),

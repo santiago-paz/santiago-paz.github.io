@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getProject, getProjectSlugs, GROUP_LABELS } from '@/lib/data'
 import { Markdown } from '@/components/Markdown'
 import { JsonLd } from '@/components/JsonLd'
-import { projectJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
+import { projectJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 export const dynamicParams = false
 
@@ -24,7 +24,7 @@ export async function generateMetadata({
   return {
     title: project.title,
     description: project.summary,
-    alternates: { canonical: path },
+    alternates: alternates(path),
     openGraph: {
       type: 'article',
       title: project.title,

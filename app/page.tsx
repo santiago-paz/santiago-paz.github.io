@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { getProfile, getProjects } from '@/lib/data'
 import { getPosts, formatDate } from '@/lib/posts'
 import { JsonLd } from '@/components/JsonLd'
-import { profilePageJsonLd } from '@/lib/seo'
+import { profilePageJsonLd, alternates } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/' },
+  alternates: alternates('/'),
 }
 
 export default function HomePage() {

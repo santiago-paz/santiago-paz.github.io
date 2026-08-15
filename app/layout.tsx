@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
+  // Feed autodiscovery — lets readers and aggregators find the writing.
+  alternates: {
+    types: { 'application/rss+xml': `${SITE.baseUrl}/writing/rss.xml` },
+  },
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: SITE.baseUrl }],
   creator: SITE.name,

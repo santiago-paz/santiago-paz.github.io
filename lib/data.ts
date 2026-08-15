@@ -3,7 +3,7 @@ import projectsData from '@/data/projects.json'
 import faqData from '@/data/faq.json'
 import experienceData from '@/data/experience.json'
 
-export type ProjectGroup = 'ai-product' | 'creative-client'
+export type ProjectGroup = 'ai-engineering' | 'ai-product' | 'creative-client'
 
 export type Project = {
   slug: string
@@ -26,12 +26,15 @@ export type Award = {
   url?: string
 }
 
+export type Language = { name: string; level: string; code: string }
+
 export type Profile = {
   name: string
   role: string
   tagline: string
   location: string
   workAuthorization: string
+  languages: Language[]
   email: string
   image: string
   about: string
@@ -78,11 +81,18 @@ const faq = faqData as unknown as FaqItem[]
 const experience = experienceData as unknown as Experience
 
 export const GROUP_LABELS: Record<ProjectGroup, string> = {
+  'ai-engineering': 'AI engineering',
   'ai-product': 'AI & product',
   'creative-client': 'Creative & client',
 }
 
-const groupRank = (group: ProjectGroup): number => (group === 'ai-product' ? 0 : 1)
+const GROUP_RANK: Record<ProjectGroup, number> = {
+  'ai-engineering': 0,
+  'ai-product': 1,
+  'creative-client': 2,
+}
+
+const groupRank = (group: ProjectGroup): number => GROUP_RANK[group]
 
 export function getProfile(): Profile {
   return profile

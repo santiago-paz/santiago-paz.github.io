@@ -5,7 +5,7 @@ import { SITE } from '@/lib/site'
 import { getPost, getPostSlugs, formatDate } from '@/lib/posts'
 import { Markdown } from '@/components/Markdown'
 import { JsonLd } from '@/components/JsonLd'
-import { blogPostingJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
+import { blogPostingJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 export const dynamicParams = false
 
@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.summary,
-    alternates: { canonical: path },
+    alternates: alternates(path),
     openGraph: {
       type: 'article',
       title: post.title,

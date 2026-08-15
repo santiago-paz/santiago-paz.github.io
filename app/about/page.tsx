@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getProfile, getFaq, getExperience } from '@/lib/data'
 import { JsonLd } from '@/components/JsonLd'
-import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
+import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
   'Santiago Paz is a senior AI / LLM application engineer based in Berlin, with 11+ years shipping production software — Dialpad, Monks, R/GA, Globant. Background, experience, tech stack, and how to get in touch.'
@@ -10,7 +10,7 @@ const description =
 export const metadata: Metadata = {
   title: 'About',
   description,
-  alternates: { canonical: '/about' },
+  alternates: alternates('/about'),
   openGraph: {
     type: 'profile',
     title: 'About Santiago Paz',
@@ -74,6 +74,16 @@ export default function AboutPage() {
           itself.
         </p>
         <p>
+          Alongside the products I build the fundamentals in the open:{' '}
+          <Link href="/projects/bedrock-genai-labs">bedrock-genai-labs</Link> is
+          26 runnable labs against live Amazon Bedrock APIs &mdash; a FAISS
+          vector store written from scratch, hybrid dense + BM25 retrieval with
+          reranking, an agent loop implemented by hand before rebuilding it on
+          the Strands Agents SDK, guardrails and PII redaction, and
+          LLM-as-judge evaluation. It backs the AWS Certified Generative AI
+          Developer &mdash; Professional certification I&rsquo;m working toward.
+        </p>
+        <p>
           On the stack: TypeScript, React and Next.js on the front end; Python
           and FastAPI on the back end; LLM tooling like the Vercel AI SDK,
           LangChain, and Anthropic and OpenAI models; plus retrieval-augmented
@@ -94,6 +104,12 @@ export default function AboutPage() {
         <dd>{profile.location}</dd>
         <dt>Authorization</dt>
         <dd>{profile.workAuthorization}</dd>
+        <dt>Languages</dt>
+        <dd>
+          {profile.languages
+            .map((l) => `${l.name} (${l.level})`)
+            .join(' · ')}
+        </dd>
         <dt>Focus</dt>
         <dd>Production AI/LLM features · full-stack product delivery</dd>
         <dt>Status</dt>
