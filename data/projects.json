@@ -54,31 +54,31 @@
     "description": "A daily bot that mines job-search subreddits and Hacker News for product-opportunity signal, then emails a digest.\n\nThe pipeline is `fetch → filter → analyze → digest → email → persist`. The design constraint was cost: rather than asking the model about each post, everything cheap happens first — engagement thresholds, noise rules, already-seen checks — and a **single Claude call** with structured output does classification, deduplication, scoring and drafting for the whole batch at once. Spend per run is therefore flat in the number of posts scanned.\n\nBuilt to feed the roadmap of a CV-tailoring product, but the pipeline is domain-agnostic: point it at different subreddits and prompts and it mines whatever signal you care about. Runs on launchd locally or GitHub Actions in CI."
   },
   {
-    "slug": "windows-money",
-    "title": "Windows Money",
+    "slug": "multi-agent-trading-desk",
+    "title": "Multi-Agent Trading Desk",
     "group": "ai-product",
     "order": 1,
-    "summary": "A Windows-98-styled, desktop-in-the-browser AI trading dashboard wired to a real broker API and a multi-agent LLM backend.",
-    "role": "Sole engineer — full-stack frontend plus the AI agent and auto-trading backend.",
+    "summary": "12 LLM analyst agents on a LangGraph + FastAPI backend, driving rebalancing and backtesting over a real portfolio, with a Next.js retro-desktop frontend and live broker integration.",
+    "role": "Sole engineer — the agent backend and trading engine, plus the full-stack frontend.",
     "stack": [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Anthropic",
       "Next.js",
       "React",
       "TypeScript",
-      "Zustand",
-      "LangChain",
-      "Anthropic",
-      "Python",
-      "FastAPI"
+      "Zustand"
     ],
     "highlights": [
-      "Multi-agent LLM system that produces trading signals from market data.",
-      "Real broker integration (InvertirOnline) with an auto-rebalancer and backtesting engine.",
-      "Draggable/resizable Win98 window manager built with 98.css, fully tested."
+      "12 LLM analyst agents on a LangGraph backend, each taking a different view of the market, whose outputs are reconciled into a single trading signal.",
+      "Live broker integration (InvertirOnline) with an auto-rebalancer that turns those signals into executable orders, and a backtesting engine to check them against history first.",
+      "A retro desktop-in-the-browser frontend where each capability — portfolio, live market data, quick-trade, auto-trader, backtesting — is its own draggable, resizable window."
     ],
     "links": {
-      "repo": "https://github.com/santiago-paz/windows-money"
+      "repo": "https://github.com/santiago-paz/multi-agent-trading-desk"
     },
-    "description": "Windows Money reframes an algorithmic trading workstation as a nostalgic desktop OS. Each capability — portfolio, live market data, quick-trade, auto-trader, backtesting — is its own draggable window. Under the hood it wires a multi-agent LLM pipeline to a real Argentine broker API, turning model signals into executable, backtestable rebalancing actions."
+    "description": "An algorithmic trading workstation built around a **multi-agent LLM pipeline**: 12 analyst agents run on a LangGraph + FastAPI backend, each reasoning over market data from a different angle, and their outputs are reconciled into rebalancing decisions.\n\nThose decisions are not hypothetical — the system wires into a real Argentine broker API (InvertirOnline), so a signal becomes an executable order, with a backtesting engine to evaluate a strategy against history before any capital moves.\n\nThe frontend reframes the whole thing as a nostalgic desktop OS. Portfolio, live market data, quick-trade, auto-trader and backtesting are each their own draggable window, built on a hand-rolled Win98-style window manager."
   },
   {
     "slug": "splitberlin",

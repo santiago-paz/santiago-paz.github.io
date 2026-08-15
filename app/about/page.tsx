@@ -66,8 +66,10 @@ export default function AboutPage() {
           <Link href="/projects/splitberlin">SplitBerlin</Link>, a multi-tenant
           SaaS that extracts structured data from legal contracts with a
           two-stage AI pipeline;{' '}
-          <Link href="/projects/windows-money">Windows Money</Link>, a
-          multi-agent LLM trading system; and{' '}
+          <Link href="/projects/multi-agent-trading-desk">
+            Multi-Agent Trading Desk
+          </Link>
+          , 12 LLM analyst agents driving a real portfolio; and{' '}
           <Link href="/projects/pegala">Pegala</Link>, an AI job-search platform;
           and <Link href="/projects/reema">Reema</Link>, a text-to-speech SaaS. I
           care about the parts that make AI features actually ship &mdash; evals,
