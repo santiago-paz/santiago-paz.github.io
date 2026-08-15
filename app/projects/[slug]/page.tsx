@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getProject, getProjectSlugs, GROUP_LABELS } from '@/lib/data'
 import { Markdown } from '@/components/Markdown'
 import { JsonLd } from '@/components/JsonLd'
-import { projectJsonLd, breadcrumbJsonLd } from '@/lib/seo'
+import { projectJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
 
 export const dynamicParams = false
 
@@ -30,8 +30,16 @@ export async function generateMetadata({
       title: project.title,
       description: project.summary,
       url: path,
+      images: ogImage(path, project.title),
     },
-    twitter: { title: project.title, description: project.summary },
+    // `card` has to be repeated: page-level `twitter` shallowly replaces the
+    // root layout's object, so omitting it silently downgrades to `summary`.
+    twitter: {
+      card: 'summary_large_image',
+      title: project.title,
+      description: project.summary,
+      images: ogImage(path, project.title),
+    },
   }
 }
 

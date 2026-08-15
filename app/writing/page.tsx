@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getPosts, formatDate } from '@/lib/posts'
 import { JsonLd } from '@/components/JsonLd'
-import { blogJsonLd, breadcrumbJsonLd } from '@/lib/seo'
+import { blogJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
 
 const description =
   'Notes on building production AI, and the occasional more personal piece.'
@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: 'Writing',
   description,
   alternates: { canonical: '/writing' },
-  openGraph: { type: 'website', title: 'Writing', description, url: '/writing' },
+  openGraph: {
+    type: 'website',
+    title: 'Writing',
+    description,
+    url: '/writing',
+    images: ogImage('/writing'),
+  },
+  twitter: { card: 'summary_large_image', images: ogImage('/writing') },
 }
 
 export default function WritingPage() {

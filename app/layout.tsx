@@ -4,7 +4,7 @@ import { Crete_Round, Inter_Tight } from 'next/font/google'
 import { SITE } from '@/lib/site'
 import { getProfile } from '@/lib/data'
 import { JsonLd } from '@/components/JsonLd'
-import { websiteJsonLd, personJsonLd } from '@/lib/seo'
+import { websiteJsonLd, personJsonLd, ogImage } from '@/lib/seo'
 import './globals.css'
 
 const display = Crete_Round({
@@ -65,11 +65,13 @@ export const metadata: Metadata = {
     description: SITE.description,
     url: SITE.baseUrl,
     locale: 'en_US',
+    images: ogImage(),
   },
   twitter: {
     card: 'summary_large_image',
     title: siteTitle,
     description: SITE.description,
+    images: ogImage(),
   },
 }
 

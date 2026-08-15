@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getProfile, getFaq, getExperience } from '@/lib/data'
 import { JsonLd } from '@/components/JsonLd'
-import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd } from '@/lib/seo'
+import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
 
 const description =
   'Santiago Paz is a senior AI / LLM application engineer based in Berlin, with 11+ years shipping production software — Dialpad, Monks, R/GA, Globant. Background, experience, tech stack, and how to get in touch.'
@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: 'About',
   description,
   alternates: { canonical: '/about' },
-  openGraph: { type: 'profile', title: 'About Santiago Paz', description, url: '/about' },
+  openGraph: {
+    type: 'profile',
+    title: 'About Santiago Paz',
+    description,
+    url: '/about',
+    images: ogImage('/about'),
+  },
+  twitter: { card: 'summary_large_image', images: ogImage('/about') },
 }
 
 export default function AboutPage() {

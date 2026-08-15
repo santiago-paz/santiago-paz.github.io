@@ -10,7 +10,9 @@
   --fg-strong: #f4f2ec;
   --about: #cfccc4;
   --dim: #8f8c83;
-  --faint: #6f6d66;
+  /* Used for 10-11px labels (.stack, .kind, .where), so it has to clear WCAG AA
+     for small text: 4.80:1 on --bg. The old #6f6d66 was 3.62:1. */
+  --faint: #838178;
   --rule: #26272b;
   --rule-strong: #3a3b40;
   --ac: #57a394;

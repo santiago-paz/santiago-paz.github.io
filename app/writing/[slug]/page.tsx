@@ -5,7 +5,7 @@ import { SITE } from '@/lib/site'
 import { getPost, getPostSlugs, formatDate } from '@/lib/posts'
 import { Markdown } from '@/components/Markdown'
 import { JsonLd } from '@/components/JsonLd'
-import { blogPostingJsonLd, breadcrumbJsonLd } from '@/lib/seo'
+import { blogPostingJsonLd, breadcrumbJsonLd, ogImage } from '@/lib/seo'
 
 export const dynamicParams = false
 
@@ -33,8 +33,15 @@ export async function generateMetadata({
       url: path,
       publishedTime: post.date,
       authors: [SITE.name],
+      images: ogImage(path, post.title),
     },
-    twitter: { title: post.title, description: post.summary },
+    // See the note in app/projects/[slug]/page.tsx — `card` must be restated.
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.summary,
+      images: ogImage(path, post.title),
+    },
   }
 }
 

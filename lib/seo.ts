@@ -13,6 +13,22 @@ const PERSON_ID = `${SITE.baseUrl}/#person`
  * so we add one — but only for pages. Paths that name a file (`/llms.txt`,
  * `/santiago-paz.png`) are served as-is and must not gain a slash.
  */
+/**
+ * Open Graph image descriptor for a page.
+ *
+ * The cards are served from `og.png` route handlers rather than Next's
+ * `opengraph-image` file convention on purpose: GitHub Pages picks the
+ * Content-Type from the file extension alone, and the extensionless file the
+ * convention emits is served as `application/octet-stream`, which stops
+ * LinkedIn, Slack and X from rendering the preview at all.
+ *
+ * Pass the page path — `ogImage('/about')` → `/about/og.png`.
+ */
+export function ogImage(path = '', alt = `${profile.name} — ${profile.role}`) {
+  const base = path.replace(/\/$/, '')
+  return [{ url: `${base}/og.png`, width: 1200, height: 630, alt }]
+}
+
 export function absUrl(path = '/'): string {
   const hasExtension = /\.[a-z0-9]+$/i.test(path)
   const normalized = hasExtension || path.endsWith('/') ? path : `${path}/`
