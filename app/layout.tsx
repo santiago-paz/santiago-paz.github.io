@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Link from 'next/link'
 import { Crete_Round, Inter_Tight } from 'next/font/google'
 import { SITE } from '@/lib/site'
@@ -81,6 +81,13 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: ogImage(),
   },
+}
+
+// Tints mobile browser chrome to match the page rather than leaving a white bar
+// above a dark site.
+export const viewport: Viewport = {
+  themeColor: '#111214',
+  colorScheme: 'dark',
 }
 
 export default function RootLayout({
