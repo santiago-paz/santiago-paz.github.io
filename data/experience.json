@@ -1,0 +1,110 @@
+{
+  "summary": "11+ years shipping production software — the last several at high-traffic scale — now focused on taking LLMs into production.",
+  "roles": [
+    {
+      "company": "Dialpad",
+      "url": "https://www.dialpad.com",
+      "title": "Senior Web Developer",
+      "period": "May 2025 — Present",
+      "start": "2025-05",
+      "note": "Drive the technical development and scaling of Dialpad's global web presence — a high-traffic ecosystem serving millions of users across the US, JP, UK and AU."
+    },
+    {
+      "company": "Dialpad",
+      "url": "https://www.dialpad.com",
+      "title": "Web Developer",
+      "period": "Jun 2022 — May 2025",
+      "start": "2022-06",
+      "end": "2025-05",
+      "note": "Built and scaled the platform behind 10M+ visitors and 21M+ annual views, plus an internal peer-recognition and news system on a Python backend."
+    },
+    {
+      "company": "Monks",
+      "url": "https://www.monks.com",
+      "title": "Senior Software Engineer",
+      "period": "Jun 2021 — Feb 2022",
+      "start": "2021-06",
+      "end": "2022-02",
+      "note": "Low-code drag-and-drop page builder in Angular for Google mobile storefronts, and web showcases for Google Chromecast."
+    },
+    {
+      "company": "R/GA",
+      "url": "https://www.rga.com",
+      "title": "Software Engineer",
+      "period": "Aug 2020 — Jun 2021",
+      "start": "2020-08",
+      "end": "2021-06",
+      "location": "Buenos Aires",
+      "note": "High-performance landing pages for Google's Small Business initiatives — millions of visitors monthly, with WCAG compliance throughout."
+    },
+    {
+      "company": "Digital Beings",
+      "title": "Full-Stack Engineer",
+      "period": "Jul 2019 — Aug 2020",
+      "start": "2019-07",
+      "end": "2020-08",
+      "note": "A modular platform for interactive mobile narratives in Angular and Node.js — app-like experiences delivered inside messaging feeds."
+    },
+    {
+      "company": "Globant",
+      "url": "https://www.globant.com",
+      "title": "Web Developer",
+      "period": "Mar 2018 — Jul 2019",
+      "start": "2018-03",
+      "end": "2019-07",
+      "location": "Argentina",
+      "note": "Co-engineered JPMorgan's infrastructure modernization, migrating core interest calculation from ActionScript to Angular."
+    },
+    {
+      "company": "Logismata",
+      "title": "Software Engineer",
+      "period": "Jun 2017 — Mar 2018",
+      "start": "2017-06",
+      "end": "2018-03",
+      "note": "FinTech and PropTech for the Swiss financial sector — scalable Angular modules for financial planning, tax and real estate."
+    },
+    {
+      "company": "MRM",
+      "url": "https://www.mrm.com",
+      "title": "Web Developer",
+      "period": "Mar 2014 — Jun 2017",
+      "start": "2014-03",
+      "end": "2017-06",
+      "location": "Argentina",
+      "note": "Data-driven experiences for the automotive sector, including the rewards platform for General Motors' \"GM Card\" program."
+    },
+    {
+      "company": "HP",
+      "url": "https://www.hp.com",
+      "title": "Java Web Developer",
+      "period": "Jan 2011 — Oct 2012",
+      "start": "2011-01",
+      "end": "2012-10",
+      "location": "Argentina",
+      "note": "Large-scale telecom solutions at HP's enterprise division — a nationwide interactive platform across Nextel retail stores."
+    }
+  ],
+  "education": [
+    {
+      "org": "Universidad de Buenos Aires",
+      "credential": "Bachelor's Degree in Data Science",
+      "period": "2023 — Present"
+    },
+    {
+      "org": "Digital House",
+      "credential": "Data Scientist",
+      "period": "2018 — 2019"
+    },
+    {
+      "org": "Universidad de Buenos Aires",
+      "credential": "Computer Science",
+      "period": "2010 — 2013"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Generative AI Developer — Professional",
+      "status": "In progress"
+    }
+  ]
+}

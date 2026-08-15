@@ -1,0 +1,22 @@
+[
+  {
+    "q": "Who is Santiago Paz?",
+    "a": "Santiago Paz is a senior software engineer and AI / LLM application engineer based in Berlin, Germany. He builds production AI features end-to-end — LLM agents, evaluation harnesses, and the full-stack products around them — and is EU work-authorized as an Italian citizen."
+  },
+  {
+    "q": "What does Santiago Paz build?",
+    "a": "He ships production AI/LLM products end-to-end: multi-tenant SaaS with AI extraction pipelines (SplitBerlin), multi-agent LLM systems (Windows Money), a text-to-speech platform (Reema), and an AI job-search platform (Pegala), among others — TypeScript, React and Next.js on the front end, Python and FastAPI on the back end."
+  },
+  {
+    "q": "Where is Santiago Paz based?",
+    "a": "Berlin, Germany. He is EU work-authorized as an Italian citizen and open to senior AI engineering roles across the EU and remotely."
+  },
+  {
+    "q": "What is Santiago Paz's tech stack?",
+    "a": "TypeScript, React and Next.js, Python and FastAPI, with LLM tooling such as the Vercel AI SDK, LangChain, and Anthropic and OpenAI models — plus retrieval-augmented generation (RAG), evaluation harnesses (evals), and prompt engineering."
+  },
+  {
+    "q": "How can I contact or hire Santiago Paz?",
+    "a": "Email santiago.paz.1992@gmail.com, or reach him on GitHub (github.com/santiago-paz) and LinkedIn. He is open to senior AI/LLM engineering roles."
+  }
+]

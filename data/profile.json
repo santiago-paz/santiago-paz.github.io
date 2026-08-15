@@ -1,0 +1,39 @@
+{
+  "name": "Santiago Paz",
+  "role": "AI / LLM Application Engineer",
+  "tagline": "I build production AI features end-to-end.",
+  "location": "Berlin, Germany",
+  "workAuthorization": "EU work authorization (Italian citizen)",
+  "email": "santiago.paz.1992@gmail.com",
+  "image": "/santiago-paz.png",
+  "about": "Software engineer with 11+ years of experience, focused on shipping production AI/LLM features end-to-end — from agents and evaluation harnesses to the full-stack products around them. EU work-authorized and based in Berlin.",
+  "knowsAbout": [
+    "LLM application engineering",
+    "Retrieval-augmented generation (RAG)",
+    "AI agents",
+    "LLM evaluation and evals",
+    "Prompt engineering",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Python",
+    "Full-stack product engineering"
+  ],
+  "links": {
+    "github": "https://github.com/santiago-paz",
+    "linkedin": "https://www.linkedin.com/in/santiago-paz",
+    "cv": "/cv/santiago-paz.pdf"
+  },
+  "sameAs": [
+    "https://github.com/santiago-paz",
+    "https://www.linkedin.com/in/santiago-paz"
+  ],
+  "awards": [
+    {
+      "title": "3rd place globally — Hack-Nation Global AI Hackathon",
+      "org": "YETI Fellowship · Startup Factory boOst, Dresden",
+      "year": "2026",
+      "url": "https://www.linkedin.com/posts/yetifellowship-dresden-siliconsaxony-ugcPost-7454684705745985536-l-Gi/"
+    }
+  ]
+}
