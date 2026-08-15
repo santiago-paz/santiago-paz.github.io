@@ -27,6 +27,33 @@
     "description": "A hands-on lab suite covering the full generative-AI development lifecycle on **Amazon Bedrock**, built while preparing for the AWS Certified Generative AI Developer — Professional (AIP-C01).\n\nNot summary notes: 26 runnable labs executed against live Bedrock APIs, organised by exam domain, each a scaffold of `TODO(you)` exercises with a reference solution held back. The five domains cover foundation models and RAG, implementation (streaming, resilience, tool use, agents, routing), safety and security, optimization, and testing and evaluation.\n\nThe recurring choice throughout is to build the primitive before reaching for the abstraction — a vector store before FAISS-as-a-service, an agent loop before an agent SDK — because knowing what the framework does for you is what makes it debuggable in production. Written in Python and boto3, with shared infrastructure for the Bedrock client, config, token pricing and a synthetic corpus used as the RAG knowledge base."
   },
   {
+    "slug": "reddit-idea-miner",
+    "title": "Reddit Idea Miner",
+    "group": "ai-engineering",
+    "order": 2,
+    "summary": "A daily pipeline that scans job-search subreddits and Hacker News, extracts actionable product ideas with Claude in a single structured call, and emails a ranked digest.",
+    "role": "Sole author — pipeline, prompt design, fetch strategy, scheduling.",
+    "stack": [
+      "Python",
+      "Anthropic API",
+      "Claude",
+      "Reddit API",
+      "Hacker News API",
+      "GitHub Actions",
+      "launchd"
+    ],
+    "highlights": [
+      "One model call per run handles classification, theme deduplication, effort/confidence scoring and suggestion drafting as structured output — everything upstream is cheap filtering, so cost stays flat no matter how many posts are scanned.",
+      "Two fetch modes chosen automatically from the environment: authenticated OAuth JSON for true engagement filtering, and an anonymous Atom-feed path that falls back to feed position for ranking.",
+      "The RSS path exists because anonymous Reddit JSON started returning 403 under the 2025 Responsible Builder Policy — it respects the x-ratelimit headers at roughly one request per minute, which is irrelevant for a once-daily job.",
+      "Persistent state (seen posts, dated digests) plus a feedback loop that tunes what gets surfaced on later runs."
+    ],
+    "links": {
+      "repo": "https://github.com/santiago-paz/reddit-idea-miner"
+    },
+    "description": "A daily bot that mines job-search subreddits and Hacker News for product-opportunity signal, then emails a digest.\n\nThe pipeline is `fetch → filter → analyze → digest → email → persist`. The design constraint was cost: rather than asking the model about each post, everything cheap happens first — engagement thresholds, noise rules, already-seen checks — and a **single Claude call** with structured output does classification, deduplication, scoring and drafting for the whole batch at once. Spend per run is therefore flat in the number of posts scanned.\n\nBuilt to feed the roadmap of a CV-tailoring product, but the pipeline is domain-agnostic: point it at different subreddits and prompts and it mines whatever signal you care about. Runs on launchd locally or GitHub Actions in CI."
+  },
+  {
     "slug": "windows-money",
     "title": "Windows Money",
     "group": "ai-product",
@@ -135,5 +162,33 @@
       "repo": "https://github.com/santiago-paz/Reema-App"
     },
     "description": "Reema is a production SaaS built as several coordinated services: an admin dashboard where customers configure players, a TTS synthesizer that extracts article text and renders natural speech across multiple providers with caching, and a statically-generated embeddable widget. It is the clearest example of a full AI-powered product shipped end-to-end."
+  },
+  {
+    "slug": "diffcv",
+    "title": "DiffCV",
+    "group": "ai-product",
+    "order": 5,
+    "summary": "An open-source CV optimization platform — a structured Master Profile that feeds per-posting CV generation, with a CRM-style application pipeline. Architecture and dashboard built; the AI engine is still in progress.",
+    "role": "Sole author — architecture, feature-driven module boundaries, dashboard.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Supabase",
+      "PostgreSQL",
+      "Vercel AI SDK"
+    ],
+    "disclosure": "Work in progress. The five-pillar architecture, data contracts and dashboard are in place; prompt and agent orchestration in the AI engine is not implemented yet.",
+    "highlights": [
+      "Feature-driven architecture — five pillars (Master Profile, ingestion, AI engine, rendering, application CRM) isolated under their own folders, communicating only through shared contracts in src/types.",
+      "External infrastructure (Supabase, the AI SDK, PDF libraries) is confined to src/lib, so the feature modules stay swappable and testable.",
+      "Dashboard with aggregate widget modules — tailored resumes, AI next actions — over the application pipeline.",
+      "Rendering targets ATS-safe templates, since a CV that a parser mangles never reaches a human."
+    ],
+    "links": {
+      "repo": "https://github.com/santiago-paz/DiffCV"
+    },
+    "description": "An open-source take on CV optimization: centralise professional history once as a structured **Master Profile**, then generate a hyper-personalised CV per job posting, keeping every application in a CRM-style pipeline.\n\nThe interesting part is the boundary design. Five pillars — profile, ingestion, AI engine, rendering, applications — each live in isolation and talk only through shared contracts (`UserProfile`, `JobDescription`, `TailoredResume`, `Application`), with Supabase and the AI SDK quarantined in a lib layer. That is what lets the AI engine be swapped or rewritten without touching ingestion or rendering.\n\n**Status:** the architecture, data contracts and dashboard are built. Prompt and agent orchestration inside the AI engine is the next piece of work, and is not implemented yet."
   }
 ]

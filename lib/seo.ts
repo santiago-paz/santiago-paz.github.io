@@ -65,7 +65,7 @@ export function personJsonLd() {
     name: profile.name,
     url: SITE.baseUrl,
     ...(profile.image ? { image: absUrl(profile.image) } : {}),
-    jobTitle: profile.role,
+    jobTitle: [profile.role, 'Senior Software Engineer'],
     description: profile.about,
     email: `mailto:${profile.email}`,
     knowsAbout: profile.knowsAbout,

@@ -5,7 +5,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
-  'Santiago Paz is a senior AI / LLM application engineer based in Berlin, with 11+ years shipping production software — Dialpad, Monks, R/GA, Globant. Background, experience, tech stack, and how to get in touch.'
+  'Santiago Paz is an AI engineer based in Berlin — RAG, agents and multi-agent systems — with 11+ years shipping production software at Dialpad, Monks, R/GA and Globant. Background, experience, tech stack, and how to get in touch.'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -55,7 +55,8 @@ export default function AboutPage() {
       <div className="prose" style={{ marginTop: 24 }}>
         <p>
           I&rsquo;m Santiago Paz, a software engineer with 11+ years of
-          experience, now focused on AI / LLM application engineering. I&rsquo;m
+          experience, now working as an AI engineer &mdash; retrieval, agents and
+          multi-agent systems. I&rsquo;m
           based in Berlin, EU work-authorized as an Italian citizen, and I build
           production AI features end-to-end &mdash; from LLM agents and
           evaluation harnesses to the full-stack products around them.

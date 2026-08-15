@@ -1,6 +1,6 @@
 # santiagopaz.com
 
-Personal site of Santiago Paz — AI / LLM application engineer, Berlin.
+Personal site of Santiago Paz — AI engineer, Berlin.
 
 Next.js (App Router) built as a **static export** and published to GitHub Pages
 at [santiagopaz.com](https://santiagopaz.com).

@@ -1,6 +1,6 @@
 {
   "name": "Santiago Paz",
-  "role": "AI / LLM Application Engineer",
+  "role": "AI Engineer",
   "tagline": "I build production AI features end-to-end.",
   "location": "Berlin, Germany",
   "workAuthorization": "EU work authorization (Italian citizen)",
@@ -25,15 +25,17 @@
   "image": "/santiago-paz.png",
   "about": "Software engineer with 11+ years of experience, focused on shipping production AI/LLM features end-to-end — from agents and evaluation harnesses to the full-stack products around them. EU work-authorized and based in Berlin.",
   "knowsAbout": [
-    "LLM application engineering",
+    "AI engineering",
     "Retrieval-augmented generation (RAG)",
     "AI agents",
+    "Multi-agent systems",
+    "Amazon Bedrock",
     "LLM evaluation and evals",
     "Prompt engineering",
+    "Python",
     "TypeScript",
     "React",
     "Next.js",
-    "Python",
     "Full-stack product engineering"
   ],
   "links": {
