@@ -1,11 +1,11 @@
 [
   {
     "q": "Who is Santiago Paz?",
-    "a": "Santiago Paz is an AI engineer based in Berlin with 11+ years of software engineering experience, Germany. He builds production AI features end-to-end — LLM agents, evaluation harnesses, and the full-stack products around them — and is EU work-authorized as an Italian citizen."
+    "a": "Santiago Paz is an AI engineer based in Berlin, Germany, with 13 years of software engineering experience building high-traffic web platforms. He works on RAG, agents and multi-agent systems — the retrieval, guardrails and evaluation around the model, not just the API call — and is EU work-authorized as an Italian citizen."
   },
   {
     "q": "What does Santiago Paz build?",
-    "a": "He ships production AI/LLM products end-to-end: multi-tenant SaaS with AI extraction pipelines (SplitBerlin), multi-agent LLM systems (Multi-Agent Trading Desk), a text-to-speech platform (Reema), and an AI job-search platform (Pegala). He also publishes bedrock-genai-labs, 26 runnable Amazon Bedrock labs covering RAG, agents, guardrails and LLM evaluation. Stack: TypeScript, React and Next.js on the front end, Python and FastAPI on the back end."
+    "a": "He ships production AI/LLM systems end-to-end: Contract Lens, a multi-tenant SaaS whose LLM extraction pipeline turns PDF and DOCX contracts into typed, structured data driving a deadline and alert system; Multi-Agent Trading Desk, 12 LLM analyst agents on a LangGraph + FastAPI backend; and bedrock-genai-labs, 26 runnable Amazon Bedrock labs covering RAG, agents, guardrails and LLM-as-judge evaluation. Stack: Python and FastAPI on the back end, TypeScript, React and Next.js on the front end."
   },
   {
     "q": "Where is Santiago Paz based?",
@@ -13,7 +13,7 @@
   },
   {
     "q": "What is Santiago Paz's tech stack?",
-    "a": "TypeScript, React and Next.js, Python and FastAPI, with LLM tooling such as the Vercel AI SDK, LangChain, and Anthropic and OpenAI models — plus retrieval-augmented generation (RAG), evaluation harnesses (evals), and prompt engineering."
+    "a": "Python and TypeScript, with LangGraph, the Strands Agents SDK, FastAPI, FAISS and boto3 on the AI side, and React and Next.js on the front end. On AWS he works with Amazon Bedrock — retrieval-augmented generation (RAG), agents and tool use, guardrails, and evaluation harnesses that catch quality drift."
   },
   {
     "q": "How can I contact or hire Santiago Paz?",

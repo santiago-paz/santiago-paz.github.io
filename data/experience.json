@@ -1,5 +1,5 @@
 {
-  "summary": "11+ years shipping production software — the last several at high-traffic scale — now focused on taking LLMs into production.",
+  "summary": "13 years shipping production software — most of it on high-traffic web platforms — now focused on taking LLMs into production.",
   "roles": [
     {
       "company": "Dialpad",
@@ -7,7 +7,7 @@
       "title": "Senior Web Developer",
       "period": "May 2025 — Present",
       "start": "2025-05",
-      "note": "Drive the technical development and scaling of Dialpad's global web presence — a high-traffic ecosystem serving millions of users across the US, JP, UK and AU."
+      "note": "Build and ship pages across dialpad.com — a Next.js App Router site on Vercel with a Contentful back end, ~1,900 pages across five locales, serving millions of visitors. Currently building a WYSIWYG page builder in Next.js: pages composed visually from modular blocks, with each block's properties mapped and kept in sync with its Contentful content model. TypeScript, React and Tailwind, with performance, SEO and accessibility as release criteria."
     },
     {
       "company": "Dialpad",
@@ -16,7 +16,7 @@
       "period": "Jun 2022 — May 2025",
       "start": "2022-06",
       "end": "2025-05",
-      "note": "Built and scaled the platform behind 10M+ visitors and 21M+ annual views, plus an internal peer-recognition and news system on a Python backend."
+      "note": "Built and maintained high-traffic marketing pages across Dialpad's global web platform."
     },
     {
       "company": "Monks",
@@ -25,7 +25,7 @@
       "period": "Jun 2021 — Feb 2022",
       "start": "2021-06",
       "end": "2022-02",
-      "note": "Low-code drag-and-drop page builder in Angular for Google mobile storefronts, and web showcases for Google Chromecast."
+      "note": "High-performance web solutions for major digital platforms — a low-code drag-and-drop page builder in Angular for mobile storefronts, and web showcases for Google Chromecast focused on seamless interactivity across devices."
     },
     {
       "company": "R/GA",
@@ -35,7 +35,7 @@
       "start": "2020-08",
       "end": "2021-06",
       "location": "Buenos Aires",
-      "note": "High-performance landing pages for Google's Small Business initiatives — millions of visitors monthly, with WCAG compliance throughout."
+      "note": "Marketing pages for Google's Small Business initiatives (smallbusiness.withgoogle.com) in AngularJS, reaching millions of visitors monthly, plus a WYSIWYG page builder that let the team assemble campaign pages without engineering time. Held performance and WCAG compliance across high-traffic pages."
     },
     {
       "company": "Digital Beings",
@@ -43,7 +43,7 @@
       "period": "Jul 2019 — Aug 2020",
       "start": "2019-07",
       "end": "2020-08",
-      "note": "A modular platform for interactive mobile narratives in Angular and Node.js — app-like experiences delivered inside messaging feeds."
+      "note": "Built the platform behind Wrap (wrap.co), which generates \"Wraps\": app-like interactive content that runs inside messaging feeds with no app install. MEAN stack — Angular front end on Node.js services — with user, team and permission management, and a modular architecture so new content formats could be added independently of the generator."
     },
     {
       "company": "Globant",
@@ -53,7 +53,7 @@
       "start": "2018-03",
       "end": "2019-07",
       "location": "Argentina",
-      "note": "Co-engineered JPMorgan's infrastructure modernization, migrating core interest calculation from ActionScript to Angular."
+      "note": "Co-engineered JPMorgan's migration from a legacy ActionScript system to a full Angular platform, rebuilding the stock calculation interfaces used by brokers on top of the bank's existing back end, and refactoring interfaces for WCAG compliance."
     },
     {
       "company": "Logismata",
@@ -61,7 +61,7 @@
       "period": "Jun 2017 — Mar 2018",
       "start": "2017-06",
       "end": "2018-03",
-      "note": "FinTech and PropTech for the Swiss financial sector — scalable Angular modules for financial planning, tax and real estate."
+      "note": "FinTech and PropTech modules for the Swiss financial sector: financial planning, tax and real estate, in Angular and TypeScript."
     },
     {
       "company": "MRM",
@@ -71,7 +71,7 @@
       "start": "2014-03",
       "end": "2017-06",
       "location": "Argentina",
-      "note": "Data-driven experiences for the automotive sector, including the rewards platform for General Motors' \"GM Card\" program."
+      "note": "Promotional rewards platform for GM's \"GM Card\" program in the US market, built in AngularJS."
     },
     {
       "company": "HP",
@@ -81,23 +81,23 @@
       "start": "2011-01",
       "end": "2012-10",
       "location": "Argentina",
-      "note": "Large-scale telecom solutions at HP's enterprise division — a nationwide interactive platform across Nextel retail stores."
+      "note": "Large-scale telecom workflows for HP's enterprise division, in J2SE, JBoss Seam and JSF."
     }
   ],
   "education": [
     {
       "org": "Universidad de Buenos Aires",
       "credential": "Bachelor's Degree in Data Science",
-      "period": "2023 — Present"
+      "period": "Mar 2023"
     },
     {
       "org": "Digital House",
-      "credential": "Data Scientist",
+      "credential": "Data Science Program",
       "period": "2018 — 2019"
     },
     {
       "org": "Universidad de Buenos Aires",
-      "credential": "Computer Science",
+      "credential": "Bachelor of Computer Science (incomplete)",
       "period": "2010 — 2013"
     }
   ],

@@ -86,22 +86,19 @@ export const GROUP_LABELS: Record<ProjectGroup, string> = {
   'creative-client': 'Creative & client',
 }
 
-const GROUP_RANK: Record<ProjectGroup, number> = {
-  'ai-engineering': 0,
-  'ai-product': 1,
-  'creative-client': 2,
-}
-
-const groupRank = (group: ProjectGroup): number => GROUP_RANK[group]
-
 export function getProfile(): Profile {
   return profile
 }
 
+/**
+ * Projects in curated order.
+ *
+ * `order` is global rather than per-group: the CV leads with Contract Lens,
+ * Multi-Agent Trading Desk and bedrock-genai-labs, and the site has to open
+ * with the same three. `group` is only a label on the detail page.
+ */
 export function getProjects(): Project[] {
-  return [...projects].sort(
-    (a, b) => groupRank(a.group) - groupRank(b.group) || a.order - b.order,
-  )
+  return [...projects].sort((a, b) => a.order - b.order)
 }
 
 export function getProject(slug: string): Project | undefined {

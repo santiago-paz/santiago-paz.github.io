@@ -65,7 +65,9 @@ export function personJsonLd() {
     name: profile.name,
     url: SITE.baseUrl,
     ...(profile.image ? { image: absUrl(profile.image) } : {}),
-    jobTitle: [profile.role, 'Senior Software Engineer'],
+    // The target role first, then whatever the CV lists as the current title —
+    // hardcoding the second one lets it drift out of sync with experience.json.
+    jobTitle: [profile.role, ...(current ? [current.title] : [])],
     description: profile.about,
     email: `mailto:${profile.email}`,
     knowsAbout: profile.knowsAbout,

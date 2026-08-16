@@ -8,7 +8,7 @@ export function GET() {
   return ogCard({
     eyebrow: 'About',
     title: profile.name,
-    subtitle: '11+ years shipping production software · now building production AI',
+    subtitle: '13 years shipping production software · now building production AI',
     footer: `${profile.location} · EU work-authorized`,
     withPhoto: true,
   })

@@ -1,9 +1,67 @@
 [
   {
+    "slug": "contract-lens",
+    "title": "Contract Lens",
+    "group": "ai-product",
+    "order": 1,
+    "summary": "A deployed multi-tenant SaaS where an LLM extraction pipeline turns PDF and DOCX contracts into typed, structured data that drives a deadline and alert system.",
+    "role": "Sole engineer — full-stack product, from the multi-tenant data model to the AI extraction pipeline.",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vercel AI SDK",
+      "GPT-4o-mini",
+      "DeepSeek R1"
+    ],
+    "highlights": [
+      "Versioned prompt configs with two-model routing by task shape — GPT-4o-mini for cheap classification and routing, DeepSeek R1 for reasoning-heavy extraction — streamed live to a 4-step upload wizard.",
+      "Multi-tenant data model with 5 roles (owner to viewer) and permission checks that scope every contract, task, and alert query to the caller's organization.",
+      "AES-256-GCM encryption at rest for sensitive contract fields (summary, conditions, and the stored file itself).",
+      "Deadline-alert and task system with email invitations, on a bilingual (DE/EN) landing page."
+    ],
+    "links": {
+      "demo": "https://contract-lens-web.vercel.app",
+      "repo": "https://github.com/santiago-paz/contract-lens"
+    },
+    "description": "Contract Lens is a deployed SaaS that helps small German law firms manage contracts with AI assistance. Uploaded PDFs and DOCX files run through an extraction pipeline — a classifier routes the document to a type-specific extractor whose output is schema-validated — surfacing structured data in a contract editor alongside deadline alerts, role-based multi-tenancy, and encryption at rest for sensitive fields.\n\nThe product thesis is an AI that *extracts* rather than *chats*: no prompting required from the user. Prompt configurations are versioned in the repository so extraction changes stay traceable, and routing runs through the AI Gateway, which makes the model choice a string rather than an application-code dependency."
+  },
+  {
+    "slug": "multi-agent-trading-desk",
+    "title": "Multi-Agent Trading Desk",
+    "group": "ai-product",
+    "order": 2,
+    "summary": "12 LLM analyst agents on a LangGraph + FastAPI backend, driving rebalancing and backtesting over a real portfolio, with a Next.js retro-desktop frontend and live broker integration.",
+    "role": "Sole engineer — the agent backend and trading engine, plus the full-stack frontend.",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Anthropic",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Zustand"
+    ],
+    "highlights": [
+      "12 LLM analyst agents on a LangGraph backend, each taking a different view of the market, whose outputs are reconciled into a single trading signal.",
+      "Live broker integration (InvertirOnline) with an auto-rebalancer that turns those signals into executable orders, and a backtesting engine to check them against history first.",
+      "A retro desktop-in-the-browser frontend where each capability — portfolio, live market data, quick-trade, auto-trader, backtesting — is its own draggable, resizable window."
+    ],
+    "links": {
+      "demo": "https://multi-agent-trading-desk.vercel.app",
+      "repo": "https://github.com/santiago-paz/multi-agent-trading-desk"
+    },
+    "description": "An algorithmic trading workstation built around a **multi-agent LLM pipeline**: 12 analyst agents run on a LangGraph + FastAPI backend, each reasoning over market data from a different angle, and their outputs are reconciled into rebalancing decisions.\n\nThose decisions are not hypothetical — the system wires into a real Argentine broker API (InvertirOnline), so a signal becomes an executable order, with a backtesting engine to evaluate a strategy against history before any capital moves.\n\nThe frontend reframes the whole thing as a nostalgic desktop OS. Portfolio, live market data, quick-trade, auto-trader and backtesting are each their own draggable window, built on a hand-rolled Win98-style window manager."
+  },
+  {
     "slug": "bedrock-genai-labs",
     "title": "bedrock-genai-labs",
     "group": "ai-engineering",
-    "order": 1,
+    "order": 3,
     "summary": "26 runnable labs against live Amazon Bedrock APIs — a FAISS vector store built from scratch, hybrid dense + BM25 retrieval with reranking, an agent loop written by hand, guardrails, and LLM-as-judge evaluation.",
     "role": "Sole author — labs, reference solutions, shared Bedrock tooling, and a progress tracker.",
     "stack": [
@@ -30,7 +88,7 @@
     "slug": "reddit-idea-miner",
     "title": "Reddit Idea Miner",
     "group": "ai-engineering",
-    "order": 2,
+    "order": 4,
     "summary": "A daily pipeline that scans job-search subreddits and Hacker News, extracts actionable product ideas with Claude in a single structured call, and emails a ranked digest.",
     "role": "Sole author — pipeline, prompt design, fetch strategy, scheduling.",
     "stack": [
@@ -52,116 +110,6 @@
       "repo": "https://github.com/santiago-paz/reddit-idea-miner"
     },
     "description": "A daily bot that mines job-search subreddits and Hacker News for product-opportunity signal, then emails a digest.\n\nThe pipeline is `fetch → filter → analyze → digest → email → persist`. The design constraint was cost: rather than asking the model about each post, everything cheap happens first — engagement thresholds, noise rules, already-seen checks — and a **single Claude call** with structured output does classification, deduplication, scoring and drafting for the whole batch at once. Spend per run is therefore flat in the number of posts scanned.\n\nBuilt to feed the roadmap of a CV-tailoring product, but the pipeline is domain-agnostic: point it at different subreddits and prompts and it mines whatever signal you care about. Runs on launchd locally or GitHub Actions in CI."
-  },
-  {
-    "slug": "multi-agent-trading-desk",
-    "title": "Multi-Agent Trading Desk",
-    "group": "ai-product",
-    "order": 1,
-    "summary": "12 LLM analyst agents on a LangGraph + FastAPI backend, driving rebalancing and backtesting over a real portfolio, with a Next.js retro-desktop frontend and live broker integration.",
-    "role": "Sole engineer — the agent backend and trading engine, plus the full-stack frontend.",
-    "stack": [
-      "Python",
-      "FastAPI",
-      "LangGraph",
-      "Anthropic",
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Zustand"
-    ],
-    "highlights": [
-      "12 LLM analyst agents on a LangGraph backend, each taking a different view of the market, whose outputs are reconciled into a single trading signal.",
-      "Live broker integration (InvertirOnline) with an auto-rebalancer that turns those signals into executable orders, and a backtesting engine to check them against history first.",
-      "A retro desktop-in-the-browser frontend where each capability — portfolio, live market data, quick-trade, auto-trader, backtesting — is its own draggable, resizable window."
-    ],
-    "links": {
-      "repo": "https://github.com/santiago-paz/multi-agent-trading-desk"
-    },
-    "description": "An algorithmic trading workstation built around a **multi-agent LLM pipeline**: 12 analyst agents run on a LangGraph + FastAPI backend, each reasoning over market data from a different angle, and their outputs are reconciled into rebalancing decisions.\n\nThose decisions are not hypothetical — the system wires into a real Argentine broker API (InvertirOnline), so a signal becomes an executable order, with a backtesting engine to evaluate a strategy against history before any capital moves.\n\nThe frontend reframes the whole thing as a nostalgic desktop OS. Portfolio, live market data, quick-trade, auto-trader and backtesting are each their own draggable window, built on a hand-rolled Win98-style window manager."
-  },
-  {
-    "slug": "splitberlin",
-    "title": "SplitBerlin",
-    "group": "ai-product",
-    "order": 2,
-    "summary": "A deployed multi-tenant SaaS that runs a two-stage AI pipeline to pull structured data out of legal contracts for small German law firms.",
-    "role": "Sole engineer — full-stack product, from the multi-tenant data model to the AI extraction pipeline.",
-    "stack": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "Vercel AI SDK",
-      "GPT-4o-mini",
-      "DeepSeek R1"
-    ],
-    "highlights": [
-      "Two-stage AI pipeline — GPT-4o-mini classifies the uploaded contract's type, then DeepSeek R1 extracts type-specific structured fields, streamed live to a 4-step upload wizard.",
-      "Multi-tenant data model with 5 roles (owner to viewer) and permission checks that scope every contract, task, and alert query to the caller's organization.",
-      "AES-256-GCM encryption at rest for sensitive contract fields (summary, conditions, and the stored file itself).",
-      "Deadline-alert and task system with email invitations, on a bilingual (DE/EN) landing page."
-    ],
-    "links": {
-      "repo": "https://github.com/santiago-paz/SplitBerlin"
-    },
-    "description": "SplitBerlin (product name Paragraph+) is a deployed SaaS that helps small German law firms manage contracts with AI assistance. Uploaded PDFs and DOCX files run through a two-stage pipeline — a classifier routes the document to a type-specific extractor whose output is schema-validated — surfacing structured data in a contract editor alongside deadline alerts, role-based multi-tenancy, and encryption at rest for sensitive fields."
-  },
-  {
-    "slug": "pegala",
-    "title": "Pegala",
-    "group": "ai-product",
-    "order": 3,
-    "summary": "An AI job-search platform for the Argentine market — a resume-tailoring product paired with a companion pipeline that mines job-search communities for product ideas.",
-    "role": "Sole engineer — product localization, the waitlist landing, and the companion research pipeline.",
-    "stack": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "FastAPI",
-      "Python",
-      "LiteLLM",
-      "Anthropic",
-      "TinyDB"
-    ],
-    "highlights": [
-      "Full resume-tailoring application with a FastAPI/LiteLLM backend — document parsing, diff-based resume tailoring against a job description, cover-letter/outreach generation, and PDF rendering via headless Chromium.",
-      "Waitlist landing (Next.js, Neon Postgres) collecting early signups ahead of the Argentina-market launch.",
-      "reddit-idea-miner — a companion daily pipeline that scans job-search subreddits and Hacker News, filters for engagement, and uses an LLM to turn raw posts into actionable, localized product-idea digests emailed to guide the roadmap.",
-      "Feedback loop (miner.mark) that records which mined ideas were implemented, discarded, or interesting, so future digests sharpen over time."
-    ],
-    "links": {},
-    "disclosure": "The core is built on the open-source Resume Matcher project.",
-    "description": "Pegala is a waitlist-stage AI job-search platform for the Argentine market. Behind the public landing sits the full product — forked from the open-source Resume Matcher and adapted for the local market — plus reddit-idea-miner, a standalone opportunity-mining module that continuously scans job-search communities for pain points and mails back structured, LLM-analyzed ideas to steer what gets built next."
-  },
-  {
-    "slug": "reema",
-    "title": "Reema",
-    "group": "ai-product",
-    "order": 4,
-    "summary": "A deployed SaaS that adds an embeddable \"listen to this article\" audio player to blogs and digital media, powered by a multi-provider TTS pipeline.",
-    "role": "Sole engineer across a multi-service product — dashboard, marketing site, synthesizer, and embeddable player.",
-    "stack": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "Google Cloud TTS",
-      "ElevenLabs",
-      "Vercel Blob"
-    ],
-    "highlights": [
-      "Multi-provider TTS synthesizer (Google, ElevenLabs, Azure) with HTML→SSML conversion and caching.",
-      "Customer dashboard with player customization, domains, usage metrics, and billing.",
-      "Statically-generated embeddable player served in an iframe with metrics beaconing."
-    ],
-    "links": {
-      "repo": "https://github.com/santiago-paz/Reema-App"
-    },
-    "description": "Reema is a production SaaS built as several coordinated services: an admin dashboard where customers configure players, a TTS synthesizer that extracts article text and renders natural speech across multiple providers with caching, and a statically-generated embeddable widget. It is the clearest example of a full AI-powered product shipped end-to-end."
   },
   {
     "slug": "diffcv",
@@ -190,5 +138,59 @@
       "repo": "https://github.com/santiago-paz/DiffCV"
     },
     "description": "An open-source take on CV optimization: centralise professional history once as a structured **Master Profile**, then generate a hyper-personalised CV per job posting, keeping every application in a CRM-style pipeline.\n\nThe interesting part is the boundary design. Five pillars — profile, ingestion, AI engine, rendering, applications — each live in isolation and talk only through shared contracts (`UserProfile`, `JobDescription`, `TailoredResume`, `Application`), with Supabase and the AI SDK quarantined in a lib layer. That is what lets the AI engine be swapped or rewritten without touching ingestion or rendering.\n\n**Status:** the architecture, data contracts and dashboard are built. Prompt and agent orchestration inside the AI engine is the next piece of work, and is not implemented yet."
+  },
+  {
+    "slug": "reema",
+    "title": "Reema",
+    "group": "ai-product",
+    "order": 6,
+    "summary": "A deployed SaaS that adds an embeddable \"listen to this article\" audio player to blogs and digital media, powered by a multi-provider TTS pipeline.",
+    "role": "Sole engineer across a multi-service product — dashboard, marketing site, synthesizer, and embeddable player.",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Google Cloud TTS",
+      "ElevenLabs",
+      "Vercel Blob"
+    ],
+    "highlights": [
+      "Multi-provider TTS synthesizer (Google, ElevenLabs, Azure) with HTML→SSML conversion and caching.",
+      "Customer dashboard with player customization, domains, usage metrics, and billing.",
+      "Statically-generated embeddable player served in an iframe with metrics beaconing."
+    ],
+    "links": {
+      "repo": "https://github.com/santiago-paz/Reema-App"
+    },
+    "description": "Reema is a production SaaS built as several coordinated services: an admin dashboard where customers configure players, a TTS synthesizer that extracts article text and renders natural speech across multiple providers with caching, and a statically-generated embeddable widget. It is the clearest example of a full AI-powered product shipped end-to-end."
+  },
+  {
+    "slug": "pegala",
+    "title": "Pegala",
+    "group": "ai-product",
+    "order": 7,
+    "summary": "An AI job-search platform for the Argentine market — a resume-tailoring product paired with a companion pipeline that mines job-search communities for product ideas.",
+    "role": "Sole engineer — product localization, the waitlist landing, and the companion research pipeline.",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "LiteLLM",
+      "Anthropic",
+      "TinyDB"
+    ],
+    "highlights": [
+      "Full resume-tailoring application with a FastAPI/LiteLLM backend — document parsing, diff-based resume tailoring against a job description, cover-letter/outreach generation, and PDF rendering via headless Chromium.",
+      "Waitlist landing (Next.js, Neon Postgres) collecting early signups ahead of the Argentina-market launch.",
+      "reddit-idea-miner — a companion daily pipeline that scans job-search subreddits and Hacker News, filters for engagement, and uses an LLM to turn raw posts into actionable, localized product-idea digests emailed to guide the roadmap.",
+      "Feedback loop (miner.mark) that records which mined ideas were implemented, discarded, or interesting, so future digests sharpen over time."
+    ],
+    "links": {},
+    "disclosure": "The core is built on the open-source Resume Matcher project.",
+    "description": "Pegala is a waitlist-stage AI job-search platform for the Argentine market. Behind the public landing sits the full product — forked from the open-source Resume Matcher and adapted for the local market — plus reddit-idea-miner, a standalone opportunity-mining module that continuously scans job-search communities for pain points and mails back structured, LLM-analyzed ideas to steer what gets built next."
   }
 ]

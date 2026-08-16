@@ -5,7 +5,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
-  'Santiago Paz is an AI engineer based in Berlin — RAG, agents and multi-agent systems — with 11+ years shipping production software at Dialpad, Monks, R/GA and Globant. Background, experience, tech stack, and how to get in touch.'
+  'Santiago Paz is an AI engineer based in Berlin — RAG, agents and multi-agent systems — with 13 years shipping production software at Dialpad, Monks, R/GA and Globant. Background, experience, tech stack, and how to get in touch.'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -54,27 +54,29 @@ export default function AboutPage() {
 
       <div className="prose" style={{ marginTop: 24 }}>
         <p>
-          I&rsquo;m Santiago Paz, a software engineer with 11+ years of
-          experience, now working as an AI engineer &mdash; retrieval, agents and
-          multi-agent systems. I&rsquo;m
-          based in Berlin, EU work-authorized as an Italian citizen, and I build
-          production AI features end-to-end &mdash; from LLM agents and
-          evaluation harnesses to the full-stack products around them.
+          I&rsquo;m Santiago Paz, a software engineer with 13 years building
+          high-traffic web platforms, now moving into AI engineering &mdash;
+          retrieval, agents and multi-agent systems. I&rsquo;m based in Berlin
+          and EU work-authorized as an Italian citizen. Taking LLMs into
+          production means the retrieval, agents, guardrails and evaluation
+          around the model, not just an API call.
         </p>
         <p>
           Most of my work is shipping real AI products, not demos:{' '}
-          <Link href="/projects/splitberlin">SplitBerlin</Link>, a multi-tenant
-          SaaS that extracts structured data from legal contracts with a
-          two-stage AI pipeline;{' '}
+          <Link href="/projects/contract-lens">Contract Lens</Link>, a
+          multi-tenant SaaS whose LLM extraction pipeline turns PDF and DOCX
+          contracts into typed, structured data driving a deadline and alert
+          system;{' '}
           <Link href="/projects/multi-agent-trading-desk">
             Multi-Agent Trading Desk
           </Link>
-          , 12 LLM analyst agents driving a real portfolio; and{' '}
-          <Link href="/projects/pegala">Pegala</Link>, an AI job-search platform;
-          and <Link href="/projects/reema">Reema</Link>, a text-to-speech SaaS. I
-          care about the parts that make AI features actually ship &mdash; evals,
-          reliability, latency, and failure modes &mdash; as much as the model
-          itself.
+          , 12 LLM analyst agents on a LangGraph + FastAPI backend driving
+          rebalancing and backtesting over a portfolio; plus{' '}
+          <Link href="/projects/reema">Reema</Link>, a text-to-speech SaaS, and{' '}
+          <Link href="/projects/pegala">Pegala</Link>, an AI job-search platform.
+          I care about the parts that make AI features actually ship &mdash;
+          evals, reliability, latency, and failure modes &mdash; as much as the
+          model itself.
         </p>
         <p>
           Alongside the products I build the fundamentals in the open:{' '}
@@ -87,10 +89,17 @@ export default function AboutPage() {
           Developer &mdash; Professional certification I&rsquo;m working toward.
         </p>
         <p>
-          On the stack: TypeScript, React and Next.js on the front end; Python
-          and FastAPI on the back end; LLM tooling like the Vercel AI SDK,
-          LangChain, and Anthropic and OpenAI models; plus retrieval-augmented
-          generation, evaluation harnesses, and prompt engineering.
+          Running underneath the last decade is a recurring thread: visual page
+          builders. A WYSIWYG builder in Next.js at Dialpad, a low-code
+          drag-and-drop builder in Angular at Monks, and a campaign page builder
+          at R/GA &mdash; content models turned into systems non-engineers can
+          drive.
+        </p>
+        <p>
+          On the stack: Python and TypeScript, with LangGraph, the Strands
+          Agents SDK, FastAPI, FAISS and boto3 on the AI side, and React and
+          Next.js on the front end &mdash; plus retrieval-augmented generation,
+          guardrails and evaluation harnesses on Amazon Bedrock.
         </p>
         <p>
           Before Berlin I was in Buenos Aires &mdash; I wrote about the move in{' '}
