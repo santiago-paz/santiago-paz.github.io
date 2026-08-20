@@ -162,6 +162,7 @@
       "Statically-generated embeddable player served in an iframe with metrics beaconing."
     ],
     "links": {
+      "demo": "https://reema.ar",
       "repo": "https://github.com/santiago-paz/Reema-App"
     },
     "description": "Reema is a production SaaS built as several coordinated services: an admin dashboard where customers configure players, a TTS synthesizer that extracts article text and renders natural speech across multiple providers with caching, and a statically-generated embeddable widget. It is the clearest example of a full AI-powered product shipped end-to-end."
