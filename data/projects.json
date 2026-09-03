@@ -24,7 +24,7 @@
       "Deadline-alert and task system with email invitations, on a bilingual (DE/EN) landing page."
     ],
     "links": {
-      "demo": "https://contract-lens-web.vercel.app",
+      "demo": "https://trycontractlens.com",
       "repo": "https://github.com/santiago-paz/contract-lens"
     },
     "description": "Contract Lens is a deployed SaaS that helps small German law firms manage contracts with AI assistance. Uploaded PDFs and DOCX files run through an extraction pipeline — a classifier routes the document to a type-specific extractor whose output is schema-validated — surfacing structured data in a contract editor alongside deadline alerts, role-based multi-tenancy, and encryption at rest for sensitive fields.\n\nThe product thesis is an AI that *extracts* rather than *chats*: no prompting required from the user. Prompt configurations are versioned in the repository so extraction changes stay traceable, and routing runs through the AI Gateway, which makes the model choice a string rather than an application-code dependency."
