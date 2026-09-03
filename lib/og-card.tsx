@@ -51,8 +51,8 @@ export async function ogCard({
           alignItems: 'center',
           justifyContent: 'space-between',
           gap: 56,
-          background: '#111214',
-          color: '#f4f2ec',
+          background: '#0a0f1c',
+          color: '#f1f3f9',
           padding: '76px 84px',
           fontFamily: 'Crete Round',
         }}
@@ -71,7 +71,7 @@ export async function ogCard({
               fontSize: 22,
               letterSpacing: 8,
               textTransform: 'uppercase',
-              color: '#57a394',
+              color: '#86a8ec',
             }}
           >
             {eyebrow}
@@ -91,7 +91,7 @@ export async function ogCard({
               style={{
                 display: 'flex',
                 fontSize: 30,
-                color: '#8f8c83',
+                color: '#8a91a5',
                 marginTop: 22,
                 lineHeight: 1.3,
               }}
@@ -104,11 +104,11 @@ export async function ogCard({
               display: 'flex',
               gap: 14,
               fontSize: 22,
-              color: '#8f8c83',
+              color: '#8a91a5',
               marginTop: 40,
             }}
           >
-            <span style={{ color: '#57a394' }}>§</span>
+            <span style={{ color: '#86a8ec' }}>§</span>
             <span>{footer}</span>
           </div>
         </div>
@@ -123,7 +123,7 @@ export async function ogCard({
               height: 300,
               borderRadius: 300,
               objectFit: 'cover',
-              border: '1px solid #3a3b40',
+              border: '1px solid #323952',
             }}
             alt=""
           />

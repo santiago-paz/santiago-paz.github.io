@@ -86,7 +86,7 @@ export const metadata: Metadata = {
 // Tints mobile browser chrome to match the page rather than leaving a white bar
 // above a dark site.
 export const viewport: Viewport = {
-  themeColor: '#111214',
+  themeColor: '#0a0f1c',
   colorScheme: 'dark',
 }
 

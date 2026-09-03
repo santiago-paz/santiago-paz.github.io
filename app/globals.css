@@ -1,22 +1,31 @@
 /* ============================================================
    Nocturne — a sober dark, content-first system.
    Crete Round (display) + Inter Tight (text), loaded via next/font.
+
+   The palette is one hue family: a blue-black ground, neutrals that carry
+   the same blue cast rather than a competing warm one, and a two-note ink
+   accent. Keeping the greys on the accent's hue is what stops the blue from
+   reading as a colour dropped onto a grey page.
    ============================================================ */
 
 :root {
-  --bg: #111214;
-  --panel: #16171a;
-  --fg: #e9e6df;
-  --fg-strong: #f4f2ec;
-  --about: #cfccc4;
-  --dim: #8f8c83;
+  --bg: #0a0f1c;
+  --panel: #111726;
+  --fg: #e2e6ef;
+  --fg-strong: #f1f3f9;
+  --about: #c5cad9;
+  --dim: #8a91a5;
   /* Used for 10-11px labels (.stack, .kind, .where), so it has to clear WCAG AA
-     for small text: 4.80:1 on --bg. The old #6f6d66 was 3.62:1. */
-  --faint: #838178;
-  --rule: #26272b;
-  --rule-strong: #3a3b40;
-  --ac: #57a394;
-  --ac-dim: #3f6f66;
+     for small text: 5.24:1 on --bg. */
+  --faint: #7e8699;
+  --rule: #1e2439;
+  --rule-strong: #323952;
+  /* Ink blue, a touch off the stock link blue so it does not read as a default.
+     8.04:1 on --bg, which it needs because it sets 11px uppercase labels. */
+  --ac: #86a8ec;
+  /* The deep note: selection ground, blockquote rule, work-row hover. Carries
+     --fg-strong at 6.57:1. */
+  --ac-dim: #3f5490;
 
   --display: var(--font-crete), Georgia, "Times New Roman", serif;
   --body: var(--font-inter-tight), system-ui, -apple-system, "Segoe UI", sans-serif;
