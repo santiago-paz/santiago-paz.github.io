@@ -24,17 +24,24 @@ export type Screen = {
   src: string
   width: number
   height: number
-  mobile: { src: string; width: number; height: number }
+  mobile: { src: string; srcSet?: string; width: number; height: number }
   alt: string
 }
 
 const SCREENS: Record<string, Screen> = {
   'contract-lens': {
     src: '/work/contract-lens/screen-1200.webp',
-    srcSet: '/work/contract-lens/screen-1200.webp 1200w, /work/contract-lens/screen-2400.webp 2400w',
-    width: 2400,
-    height: 1500,
-    mobile: { src: '/work/contract-lens/screen-mobile.webp', width: 780, height: 1328 },
+    srcSet:
+      '/work/contract-lens/screen-1200.webp 1200w, /work/contract-lens/screen-2400.webp 2400w, /work/contract-lens/screen-3600.webp 3600w',
+    width: 3600,
+    height: 2250,
+    mobile: {
+      src: '/work/contract-lens/screen-mobile.webp',
+      srcSet:
+        '/work/contract-lens/screen-mobile.webp 780w, /work/contract-lens/screen-mobile-1170.webp 1170w',
+      width: 1170,
+      height: 1992,
+    },
     alt: 'The Contract Lens landing page: "Upload a contract. Get the facts and the deadlines back." A demo below reads a sample service agreement into a contract record.',
   },
   'multi-agent-trading-desk': {
@@ -47,10 +54,16 @@ const SCREENS: Record<string, Screen> = {
   },
   reema: {
     src: '/work/reema/screen-1200.webp',
-    srcSet: '/work/reema/screen-1200.webp 1200w, /work/reema/screen-2400.webp 2400w',
-    width: 2400,
-    height: 1500,
-    mobile: { src: '/work/reema/screen-mobile.webp', width: 780, height: 1328 },
+    srcSet:
+      '/work/reema/screen-1200.webp 1200w, /work/reema/screen-2400.webp 2400w, /work/reema/screen-3600.webp 3600w',
+    width: 3600,
+    height: 2250,
+    mobile: {
+      src: '/work/reema/screen-mobile.webp',
+      srcSet: '/work/reema/screen-mobile.webp 780w, /work/reema/screen-mobile-1170.webp 1170w',
+      width: 1170,
+      height: 1992,
+    },
     alt: 'The Reema landing page in Spanish. A sample article plays through the "listen to this article" player, which highlights the word being read.',
   },
 }

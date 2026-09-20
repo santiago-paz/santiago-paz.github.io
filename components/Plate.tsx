@@ -93,7 +93,8 @@ function Screen({ project, lead }: { project: Project; lead?: boolean }) {
         <picture>
           <source
             media="(max-width: 759px)"
-            srcSet={screen.mobile.src}
+            srcSet={screen.mobile.srcSet ?? screen.mobile.src}
+            sizes="380px"
             width={screen.mobile.width}
             height={screen.mobile.height}
           />

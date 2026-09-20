@@ -94,7 +94,8 @@ export default function HomePage() {
                       <picture>
                         <source
                           media="(max-width: 759px)"
-                          srcSet={screen.mobile.src}
+                          srcSet={screen.mobile.srcSet ?? screen.mobile.src}
+                          sizes="280px"
                           width={screen.mobile.width}
                           height={screen.mobile.height}
                         />
