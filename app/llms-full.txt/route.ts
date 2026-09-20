@@ -14,6 +14,34 @@ export const dynamic = 'force-static'
 
 const SOURCES = ['data', 'content/posts', 'app/llms-full.txt/route.ts']
 
+/**
+ * Push a post's own headings below the heading this file gives it.
+ *
+ * Each post is inlined under `### <title>`, so a post's own `## Section` would
+ * otherwise land level with `## Writing` and `## Contact`: read as an outline,
+ * a subheading of one essay becomes a section of Santiago's profile, sibling
+ * to Experience. Shifting by two hangs them off the post they belong to.
+ *
+ * Fenced blocks are left alone, because `# install` in a shell snippet is a
+ * comment, not a heading. No post has one today; the next one might.
+ */
+function nest(markdown: string, by = 2): string {
+  let fenced = false
+  return markdown
+    .split('\n')
+    .map((line) => {
+      if (/^\s*(```|~~~)/.test(line)) {
+        fenced = !fenced
+        return line
+      }
+      if (fenced) return line
+      return line.replace(/^(#{1,6})(\s)/, (_, hashes: string, space: string) =>
+        '#'.repeat(Math.min(6, hashes.length + by)) + space,
+      )
+    })
+    .join('\n')
+}
+
 export function GET() {
   const profile = getProfile()
   const projects = getProjects()
@@ -106,7 +134,7 @@ export function GET() {
       '',
       `Date: ${post.date} · ${post.kind} · ${absUrl(`/writing/${post.slug}`)}`,
       '',
-      post.body,
+      nest(post.body),
       '',
     )
   }
