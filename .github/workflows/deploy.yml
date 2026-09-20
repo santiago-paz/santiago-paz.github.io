@@ -20,6 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The sitemap dates each page by the last commit that touched its
+          # sources, so the build needs the history, not just the tip commit.
+          fetch-depth: 0
 
       - uses: pnpm/action-setup@v4
 

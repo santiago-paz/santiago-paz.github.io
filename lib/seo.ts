@@ -1,5 +1,6 @@
 import { SITE } from './site'
 import { getProfile, getExperience, type Project, type FaqItem } from './data'
+import { screenOf } from './plates'
 import type { PostMeta } from './posts'
 
 const profile = getProfile()
@@ -54,10 +55,32 @@ function countryCode(country: string): string {
   return map[country] ?? country
 }
 
+type RoleEntry = (typeof experience.roles)[number]
+
+/**
+ * An employer. The company's own URL doubles as the `@id`, so the same company
+ * named by two different jobs resolves to one node instead of two.
+ */
+function organization(role: RoleEntry) {
+  return {
+    '@type': 'Organization',
+    ...(role.url ? { '@id': role.url, url: role.url } : {}),
+    name: role.company,
+  }
+}
+
 /** The canonical Person entity — the anchor for "who is Santiago Paz". */
 export function personJsonLd() {
   const [city, country = ''] = profile.location.split(',').map((s) => s.trim())
   const current = experience.roles.find((role) => !role.end)
+  const roles = experience.roles.map((role) => ({
+    '@type': 'EmployeeRole',
+    roleName: role.title,
+    startDate: role.start,
+    ...(role.end ? { endDate: role.end } : {}),
+    description: role.note,
+    worksFor: organization(role),
+  }))
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -85,27 +108,31 @@ export function personJsonLd() {
       addressLocality: city,
       addressCountry: countryCode(country),
     },
-    ...(current
-      ? {
-          worksFor: {
-            '@type': 'Organization',
-            name: current.company,
-            ...(current.url ? { url: current.url } : {}),
-          },
-        }
-      : {}),
-    hasOccupation: experience.roles.map((role) => ({
-      '@type': 'EmployeeRole',
-      roleName: role.title,
-      startDate: role.start,
-      ...(role.end ? { endDate: role.end } : {}),
-      description: role.note,
-      worksFor: {
-        '@type': 'Organization',
-        name: role.company,
-        ...(role.url ? { url: role.url } : {}),
-      },
-    })),
+    // Berlin is where he lives; Italy is what lets him work anywhere in the EU
+    // without sponsorship. A recruiter's first filter, so it gets stated twice:
+    // once in the FAQ prose, once here where a machine can read it.
+    nationality: { '@type': 'Country', name: 'Italy' },
+    // The whole employment history, as schema.org's role pattern: a Role stands
+    // where the plain value would go, and repeats the property it stands for —
+    // so `worksFor` holds roles, and each role's own `worksFor` holds the
+    // employer. Hanging the employer off `hasOccupation` instead, which is what
+    // this used to do, is what schema.org's validator rejects: `worksFor` is
+    // not a property of EmployeeRole, so the employer was dropped nine times
+    // over, once per job.
+    //
+    // The current employer also appears plainly, ahead of the roles, so a
+    // reader that wants one answer to "who does he work for" gets it without
+    // unwrapping anything. Both point at the same node: the company URL is the
+    // `@id`, so Dialpad-the-employer and Dialpad-in-2022 merge rather than
+    // becoming two companies with one name.
+    ...(current ? { worksFor: [organization(current), ...roles] } : {}),
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: profile.role,
+      // O*NET-SOC 15-1252.00, "Software Developers": the standard code, so the
+      // occupation resolves to a known thing rather than a job title we made up.
+      occupationalCategory: '15-1252.00',
+    },
     alumniOf: experience.education.map((item) => ({
       '@type': 'EducationalOrganization',
       name: item.org,
@@ -177,6 +204,9 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
 
 export function projectJsonLd(project: Project) {
   const external = [project.links.demo, project.links.repo].filter(Boolean)
+  // The same screen the page shows, so the markup describes the page rather
+  // than a second, invisible version of it.
+  const screen = screenOf(project.slug)
   return {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
@@ -185,6 +215,17 @@ export function projectJsonLd(project: Project) {
     description: project.summary,
     url: absUrl(`/projects/${project.slug}`),
     keywords: project.stack.join(', '),
+    ...(screen
+      ? {
+          image: {
+            '@type': 'ImageObject',
+            url: absUrl(screen.src),
+            width: screen.width,
+            height: screen.height,
+            caption: screen.alt,
+          },
+        }
+      : {}),
     author: { '@id': PERSON_ID },
     creator: { '@id': PERSON_ID },
     ...(external.length ? { sameAs: external } : {}),
