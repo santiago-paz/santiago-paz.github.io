@@ -56,7 +56,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - A project has a slug, title, group, global order, summary, role, stack, highlights, repo and demo links, an optional disclosure and a Markdown description. A post has a title, date, kind (`engineering` or `personal`) and summary.
 - Project order is global and matches the CV. Contract Lens, Reema and Multi-Agent Trading Desk lead on both. Those are also the only three with a public screen and their own colorway, so the home page's three plates stay filled.
 - The repo is public. Salary, rates and notice periods stay out of it and off the site. The TestGorilla report lost its fourth page for this reason.
-- Names to keep exact: Senior Full-Stack Engineer, Contract Lens, Multi-Agent Trading Desk, bedrock-genai-labs (lowercase, like the repo), Reema, Pegala, DiffCV, Reddit Idea Miner.
+- Names to keep exact: Senior Full-Stack Engineer, Contract Lens, Multi-Agent Trading Desk, bedrock-genai-labs (lowercase, like the repo), Reema, Pegala, Reddit Idea Miner.
 
 ## Brand Commitments
 
@@ -64,7 +64,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - The role and tagline appear word for word: "Senior Full-Stack Engineer" and "TypeScript, React, Next.js and Node.js. Three products shipped solo, all live."
 - Two claims stay bounded, and their disclosures do not come off. bedrock-genai-labs is a study curriculum whose exercises are unfilled `TODO(you)` scaffolds, not labs that were run; it is never described as production RAG, agent or Bedrock experience. Multi-Agent Trading Desk sits on an analyst backend forked from virattt's open-source ai-hedge-fund, where the 12-agent panel and the LangGraph orchestration are upstream work rather than Santiago's design.
 - AWS and Amazon Bedrock are not working experience. Nothing Santiago ships runs on AWS, so neither belongs in a headline, a tagline or the skills list. The certification appears only as in progress.
-- Voice: plain and specific, with numbers in place of adjectives. The About page speaks in the first person. The copy states its limits: DiffCV is marked as work in progress, and Pegala names the open-source project it builds on.
+- Voice: plain and specific, with numbers in place of adjectives. The About page speaks in the first person. The copy states its limits: bedrock-genai-labs is marked as a study curriculum, and Pegala names the open-source project it builds on.
 - English prose uses the plain hyphen and never an em or en dash.
 - Education reads "Computer Science, then Data Science" at the Universidad de Buenos Aires, 2010-2023. The site never claims a finished degree.
 - The only certification listed is the AWS Certified Generative AI Developer - Professional, marked in progress. LinkedIn skill badges stay off the site.
@@ -76,7 +76,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 
 - `data/profile.json`: role, tagline, location, work authorization, languages, bio, skills, links and the award.
 - `data/experience.json`: nine roles at eight companies from 2011 to today, plus education and the AWS certification in progress.
-- `data/projects.json`: seven projects. Live demos: Contract Lens (trycontractlens.com), Multi-Agent Trading Desk (trading-desk.santiagopaz.com) and Reema (reema.ar). Public repos: contract-lens, multi-agent-trading-desk, bedrock-genai-labs, reddit-idea-miner and DiffCV. Pegala has no public link.
+- `data/projects.json`: six projects. Live demos: Contract Lens (trycontractlens.com), Multi-Agent Trading Desk (trading-desk.santiagopaz.com) and Reema (reema.ar). Public repos: contract-lens, multi-agent-trading-desk, bedrock-genai-labs and reddit-idea-miner. Pegala has no public link.
 - `data/faq.json`: five questions and answers, which also feed the FAQPage schema.
 - `content/posts/`: "Evals are the product, not the model" (engineering, 2026-06-15) and "Leaving Buenos Aires" (personal, 2026-02-02).
 - `public/cv/santiago-paz.pdf`: the CV. Its source is not in this repo; it is built in the job-search workspace and copied here by hand, which is why it drifts. Copy the **single-column** full-stack build (`cv/main_fullstack.pdf`), never the one-page sidebar. A CV downloaded from a public site often gets fed into an ATS, and the sidebar is two-column, so text extraction interleaves the rail into the body and drops the skills list between job titles and dates. Check two things on every swap: the headline reads Senior Full-Stack Engineer, and Education reads "Computer Science, then Data Science (both unfinished)". No degree was ever conferred.

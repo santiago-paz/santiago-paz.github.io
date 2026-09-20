@@ -108,47 +108,10 @@
     "disclosure": "Two repositories. The desk is my own work. Its analyst backend is a fork of the open-source ai-hedge-fund project by virattt: the 12-agent analyst panel and the LangGraph orchestration are upstream, not my design. My 72 commits there adapt it to the Argentine CEDEAR market and add the rebalancer, the backtesting layer and liquidity ranking."
   },
   {
-    "slug": "diffcv",
-    "title": "DiffCV",
-    "group": "ai-product",
-    "order": 4,
-    "summary": "An open-source CV optimization platform: a structured Master Profile that feeds per-posting CV generation, with a CRM-style application pipeline. Architecture and dashboard built; the AI engine is still in progress.",
-    "role": "Sole author: architecture, feature-driven module boundaries, dashboard.",
-    "stage": "In progress",
-    "built": [
-      "Architecture",
-      "Data contracts",
-      "Dashboard"
-    ],
-    "planned": [
-      "AI engine"
-    ],
-    "stack": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Supabase",
-      "PostgreSQL",
-      "Vercel AI SDK"
-    ],
-    "disclosure": "Work in progress. The five-pillar architecture, data contracts and dashboard are in place; prompt and agent orchestration in the AI engine is not implemented yet.",
-    "highlights": [
-      "Feature-driven architecture: five pillars (Master Profile, ingestion, AI engine, rendering, application CRM) isolated under their own folders, communicating only through shared contracts in src/types.",
-      "External infrastructure (Supabase, the AI SDK, PDF libraries) is confined to src/lib, so the feature modules stay swappable and testable.",
-      "Dashboard with aggregate widget modules (tailored resumes, AI next actions) over the application pipeline.",
-      "Rendering targets ATS-safe templates, since a CV that a parser mangles never reaches a human."
-    ],
-    "links": {
-      "repo": "https://github.com/santiago-paz/DiffCV"
-    },
-    "description": "An open-source take on CV optimization: centralise professional history once as a structured **Master Profile**, then generate a hyper-personalised CV per job posting, keeping every application in a CRM-style pipeline.\n\nThe interesting part is the boundary design. Five pillars (profile, ingestion, AI engine, rendering, applications) each live in isolation and talk only through shared contracts (`UserProfile`, `JobDescription`, `TailoredResume`, `Application`), with Supabase and the AI SDK quarantined in a lib layer. That is what lets the AI engine be swapped or rewritten without touching ingestion or rendering.\n\n**Status:** the architecture, data contracts and dashboard are built. Prompt and agent orchestration inside the AI engine is the next piece of work, and is not implemented yet."
-  },
-  {
     "slug": "pegala",
     "title": "Pegala",
     "group": "ai-product",
-    "order": 5,
+    "order": 4,
     "summary": "An AI job-search platform for the Argentine market: a resume-tailoring product paired with a companion pipeline that mines job-search communities for product ideas.",
     "role": "Sole engineer: product localization, the waitlist landing, and the companion research pipeline.",
     "stage": "Waitlist",
@@ -181,7 +144,7 @@
     "slug": "bedrock-genai-labs",
     "title": "bedrock-genai-labs",
     "group": "ai-engineering",
-    "order": 6,
+    "order": 5,
     "summary": "A study curriculum I assembled for the AWS generative AI certification: 26 lab scaffolds with reference solutions, covering retrieval, an agent loop, guardrails and LLM-as-judge evaluation. I am still working through it.",
     "role": "Sole author of the curriculum: the lab scaffolds, reference solutions, shared tooling and a progress tracker.",
     "built": [
@@ -239,7 +202,7 @@
     "slug": "reddit-idea-miner",
     "title": "Reddit Idea Miner",
     "group": "ai-engineering",
-    "order": 7,
+    "order": 6,
     "summary": "A daily pipeline that scans job-search subreddits and Hacker News, extracts actionable product ideas with Claude in a single structured call, and emails a ranked digest.",
     "role": "Sole author: pipeline, prompt design, fetch strategy, scheduling.",
     "built": [
