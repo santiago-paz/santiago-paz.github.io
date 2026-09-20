@@ -1,4 +1,4 @@
-import { getPost, getPostSlugs } from '@/lib/posts'
+import { getPost, getPostSlugs, formatDate } from '@/lib/posts'
 import { ogCard } from '@/lib/og-card'
 
 export const dynamic = 'force-static'
@@ -13,10 +13,10 @@ export async function GET(
 ) {
   const { slug } = await params
   const post = getPost(slug)
+  if (!post) return ogCard({ title: 'Writing' })
   return ogCard({
-    eyebrow: 'Writing',
-    title: post?.title ?? 'Writing',
-    subtitle: post?.summary,
-    footer: 'santiagopaz.com · Santiago Paz',
+    title: post.title,
+    subtitle: post.summary,
+    marks: [formatDate(post.date), post.kind === 'personal' ? 'Personal' : 'Engineering'],
   })
 }

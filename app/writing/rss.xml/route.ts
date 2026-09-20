@@ -34,10 +34,10 @@ export function GET(): Response {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writing — ${escape(profile.name)}</title>
+    <title>Writing - ${escape(profile.name)}</title>
     <link>${absUrl('/writing')}</link>
     <atom:link href="${SITE.baseUrl}/writing/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Essays and notes on building production AI, plus the occasional more personal piece.</description>
+    <description>Essays and notes on engineering, plus the occasional more personal piece.</description>
     <language>en</language>
     <managingEditor>${escape(profile.email)} (${escape(profile.name)})</managingEditor>
 ${updated ? `    <lastBuildDate>${new Date(`${updated}T00:00:00Z`).toUTCString()}</lastBuildDate>\n` : ''}${items}

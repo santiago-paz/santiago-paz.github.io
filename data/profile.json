@@ -1,9 +1,10 @@
 {
   "name": "Santiago Paz",
-  "role": "AI Engineer",
-  "tagline": "RAG, agents and multi-agent systems.",
+  "role": "Senior Full-Stack Engineer",
+  "tagline": "TypeScript, React, Next.js and Node.js. Three products shipped solo, all live.",
   "location": "Berlin, Germany",
   "workAuthorization": "EU work authorization (Italian citizen)",
+  "availability": "Open to senior full-stack and product engineering roles. Berlin on-site or hybrid, or fully remote.",
   "languages": [
     {
       "name": "Spanish",
@@ -12,7 +13,7 @@
     },
     {
       "name": "English",
-      "level": "Bilingual",
+      "level": "Full professional",
       "code": "en"
     },
     {
@@ -23,26 +24,28 @@
   ],
   "email": "santiago.paz.1992@gmail.com",
   "image": "/santiago-paz.png",
-  "about": "Software engineer with 13 years building high-traffic web platforms, now moving into AI engineering. Taking LLMs into production means the retrieval, agents, guardrails and evaluation around the model, not just an API call. Throughout, a recurring thread of visual page builders that turn content models into systems non-engineers can drive.",
+  "about": "Full-stack engineer with 13 years shipping production software. At Dialpad I work in TypeScript, React and Next.js on a site of about 1,900 pages in five locales, with GraphQL and Contentful behind it. On my own time I have shipped three products alone, and all three are live. Running under the last decade is a thread of visual builders, which turn content models into systems non-engineers can drive.",
   "knowsAbout": [
-    "AI engineering",
-    "Retrieval-augmented generation (RAG)",
-    "AI agents and tool use",
-    "Multi-agent systems",
-    "Prompt engineering",
-    "Guardrails and LLM evaluation",
-    "Amazon Web Services (AWS)",
-    "Amazon Bedrock",
-    "LangGraph",
-    "Strands Agents SDK",
-    "FastAPI",
-    "FAISS",
-    "Python",
+    "Full-stack development",
     "TypeScript",
+    "React",
     "Next.js",
+    "Node.js",
+    "GraphQL",
+    "PostgreSQL",
+    "Prisma",
+    "REST API design",
     "Multi-tenant SaaS",
-    "Visual page builders",
-    "High-traffic web platforms"
+    "High-traffic web platforms",
+    "Visual page builders and content modelling",
+    "Web performance, SEO and accessibility",
+    "Contentful",
+    "Document to structured data extraction",
+    "LLM APIs and the Anthropic SDK",
+    "Prompt engineering",
+    "Python",
+    "FastAPI",
+    "Claude Code"
   ],
   "links": {
     "github": "https://github.com/santiago-paz",
@@ -55,7 +58,7 @@
   ],
   "awards": [
     {
-      "title": "3rd place globally — Hack-Nation Global AI Hackathon (2,000+ participants)",
+      "title": "3rd place globally - Hack-Nation Global AI Hackathon (2,000+ participants)",
       "org": "YETI Fellowship · Startup Factory boOst, Dresden",
       "year": "2026",
       "url": "https://www.linkedin.com/posts/yetifellowship-dresden-siliconsaxony-ugcPost-7454684705745985536-l-Gi/"

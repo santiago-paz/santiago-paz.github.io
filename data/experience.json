@@ -1,19 +1,19 @@
 {
-  "summary": "13 years shipping production software — most of it on high-traffic web platforms — now focused on taking LLMs into production.",
+  "summary": "13 years shipping production software, most of it on high-traffic web platforms and the visual builders that feed them.",
   "roles": [
     {
       "company": "Dialpad",
       "url": "https://www.dialpad.com",
       "title": "Senior Web Developer",
-      "period": "May 2025 — Present",
+      "period": "May 2025 - Present",
       "start": "2025-05",
-      "note": "Build and ship pages across dialpad.com — a Next.js App Router site on Vercel with a Contentful back end, ~1,900 pages across five locales, serving millions of visitors. Currently building a WYSIWYG page builder in Next.js: pages composed visually from modular blocks, with each block's properties mapped and kept in sync with its Contentful content model. TypeScript, React and Tailwind, with performance, SEO and accessibility as release criteria."
+      "note": "Build and ship pages across dialpad.com, a Next.js App Router site on Vercel: ~1,900 pages across five locales, serving millions of visitors. Built most of a WYSIWYG blog builder in Next.js, now live: each block's form comes from its Contentful content model, so a new field rarely needs UI work. It drafts with the Anthropic SDK, where Claude streams a draft that an editor approves before it enters a post. React, Next.js, TypeScript and Tailwind on the front end, with GraphQL queries and resolvers in a layer the team owns. Performance, SEO and accessibility are release criteria."
     },
     {
       "company": "Dialpad",
       "url": "https://www.dialpad.com",
       "title": "Web Developer",
-      "period": "Jun 2022 — May 2025",
+      "period": "Jun 2022 - May 2025",
       "start": "2022-06",
       "end": "2025-05",
       "note": "Built and maintained high-traffic marketing pages across Dialpad's global web platform."
@@ -22,16 +22,16 @@
       "company": "Monks",
       "url": "https://www.monks.com",
       "title": "Senior Software Engineer",
-      "period": "Jun 2021 — Feb 2022",
+      "period": "Jun 2021 - Feb 2022",
       "start": "2021-06",
       "end": "2022-02",
-      "note": "High-performance web solutions for major digital platforms — a low-code drag-and-drop page builder in Angular for mobile storefronts, and web showcases for Google Chromecast focused on seamless interactivity across devices."
+      "note": "High-performance web solutions for major digital platforms: a low-code drag-and-drop page builder in Angular for mobile storefronts, and web showcases for Google Chromecast focused on interactivity and cross-device performance."
     },
     {
       "company": "R/GA",
       "url": "https://www.rga.com",
       "title": "Software Engineer",
-      "period": "Aug 2020 — Jun 2021",
+      "period": "Aug 2020 - Jun 2021",
       "start": "2020-08",
       "end": "2021-06",
       "location": "Buenos Aires",
@@ -40,16 +40,16 @@
     {
       "company": "Digital Beings",
       "title": "Full-Stack Engineer",
-      "period": "Jul 2019 — Aug 2020",
+      "period": "Jul 2019 - Aug 2020",
       "start": "2019-07",
       "end": "2020-08",
-      "note": "Built the platform behind Wrap (wrap.co), which generates \"Wraps\": app-like interactive content that runs inside messaging feeds with no app install. MEAN stack — Angular front end on Node.js services — with user, team and permission management, and a modular architecture so new content formats could be added independently of the generator."
+      "note": "Built the platform behind Wrap (wrap.co) from scratch at an early-stage startup: app-like interactive content that runs inside messaging feeds with no app install. Node.js and Express services on MongoDB behind an Angular front end, with user, team and permission management, and a modular service architecture so new content formats could be added independently of the generator."
     },
     {
       "company": "Globant",
       "url": "https://www.globant.com",
       "title": "Web Developer",
-      "period": "Mar 2018 — Jul 2019",
+      "period": "Mar 2018 - Jul 2019",
       "start": "2018-03",
       "end": "2019-07",
       "location": "Argentina",
@@ -58,7 +58,7 @@
     {
       "company": "Logismata",
       "title": "Software Engineer",
-      "period": "Jun 2017 — Mar 2018",
+      "period": "Jun 2017 - Mar 2018",
       "start": "2017-06",
       "end": "2018-03",
       "note": "FinTech and PropTech modules for the Swiss financial sector: financial planning, tax and real estate, in Angular and TypeScript."
@@ -67,43 +67,38 @@
       "company": "MRM",
       "url": "https://www.mrm.com",
       "title": "Web Developer",
-      "period": "Mar 2014 — Jun 2017",
+      "period": "Mar 2014 - Jun 2017",
       "start": "2014-03",
       "end": "2017-06",
       "location": "Argentina",
-      "note": "Promotional rewards platform for GM's \"GM Card\" program in the US market, built in AngularJS."
+      "note": "Data-driven digital experiences for the automotive sector, including the promotional rewards platform for GM's \"GM Card\" program. Built in AngularJS for the US market, letting cardholders track their earnings and vehicle benefits."
     },
     {
       "company": "HP",
       "url": "https://www.hp.com",
       "title": "Java Web Developer",
-      "period": "Jan 2011 — Oct 2012",
+      "period": "Jan 2011 - Oct 2012",
       "start": "2011-01",
       "end": "2012-10",
       "location": "Argentina",
-      "note": "Large-scale telecom workflows for HP's enterprise division, in J2SE, JBoss Seam and JSF."
+      "note": "Large-scale telecom web solutions at HP's enterprise division, including a nationwide interactive mobile platform launched in Nextel stores. Built in J2SE, JBoss Seam, JSF and JavaScript, maintaining workflows for multi-million endpoint environments."
     }
   ],
   "education": [
     {
       "org": "Universidad de Buenos Aires",
-      "credential": "Bachelor's Degree in Data Science",
-      "period": "Mar 2023"
+      "credential": "Computer Science, then Data Science",
+      "period": "2010 - 2023"
     },
     {
       "org": "Digital House",
-      "credential": "Data Science Program",
-      "period": "2018 — 2019"
-    },
-    {
-      "org": "Universidad de Buenos Aires",
-      "credential": "Bachelor of Computer Science (incomplete)",
-      "period": "2010 — 2013"
+      "credential": "Data Science",
+      "period": "2018 - 2019"
     }
   ],
   "certifications": [
     {
-      "name": "AWS Certified Generative AI Developer — Professional",
+      "name": "AWS Certified Generative AI Developer - Professional",
       "status": "In progress"
     }
   ]

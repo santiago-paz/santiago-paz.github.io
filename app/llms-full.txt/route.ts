@@ -12,7 +12,7 @@ export function GET() {
   const posts = getPosts()
 
   const out: string[] = [
-    `# ${profile.name} — full profile`,
+    `# ${profile.name}: full profile`,
     '',
     `> ${profile.role} based in ${profile.location} (${profile.workAuthorization}). ${profile.about}`,
     '',
@@ -20,7 +20,7 @@ export function GET() {
     '',
     '## Recognition',
     ...profile.awards.map(
-      (a) => `- ${a.title} — ${a.org} (${a.year}). Source: ${a.url ?? ''}`.trim(),
+      (a) => `- ${a.title}. ${a.org} (${a.year}). Source: ${a.url ?? ''}`.trim(),
     ),
     '',
     '## FAQ',

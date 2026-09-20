@@ -1,0 +1,1081 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-19T10:57:50.830Z",
+  "title": "Design System: Santiago Paz",
+  "extensions": {
+    "colorMeta": {
+      "blued": {
+        "role": "primary",
+        "displayName": "Blued Steel",
+        "canonical": "#2a44a8",
+        "usedAs": [
+          "--blued",
+          "maker --link-bg",
+          "maker --underline",
+          "maker --focus"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.163 267.7)",
+          "oklch(26% 0.163 267.7)",
+          "oklch(38% 0.163 267.7)",
+          "oklch(49% 0.163 267.7)",
+          "oklch(61% 0.163 267.7)",
+          "oklch(72% 0.163 267.7)",
+          "oklch(84% 0.163 267.7)",
+          "oklch(95% 0.163 267.7)"
+        ]
+      },
+      "blued-deep": {
+        "role": "primary",
+        "displayName": "Deep Blued",
+        "canonical": "#1d3183",
+        "usedAs": [
+          "--blued-deep"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.140 267.9)",
+          "oklch(26% 0.140 267.9)",
+          "oklch(38% 0.140 267.9)",
+          "oklch(49% 0.140 267.9)",
+          "oklch(61% 0.140 267.9)",
+          "oklch(72% 0.140 267.9)",
+          "oklch(84% 0.140 267.9)",
+          "oklch(95% 0.140 267.9)"
+        ]
+      },
+      "on-blued": {
+        "role": "primary",
+        "displayName": "Blued Paper",
+        "canonical": "#f5f7fa",
+        "usedAs": [
+          "--on-blued",
+          "maker --link-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.005 258.3)",
+          "oklch(26% 0.005 258.3)",
+          "oklch(38% 0.005 258.3)",
+          "oklch(49% 0.005 258.3)",
+          "oklch(61% 0.005 258.3)",
+          "oklch(72% 0.005 258.3)",
+          "oklch(84% 0.005 258.3)",
+          "oklch(95% 0.005 258.3)"
+        ]
+      },
+      "on-blued-soft": {
+        "role": "primary",
+        "displayName": "Blued Mist",
+        "canonical": "#d5dcf2",
+        "usedAs": [
+          "--on-blued-soft",
+          "contact band --underline"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.031 271.7)",
+          "oklch(26% 0.031 271.7)",
+          "oklch(38% 0.031 271.7)",
+          "oklch(49% 0.031 271.7)",
+          "oklch(61% 0.031 271.7)",
+          "oklch(72% 0.031 271.7)",
+          "oklch(84% 0.031 271.7)",
+          "oklch(95% 0.031 271.7)"
+        ]
+      },
+      "steel": {
+        "role": "neutral",
+        "displayName": "Polished Steel",
+        "canonical": "#edf0f3",
+        "usedAs": [
+          "--steel",
+          "maker --field",
+          "maker --status-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.005 247.9)",
+          "oklch(26% 0.005 247.9)",
+          "oklch(38% 0.005 247.9)",
+          "oklch(49% 0.005 247.9)",
+          "oklch(61% 0.005 247.9)",
+          "oklch(72% 0.005 247.9)",
+          "oklch(84% 0.005 247.9)",
+          "oklch(95% 0.005 247.9)"
+        ]
+      },
+      "steel-deep": {
+        "role": "neutral",
+        "displayName": "Deep Steel",
+        "canonical": "#dce2e8",
+        "usedAs": [
+          "--steel-deep",
+          "maker --pale-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.010 247.9)",
+          "oklch(26% 0.010 247.9)",
+          "oklch(38% 0.010 247.9)",
+          "oklch(49% 0.010 247.9)",
+          "oklch(61% 0.010 247.9)",
+          "oklch(72% 0.010 247.9)",
+          "oklch(84% 0.010 247.9)",
+          "oklch(95% 0.010 247.9)"
+        ]
+      },
+      "steel-row": {
+        "role": "neutral",
+        "displayName": "Row Steel",
+        "canonical": "#e2e7ec",
+        "usedAs": [
+          "--steel-row",
+          "maker --row-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.009 247.9)",
+          "oklch(26% 0.009 247.9)",
+          "oklch(38% 0.009 247.9)",
+          "oklch(49% 0.009 247.9)",
+          "oklch(61% 0.009 247.9)",
+          "oklch(72% 0.009 247.9)",
+          "oklch(84% 0.009 247.9)",
+          "oklch(95% 0.009 247.9)"
+        ]
+      },
+      "steel-rule": {
+        "role": "neutral",
+        "displayName": "Steel Rule",
+        "canonical": "#c4ccd4",
+        "usedAs": [
+          "--steel-rule",
+          "maker --frame"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.014 248.0)",
+          "oklch(26% 0.014 248.0)",
+          "oklch(38% 0.014 248.0)",
+          "oklch(49% 0.014 248.0)",
+          "oklch(61% 0.014 248.0)",
+          "oklch(72% 0.014 248.0)",
+          "oklch(84% 0.014 248.0)",
+          "oklch(95% 0.014 248.0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111418",
+        "usedAs": [
+          "--ink",
+          "maker --field-ink",
+          "maker --status-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.009 255.6)",
+          "oklch(26% 0.009 255.6)",
+          "oklch(38% 0.009 255.6)",
+          "oklch(49% 0.009 255.6)",
+          "oklch(61% 0.009 255.6)",
+          "oklch(72% 0.009 255.6)",
+          "oklch(84% 0.009 255.6)",
+          "oklch(95% 0.009 255.6)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4a5360",
+        "usedAs": [
+          "--ink-soft",
+          "maker --field-soft",
+          "maker --layer-bg",
+          "maker --pale-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.024 257.5)",
+          "oklch(26% 0.024 257.5)",
+          "oklch(38% 0.024 257.5)",
+          "oklch(49% 0.024 257.5)",
+          "oklch(61% 0.024 257.5)",
+          "oklch(72% 0.024 257.5)",
+          "oklch(84% 0.024 257.5)",
+          "oklch(95% 0.024 257.5)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "usedAs": [
+          "maker --layer-fg",
+          "contract-lens --field",
+          "contract-lens --status-fg",
+          "contract-lens --link-fg",
+          "contract-lens --layer-fg",
+          "contract-lens --row-bg",
+          "trading-desk --field-ink",
+          "trading-desk --field-soft",
+          "trading-desk --status-fg",
+          "trading-desk --layer-fg",
+          "trading-desk --pale-fg",
+          "trading-desk --underline",
+          "trading-desk --focus",
+          "contact band --focus"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(38% 0.000 0.0)",
+          "oklch(49% 0.000 0.0)",
+          "oklch(61% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "contract-lens-ink": {
+        "role": "colorway",
+        "displayName": "Lens Ink",
+        "canonical": "#16181d",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--field-ink",
+          "--link-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.010 268.2)",
+          "oklch(26% 0.010 268.2)",
+          "oklch(38% 0.010 268.2)",
+          "oklch(49% 0.010 268.2)",
+          "oklch(61% 0.010 268.2)",
+          "oklch(72% 0.010 268.2)",
+          "oklch(84% 0.010 268.2)",
+          "oklch(95% 0.010 268.2)"
+        ]
+      },
+      "contract-lens-soft": {
+        "role": "colorway",
+        "displayName": "Lens Soft",
+        "canonical": "#4b505a",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--field-soft"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.018 264.4)",
+          "oklch(26% 0.018 264.4)",
+          "oklch(38% 0.018 264.4)",
+          "oklch(49% 0.018 264.4)",
+          "oklch(61% 0.018 264.4)",
+          "oklch(72% 0.018 264.4)",
+          "oklch(84% 0.018 264.4)",
+          "oklch(95% 0.018 264.4)"
+        ]
+      },
+      "contract-lens-seal": {
+        "role": "colorway",
+        "displayName": "Seal Red",
+        "canonical": "#a3202f",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--status-bg",
+          "--underline",
+          "--focus"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.166 21.0)",
+          "oklch(26% 0.166 21.0)",
+          "oklch(38% 0.166 21.0)",
+          "oklch(49% 0.166 21.0)",
+          "oklch(61% 0.166 21.0)",
+          "oklch(72% 0.166 21.0)",
+          "oklch(84% 0.166 21.0)",
+          "oklch(95% 0.166 21.0)"
+        ]
+      },
+      "contract-lens-layer": {
+        "role": "colorway",
+        "displayName": "Lens Slate",
+        "canonical": "#3d434d",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--layer-bg",
+          "--pale-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.019 260.7)",
+          "oklch(26% 0.019 260.7)",
+          "oklch(38% 0.019 260.7)",
+          "oklch(49% 0.019 260.7)",
+          "oklch(61% 0.019 260.7)",
+          "oklch(72% 0.019 260.7)",
+          "oklch(84% 0.019 260.7)",
+          "oklch(95% 0.019 260.7)"
+        ]
+      },
+      "contract-lens-pale": {
+        "role": "colorway",
+        "displayName": "Lens Pale",
+        "canonical": "#e8edf3",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--pale-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.010 252.8)",
+          "oklch(26% 0.010 252.8)",
+          "oklch(38% 0.010 252.8)",
+          "oklch(49% 0.010 252.8)",
+          "oklch(61% 0.010 252.8)",
+          "oklch(72% 0.010 252.8)",
+          "oklch(84% 0.010 252.8)",
+          "oklch(95% 0.010 252.8)"
+        ]
+      },
+      "contract-lens-frame": {
+        "role": "colorway",
+        "displayName": "Lens Frame",
+        "canonical": "#d5dbe3",
+        "colorway": "contract-lens",
+        "usedAs": [
+          "--frame"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.013 255.5)",
+          "oklch(26% 0.013 255.5)",
+          "oklch(38% 0.013 255.5)",
+          "oklch(49% 0.013 255.5)",
+          "oklch(61% 0.013 255.5)",
+          "oklch(72% 0.013 255.5)",
+          "oklch(84% 0.013 255.5)",
+          "oklch(95% 0.013 255.5)"
+        ]
+      },
+      "trading-desk-teal": {
+        "role": "colorway",
+        "displayName": "Desktop Teal",
+        "canonical": "#008080",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--field",
+          "--row-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.093 194.8)",
+          "oklch(26% 0.093 194.8)",
+          "oklch(38% 0.093 194.8)",
+          "oklch(49% 0.093 194.8)",
+          "oklch(61% 0.093 194.8)",
+          "oklch(72% 0.093 194.8)",
+          "oklch(84% 0.093 194.8)",
+          "oklch(95% 0.093 194.8)"
+        ]
+      },
+      "trading-desk-navy": {
+        "role": "colorway",
+        "displayName": "Title-bar Navy",
+        "canonical": "#000080",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--status-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.188 264.1)",
+          "oklch(26% 0.188 264.1)",
+          "oklch(38% 0.188 264.1)",
+          "oklch(49% 0.188 264.1)",
+          "oklch(61% 0.188 264.1)",
+          "oklch(72% 0.188 264.1)",
+          "oklch(84% 0.188 264.1)",
+          "oklch(95% 0.188 264.1)"
+        ]
+      },
+      "trading-desk-grey": {
+        "role": "colorway",
+        "displayName": "Button Grey",
+        "canonical": "#c0c0c0",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--link-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(38% 0.000 0.0)",
+          "oklch(49% 0.000 0.0)",
+          "oklch(61% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "trading-desk-black": {
+        "role": "colorway",
+        "displayName": "Black",
+        "canonical": "#000000",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--link-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(38% 0.000 0.0)",
+          "oklch(49% 0.000 0.0)",
+          "oklch(61% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "trading-desk-layer": {
+        "role": "colorway",
+        "displayName": "Deep Teal",
+        "canonical": "#005f5f",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--layer-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.075 194.8)",
+          "oklch(26% 0.075 194.8)",
+          "oklch(38% 0.075 194.8)",
+          "oklch(49% 0.075 194.8)",
+          "oklch(61% 0.075 194.8)",
+          "oklch(72% 0.075 194.8)",
+          "oklch(84% 0.075 194.8)",
+          "oklch(95% 0.075 194.8)"
+        ]
+      },
+      "trading-desk-pale": {
+        "role": "colorway",
+        "displayName": "Shaded Teal",
+        "canonical": "#006b6b",
+        "colorway": "trading-desk",
+        "usedAs": [
+          "--pale-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.082 194.8)",
+          "oklch(26% 0.082 194.8)",
+          "oklch(38% 0.082 194.8)",
+          "oklch(49% 0.082 194.8)",
+          "oklch(61% 0.082 194.8)",
+          "oklch(72% 0.082 194.8)",
+          "oklch(84% 0.082 194.8)",
+          "oklch(95% 0.082 194.8)"
+        ]
+      },
+      "reema-night": {
+        "role": "colorway",
+        "displayName": "Reema Night",
+        "canonical": "#00131f",
+        "colorway": "reema",
+        "usedAs": [
+          "--field",
+          "--status-fg",
+          "--link-fg",
+          "--row-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.038 235.7)",
+          "oklch(26% 0.038 235.7)",
+          "oklch(38% 0.038 235.7)",
+          "oklch(49% 0.038 235.7)",
+          "oklch(61% 0.038 235.7)",
+          "oklch(72% 0.038 235.7)",
+          "oklch(84% 0.038 235.7)",
+          "oklch(95% 0.038 235.7)"
+        ]
+      },
+      "reema-aqua": {
+        "role": "colorway",
+        "displayName": "Reema Aqua",
+        "canonical": "#25ffcd",
+        "colorway": "reema",
+        "usedAs": [
+          "--status-bg",
+          "--underline",
+          "--focus"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.170 171.2)",
+          "oklch(26% 0.170 171.2)",
+          "oklch(38% 0.170 171.2)",
+          "oklch(49% 0.170 171.2)",
+          "oklch(61% 0.170 171.2)",
+          "oklch(72% 0.170 171.2)",
+          "oklch(84% 0.170 171.2)",
+          "oklch(95% 0.170 171.2)"
+        ]
+      },
+      "reema-ink": {
+        "role": "colorway",
+        "displayName": "Reema Mist",
+        "canonical": "#e7edf0",
+        "colorway": "reema",
+        "usedAs": [
+          "--field-ink",
+          "--link-bg",
+          "--layer-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.008 228.9)",
+          "oklch(26% 0.008 228.9)",
+          "oklch(38% 0.008 228.9)",
+          "oklch(49% 0.008 228.9)",
+          "oklch(61% 0.008 228.9)",
+          "oklch(72% 0.008 228.9)",
+          "oklch(84% 0.008 228.9)",
+          "oklch(95% 0.008 228.9)"
+        ]
+      },
+      "reema-soft": {
+        "role": "colorway",
+        "displayName": "Reema Soft",
+        "canonical": "#b4c2c8",
+        "colorway": "reema",
+        "usedAs": [
+          "--field-soft",
+          "--pale-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.018 225.2)",
+          "oklch(26% 0.018 225.2)",
+          "oklch(38% 0.018 225.2)",
+          "oklch(49% 0.018 225.2)",
+          "oklch(61% 0.018 225.2)",
+          "oklch(72% 0.018 225.2)",
+          "oklch(84% 0.018 225.2)",
+          "oklch(95% 0.018 225.2)"
+        ]
+      },
+      "reema-layer": {
+        "role": "colorway",
+        "displayName": "Reema Deep",
+        "canonical": "#0b3a45",
+        "colorway": "reema",
+        "usedAs": [
+          "--layer-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.052 217.3)",
+          "oklch(26% 0.052 217.3)",
+          "oklch(38% 0.052 217.3)",
+          "oklch(49% 0.052 217.3)",
+          "oklch(61% 0.052 217.3)",
+          "oklch(72% 0.052 217.3)",
+          "oklch(84% 0.052 217.3)",
+          "oklch(95% 0.052 217.3)"
+        ]
+      },
+      "reema-pale": {
+        "role": "colorway",
+        "displayName": "Reema Shade",
+        "canonical": "#0a2a33",
+        "colorway": "reema",
+        "usedAs": [
+          "--pale-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.040 220.0)",
+          "oklch(26% 0.040 220.0)",
+          "oklch(38% 0.040 220.0)",
+          "oklch(49% 0.040 220.0)",
+          "oklch(61% 0.040 220.0)",
+          "oklch(72% 0.040 220.0)",
+          "oklch(84% 0.040 220.0)",
+          "oklch(95% 0.040 220.0)"
+        ]
+      },
+      "reema-frame": {
+        "role": "colorway",
+        "displayName": "Reema Frame",
+        "canonical": "rgb(231 237 240 / 0.16)",
+        "colorway": "reema",
+        "usedAs": [
+          "--frame"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.008 228.9)",
+          "oklch(26% 0.008 228.9)",
+          "oklch(38% 0.008 228.9)",
+          "oklch(49% 0.008 228.9)",
+          "oklch(61% 0.008 228.9)",
+          "oklch(72% 0.008 228.9)",
+          "oklch(84% 0.008 228.9)",
+          "oklch(95% 0.008 228.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "name": {
+        "displayName": "Name",
+        "purpose": "The hero name on the home page, set on two lines. The one big voice."
+      },
+      "page-title": {
+        "displayName": "Page title",
+        "purpose": "The h1 on inner pages."
+      },
+      "post-title": {
+        "displayName": "Post title",
+        "purpose": "The h1 on post pages, one step down because post titles run long."
+      },
+      "section-title": {
+        "displayName": "Section title",
+        "purpose": "Work, Writing and Contact on the home page. The widest cut on the site."
+      },
+      "plate-name": {
+        "displayName": "Plate name",
+        "purpose": "The product name across the top of a plate."
+      },
+      "subhead": {
+        "displayName": "Section head",
+        "purpose": "Inner-page section heads such as Role, Stack, Highlights and At a glance."
+      },
+      "bench-title": {
+        "displayName": "Bench title",
+        "purpose": "The More projects heading over the bench."
+      },
+      "bench-name": {
+        "displayName": "Bench name",
+        "purpose": "Project names in bench rows."
+      },
+      "role-line": {
+        "displayName": "Role line",
+        "purpose": "The role under the name in the hero."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The line under a page title. The hero tagline and the Contact lead use the same size at 1.45."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text."
+      },
+      "reading": {
+        "displayName": "Reading",
+        "purpose": "Long text in posts, project overviews and the About page, within the 46ch measure."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Footer, list labels, dates and meta lines. Labels at this size go bold, never capitals."
+      },
+      "mark": {
+        "displayName": "Mark",
+        "purpose": "Hallmark letters, set in capitals. 12px in bench rows. A domain keeps its lowercase at 14px with 0.015em tracking."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels in sentence case. 14px in the masthead CV button."
+      }
+    },
+    "shadows": [
+      {
+        "name": "screen-lift",
+        "property": "filter",
+        "value": "drop-shadow(0 28px 36px rgb(17 20 24 / 0.2)) drop-shadow(0 2px 4px rgb(17 20 24 / 0.12))",
+        "purpose": "Under a product screen on a steel plate. A filter on the screen wrapper, so it follows the bevel."
+      },
+      {
+        "name": "screen-lift-contract-lens",
+        "property": "filter",
+        "value": "drop-shadow(0 28px 36px rgb(22 24 29 / 0.16)) drop-shadow(0 2px 4px rgb(22 24 29 / 0.1))",
+        "purpose": "The same lift on the Contract Lens plate, tinted with its ink."
+      },
+      {
+        "name": "screen-lift-reema",
+        "property": "filter",
+        "value": "drop-shadow(0 28px 36px rgb(0 0 0 / 0.45)) drop-shadow(0 2px 4px rgb(0 0 0 / 0.3))",
+        "purpose": "The same lift on the Reema night field."
+      },
+      {
+        "name": "masthead-rule",
+        "property": "box-shadow",
+        "value": "0 1px 0 #c4ccd4",
+        "purpose": "A 1px Steel Rule line under the sticky masthead. A line, not a lift."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-strike",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The strike easing: a fast press and a long settle."
+      },
+      {
+        "name": "strike-press",
+        "value": "strike-press 0.52s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--i, 0) * 90ms) both",
+        "purpose": "Each mark dips 2px and scales to 0.86 at 18%, then springs back."
+      },
+      {
+        "name": "strike-flash",
+        "value": "strike-flash 0.6s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--i, 0) * 90ms) both",
+        "purpose": "A flash of the mark's own ink (currentColor) rises to 0.62 opacity at 14% and fades."
+      },
+      {
+        "name": "strike-stagger",
+        "value": "90ms",
+        "purpose": "Delay between marks in a row, set by each mark's --i index."
+      },
+      {
+        "name": "strike-trigger",
+        "value": "IntersectionObserver, threshold 0.4, once per row",
+        "purpose": "Rows with data-strike get data-struck the first time 40% of the row is in view: the home hero register and every plate's hallmark row."
+      },
+      {
+        "name": "button-face",
+        "value": "background-color 0.18s ease-out, transform 0.12s ease-out",
+        "purpose": "Hover darkens the button face. A press moves it down 1px."
+      },
+      {
+        "name": "scroll",
+        "value": "scroll-behavior: smooth; scroll-padding-top: calc(64px + 16px)",
+        "purpose": "In-page jumps glide and stop 16px below the sticky masthead."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce)",
+        "purpose": "Removes the strike, button transitions and smooth scroll. Marks stay fully drawn."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-stack",
+        "value": "1020px",
+        "query": "(max-width: 1020px)",
+        "purpose": "The hero goes to one column, and the tagline widens to 40ch."
+      },
+      {
+        "name": "stack",
+        "value": "859px",
+        "query": "(max-width: 859px)",
+        "purpose": "Plates, bench rows, the project grid and the Contact band stack. The large stamp hides. Bench rows pad 22px."
+      },
+      {
+        "name": "phone-capture",
+        "value": "759px",
+        "query": "(max-width: 759px)",
+        "purpose": "Screens switch to phone captures. Plate screens cap at 380px and bench screens at 280px."
+      },
+      {
+        "name": "phone",
+        "value": "639px",
+        "query": "(max-width: 639px)",
+        "purpose": "The masthead name hides. Register, keyed, post and ledger rows stack. Action buttons go full width."
+      }
+    ],
+    "bevelShape": "clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 calc(100% - var(--cut)), 0 var(--cut))",
+    "bevels": [
+      {
+        "name": "highlight-bullet",
+        "value": "3px",
+        "purpose": "The 12px Blued Steel square before each highlight."
+      },
+      {
+        "name": "mark",
+        "value": "5px",
+        "purpose": "Every mark, at every size except the stamp."
+      },
+      {
+        "name": "button-small",
+        "value": "6px",
+        "purpose": "The masthead CV button."
+      },
+      {
+        "name": "button",
+        "value": "7px",
+        "purpose": "Primary and inverse buttons."
+      },
+      {
+        "name": "bench-screen",
+        "value": "8px",
+        "purpose": "Screens on live bench rows."
+      },
+      {
+        "name": "bench-row",
+        "value": "10px",
+        "purpose": "Bench rows."
+      },
+      {
+        "name": "portrait",
+        "value": "10px",
+        "purpose": "The portrait in the fact register."
+      },
+      {
+        "name": "panel",
+        "value": "12px",
+        "purpose": "The fact register, the exam-domains panel and plate screens."
+      },
+      {
+        "name": "stamp",
+        "value": "14px",
+        "purpose": "The large SP stamp in the Contact band."
+      },
+      {
+        "name": "share-card-screen",
+        "value": "14px",
+        "purpose": "The product screen on a share card, left corners only."
+      },
+      {
+        "name": "share-card-portrait",
+        "value": "16px",
+        "purpose": "The headshot on a share card."
+      }
+    ],
+    "colorways": {
+      "maker": {
+        "cssClass": "cw-maker (and :root)",
+        "field": "steel",
+        "fieldInk": "ink",
+        "fieldSoft": "ink-soft",
+        "statusBg": "ink",
+        "statusFg": "steel",
+        "linkBg": "blued",
+        "linkFg": "on-blued",
+        "layerBg": "ink-soft",
+        "layerFg": "white",
+        "paleBg": "steel-deep",
+        "paleFg": "ink-soft",
+        "underline": "blued",
+        "focus": "blued",
+        "frame": "steel-rule",
+        "rowBg": "steel-row",
+        "shadow": "rgb(17 20 24 / 0.2)",
+        "shadowNear": "rgb(17 20 24 / 0.12)"
+      },
+      "contract-lens": {
+        "cssClass": "cw-contract-lens",
+        "field": "white",
+        "fieldInk": "contract-lens-ink",
+        "fieldSoft": "contract-lens-soft",
+        "statusBg": "contract-lens-seal",
+        "statusFg": "white",
+        "linkBg": "contract-lens-ink",
+        "linkFg": "white",
+        "layerBg": "contract-lens-layer",
+        "layerFg": "white",
+        "paleBg": "contract-lens-pale",
+        "paleFg": "contract-lens-layer",
+        "underline": "contract-lens-seal",
+        "focus": "contract-lens-seal",
+        "frame": "contract-lens-frame",
+        "rowBg": "white",
+        "shadow": "rgb(22 24 29 / 0.16)",
+        "shadowNear": "rgb(22 24 29 / 0.1)"
+      },
+      "trading-desk": {
+        "cssClass": "cw-trading-desk",
+        "field": "trading-desk-teal",
+        "fieldInk": "white",
+        "fieldSoft": "white",
+        "statusBg": "trading-desk-navy",
+        "statusFg": "white",
+        "linkBg": "trading-desk-grey",
+        "linkFg": "trading-desk-black",
+        "layerBg": "trading-desk-layer",
+        "layerFg": "white",
+        "paleBg": "trading-desk-pale",
+        "paleFg": "white",
+        "underline": "white",
+        "focus": "white",
+        "frame": null,
+        "rowBg": "trading-desk-teal",
+        "shadow": null,
+        "shadowNear": null,
+        "note": "The dialog screen takes no frame, no cut and no shadow."
+      },
+      "reema": {
+        "cssClass": "cw-reema",
+        "field": "reema-night",
+        "fieldInk": "reema-ink",
+        "fieldSoft": "reema-soft",
+        "statusBg": "reema-aqua",
+        "statusFg": "reema-night",
+        "linkBg": "reema-ink",
+        "linkFg": "reema-night",
+        "layerBg": "reema-layer",
+        "layerFg": "reema-ink",
+        "paleBg": "reema-pale",
+        "paleFg": "reema-soft",
+        "underline": "reema-aqua",
+        "focus": "reema-aqua",
+        "frame": "reema-frame",
+        "rowBg": "reema-night",
+        "shadow": "rgb(0 0 0 / 0.45)",
+        "shadowNear": "rgb(0 0 0 / 0.3)"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Hallmark row",
+      "kind": "custom",
+      "refersTo": "mark-maker",
+      "description": "SP first, then the standing, then Code. Struck once on render: each mark presses in turn with a flash of its own ink.",
+      "html": "<ul class=\"ds-hallmarks\" data-struck aria-label=\"Marks\"><li><span class=\"ds-hm ds-hm--maker\" style=\"--i:0\"><span aria-hidden=\"true\">SP</span><span class=\"ds-hm-sr\">Built by Santiago Paz</span></span></li><li><span class=\"ds-hm ds-hm--status\" style=\"--i:1\">Live</span></li><li><a class=\"ds-hm-link\" href=\"#\"><span class=\"ds-hm ds-hm--link\" style=\"--i:2\">Code<svg class=\"ds-hm-icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg><span class=\"ds-hm-sr\"> (opens in a new tab)</span></span></a></li></ul>",
+      "css": ".ds-hallmarks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-hm{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-hm::after{content:'';position:absolute;inset:0;background:currentColor;opacity:0;pointer-events:none}.ds-hm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm--status{background:var(--ink,#111418);color:var(--steel,#edf0f3)}.ds-hm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm-icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-hm-link{display:inline-flex;text-decoration:none}.ds-hm-link:hover .ds-hm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-hm-link:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-hm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@keyframes ds-strike-press{0%{transform:none}18%{transform:translateY(2px) scale(.86)}100%{transform:none}}@keyframes ds-strike-flash{0%{opacity:0}14%{opacity:.62}100%{opacity:0}}.ds-hallmarks[data-struck] .ds-hm{animation:ds-strike-press .52s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}.ds-hallmarks[data-struck] .ds-hm::after{animation:ds-strike-flash .6s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}@media (prefers-reduced-motion:reduce){.ds-hallmarks[data-struck] .ds-hm,.ds-hallmarks[data-struck] .ds-hm::after{animation:none}}"
+    },
+    {
+      "name": "Mark tones",
+      "kind": "chip",
+      "refersTo": "mark-layer",
+      "description": "Layer (built), pale (not built yet, or a stage) and date marks in the maker colorway.",
+      "html": "<div class=\"ds-tones\"><span class=\"ds-tone ds-tone--layer\">Web app</span><span class=\"ds-tone ds-tone--pale\">In progress</span><span class=\"ds-tone ds-tone--date\">Jun 2026</span></div>",
+      "css": ".ds-tones{display:flex;flex-wrap:wrap;gap:6px}.ds-tone{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-tone--layer{background:var(--ink-soft,#4a5360);color:#ffffff}.ds-tone--pale{background:var(--steel-deep,#dce2e8);color:var(--ink-soft,#4a5360)}.ds-tone--date{background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Download CV: blued face with cut corners, the file type and size in Blued Mist.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><span class=\"ds-btn__face\"><svg class=\"ds-btn__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>Download CV<span class=\"ds-btn__meta\">PDF, 127 KB</span></span></a>",
+      "css": ".ds-btn{display:inline-flex;text-decoration:none}.ds-btn__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn__meta{margin-left:.2em;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-weight:400;font-size:.8125rem;letter-spacing:0;color:var(--on-blued-soft,#d5dcf2)}.ds-btn:hover .ds-btn__face{background:var(--blued-deep,#1d3183)}.ds-btn:active .ds-btn__face{transform:translateY(1px)}.ds-btn:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn__face{transition:none}}"
+    },
+    {
+      "name": "Small button",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "The masthead CV button: 40px tall, 6px cut, 14px label.",
+      "html": "<a class=\"ds-btn-sm\" href=\"#\"><span class=\"ds-btn-sm__face\"><svg class=\"ds-btn-sm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>CV</span></a>",
+      "css": ".ds-btn-sm{display:inline-flex;text-decoration:none}.ds-btn-sm__face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-sm__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-sm:hover .ds-btn-sm__face{background:var(--blued-deep,#1d3183)}.ds-btn-sm:active .ds-btn-sm__face{transform:translateY(1px)}.ds-btn-sm:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-sm__face{transition:none}}"
+    },
+    {
+      "name": "Inverse button",
+      "kind": "button",
+      "refersTo": "button-inverse",
+      "description": "On the blued Contact band: steel face with blued letters, white on hover, white focus ring.",
+      "html": "<div class=\"ds-band\"><a class=\"ds-btn-inv\" href=\"#\"><span class=\"ds-btn-inv__face\"><svg class=\"ds-btn-inv__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.5 5.5h17v13h-17zM3.5 6.5 12 13l8.5-6.5\"/></svg>Email me</span></a></div>",
+      "css": ".ds-band{padding:24px;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-btn-inv{display:inline-flex;text-decoration:none}.ds-btn-inv__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--steel,#edf0f3);color:var(--blued,#2a44a8);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-inv__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-inv:hover .ds-btn-inv__face{background:#ffffff}.ds-btn-inv:active .ds-btn-inv__face{transform:translateY(1px)}.ds-btn-inv:focus-visible{outline:2px solid #ffffff;outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-inv__face{transition:none}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "The second action beside a button: bold text, 2px underline in the colorway underline color, at least 44px tall.",
+      "html": "<a class=\"ds-text-action\" href=\"#\"><svg class=\"ds-text-action__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.5 5.5h17v13h-17zM3.5 6.5 12 13l8.5-6.5\"/></svg>Email me</a>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:.5em;min-height:2.75rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;font-weight:700;color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-text-action__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-text-action:hover{text-decoration-color:currentColor}.ds-text-action:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky 64px steel bar with a 1px Steel Rule line: SP mark and name, three links, the small CV button.",
+      "html": "<header class=\"ds-mast\"><div class=\"ds-mast__bar\"><a class=\"ds-mast__maker\" href=\"#\"><span class=\"ds-mast__mark\" aria-hidden=\"true\">SP</span><span class=\"ds-mast__name\">Santiago Paz</span></a><nav class=\"ds-mast__nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\">Work</a><a href=\"#\">About</a><a href=\"#\">Writing</a></nav><a class=\"ds-mast__cv\" href=\"#\"><span class=\"ds-mast__cv-face\"><svg class=\"ds-mast__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>CV</span></a></div></header>",
+      "css": ".ds-mast{background:var(--steel,#edf0f3);color:var(--ink,#111418);box-shadow:0 1px 0 var(--steel-rule,#c4ccd4)}.ds-mast__bar{display:flex;align-items:center;gap:clamp(8px,2.5vw,28px);min-height:64px;padding-inline:clamp(20px,4vw,48px)}.ds-mast__maker{display:inline-flex;align-items:center;gap:12px;min-height:2.75rem;color:var(--ink,#111418);text-decoration:none}.ds-mast__mark{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__name{font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 112;font-weight:750;font-size:1.0625rem;letter-spacing:.005em}.ds-mast__maker:hover .ds-mast__name{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__nav{display:flex;align-items:center;gap:2px;margin-left:auto}.ds-mast__nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding-inline:.8rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-weight:700;font-size:.9375rem;color:var(--ink-soft,#4a5360);text-decoration:none}.ds-mast__nav a:hover{color:var(--ink,#111418)}.ds-mast__nav a[aria-current=page]{color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.45em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__cv{display:inline-flex;text-decoration:none}.ds-mast__cv-face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__cv:hover .ds-mast__cv-face{background:var(--blued-deep,#1d3183)}.ds-mast__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-mast a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (max-width:639px){.ds-mast__name{display:none}.ds-mast__nav a{padding-inline:.55rem}}"
+    },
+    {
+      "name": "Fact register",
+      "kind": "card",
+      "refersTo": "fact-register",
+      "description": "Deep Steel panel with a 12px cut. Each row pairs a struck mark with one plain sentence; the first mark is the blued SP.",
+      "html": "<div class=\"ds-register\"><dl class=\"ds-register__rows\"><div class=\"ds-register__row\"><dt><span class=\"ds-rm ds-rm--maker\">SP</span></dt><dd>Every project here is solo work, from the data model to the deploy.</dd></div><div class=\"ds-register__row\"><dt><span class=\"ds-rm\">BER</span></dt><dd>Based in Berlin, open to roles across the EU and remote.</dd></div><div class=\"ds-register__row\"><dt><span class=\"ds-rm\">EU</span></dt><dd>Italian citizen with EU work authorization. No sponsorship needed.</dd></div></dl></div>",
+      "css": ".ds-register{padding:clamp(18px,2vw,24px);background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);--cut:12px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-register__rows{margin:0}.ds-register__row{display:flex;align-items:flex-start;gap:14px}.ds-register__row+.ds-register__row{margin-top:12px}.ds-register__row dt{flex:0 0 7.25rem}.ds-register__row dd{flex:1;min-width:0;margin:0;padding-top:.2rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1rem;line-height:1.45}.ds-rm{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--ink,#111418);color:var(--steel,#edf0f3);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-rm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}@media (max-width:639px){.ds-register__row{flex-direction:column;gap:6px}.ds-register__row dt{flex:none}.ds-register__row dd{padding-top:0}}"
+    },
+    {
+      "name": "Plate (Contract Lens colorway)",
+      "kind": "card",
+      "refersTo": "plate-contract-lens",
+      "description": "A product plate in its own colors: name and hallmarks across the top, the summary with the live domain beside it, and the layers built stacked base-first. The SP mark stays blued. The real screen is left out here because snippets carry no images.",
+      "html": "<article class=\"ds-plate\"><div class=\"ds-plate__title\"><h3 class=\"ds-plate__name\"><a href=\"#\">Contract Lens</a></h3><ul class=\"ds-plate__marks\" aria-label=\"Marks\"><li><span class=\"ds-pm ds-pm--maker\">SP</span></li><li><span class=\"ds-pm ds-pm--status\">Live</span></li><li><a class=\"ds-pm-link\" href=\"#\"><span class=\"ds-pm ds-pm--link\">Code<svg class=\"ds-pm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></li></ul></div><div class=\"ds-plate__lede\"><p class=\"ds-plate__summary\">A deployed multi-tenant SaaS where an LLM extraction pipeline turns PDF and DOCX contracts into typed, structured data that drives a deadline and alert system.</p><p class=\"ds-plate__assay\"><a class=\"ds-pm-link\" href=\"#\"><span class=\"ds-pm ds-pm--link ds-pm--domain\">trycontractlens.com<svg class=\"ds-pm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></p></div><div class=\"ds-plate__built\"><p class=\"ds-plate__label\">Layers built</p><ol class=\"ds-plate__stack\"><li><span class=\"ds-pm ds-pm--layer\">Data model</span></li><li><span class=\"ds-pm ds-pm--layer\">Encryption</span></li><li><span class=\"ds-pm ds-pm--layer\">AI extraction</span></li><li><span class=\"ds-pm ds-pm--layer\">Web app</span></li><li><span class=\"ds-pm ds-pm--layer\">Deploy</span></li></ol></div></article>",
+      "css": ".ds-plate{--field:#ffffff;--field-ink:#16181d;--field-soft:#4b505a;--status-bg:#a3202f;--status-fg:#ffffff;--link-bg:#16181d;--link-fg:#ffffff;--layer-bg:#3d434d;--layer-fg:#ffffff;--underline:#a3202f;--focus:#a3202f;padding:clamp(40px,5vw,72px) clamp(20px,4vw,48px) clamp(56px,6vw,88px);background:var(--field);color:var(--field-ink);font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.6}.ds-plate__title{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 32px}.ds-plate__name{margin:0;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 116;font-weight:800;font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem);line-height:1;letter-spacing:-.01em}.ds-plate__name a{color:inherit;text-decoration:none}.ds-plate__name a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.14em;text-decoration-color:var(--underline)}.ds-plate__marks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-plate__lede{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 32px;margin-top:16px}.ds-plate__summary{max-width:60ch;margin:0;color:var(--field-soft)}.ds-plate__assay{margin:0}.ds-pm{display:inline-flex;align-items:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-pm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-pm--status{background:var(--status-bg);color:var(--status-fg)}.ds-pm--link{background:var(--link-bg);color:var(--link-fg)}.ds-pm--domain{font-size:.875rem;letter-spacing:.015em;text-transform:none}.ds-pm--layer{width:100%;justify-content:flex-start;background:var(--layer-bg);color:var(--layer-fg)}.ds-pm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-pm-link{display:inline-flex;text-decoration:none}.ds-pm-link:hover .ds-pm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-plate a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-plate__built{margin-top:clamp(24px,3vw,36px)}.ds-plate__label{margin:0;font-size:.9375rem;font-weight:700;color:var(--field-soft)}.ds-plate__stack{display:inline-flex;flex-direction:column-reverse;align-items:stretch;gap:3px;margin:10px 0 0;padding:0;list-style:none}@media (max-width:859px){.ds-plate__title,.ds-plate__lede{flex-direction:column;align-items:flex-start}}"
+    },
+    {
+      "name": "Bench row",
+      "kind": "card",
+      "refersTo": "bench-row",
+      "description": "A full-width Row Steel panel with a 10px cut: name and small hallmarks on the left, summary on the right, split 5:7.",
+      "html": "<div class=\"ds-bench\"><div><h4 class=\"ds-bench__name\"><a href=\"#\">Reddit Idea Miner</a></h4><ul class=\"ds-bench__marks\" aria-label=\"Marks\"><li><span class=\"ds-bm ds-bm--maker\">SP</span></li><li><a class=\"ds-bm-link\" href=\"#\"><span class=\"ds-bm ds-bm--link\">Code<svg class=\"ds-bm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></li></ul></div><p class=\"ds-bench__summary\">A daily pipeline that scans job-search subreddits and Hacker News, extracts actionable product ideas with Claude in a single structured call, and emails a ranked digest.</p></div>",
+      "css": ".ds-bench{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:14px 40px;align-items:center;padding:24px 28px;background:var(--steel-row,#e2e7ec);color:var(--ink,#111418);--cut:10px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bench__name{margin:0;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 116;font-weight:800;font-size:clamp(1.125rem,1rem + .5vw,1.375rem);line-height:1.1}.ds-bench__name a{color:inherit;text-decoration:none}.ds-bench__name a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em;text-decoration-color:var(--blued,#2a44a8)}.ds-bench__marks{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}.ds-bm{display:inline-flex;align-items:center;gap:.4em;min-height:1.625rem;padding:.33rem .55rem .28rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bm--maker,.ds-bm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-bm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-bm-link{display:inline-flex;text-decoration:none}.ds-bm-link:hover .ds-bm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-bench a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-bench__summary{margin:0;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.55;color:var(--ink-soft,#4a5360)}@media (max-width:859px){.ds-bench{grid-template-columns:minmax(0,1fr);padding:22px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Maker's Mark",
+    "overview": "The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each live product wears its own real colors wherever it appears. The SP mark stays blued on all of them.\n\nType does most of the work. Science Gothic, a squared grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Atkinson Hyperlegible Next sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.\n\nReal product screens and the headshot are the only pictures. The site's own surfaces carry no texture, gradient or glass, no hairline grid, no eyebrow labels and no section numbers. Only a product screen casts a shadow. The work never appears as a grid of same-size project cards or as text-left, image-right feature bands.",
+    "keyCharacteristics": [
+      "Polished steel ground, ink text and one accent, blued steel.",
+      "Cut corners on every standalone shape. Nothing is rounded.",
+      "Struck capitals in marks that certify facts: SP, Live, Code, dates and layers built.",
+      "Live products in their own colors, on full-bleed plates and bench rows.",
+      "Science Gothic cut wide or narrow with its width axis, and Atkinson Hyperlegible Next for reading.",
+      "One motion, the strike, which presses each mark in turn and never hides it."
+    ],
+    "rules": [
+      {
+        "name": "The Maker's Mark Rule",
+        "body": "The SP mark is always Blued Steel with Blued Paper letters, on every colorway, page and share card. A product may recolor every other mark but never this one. The Contact band is the one exception: it is blued itself, so its SP stamp turns steel with blued letters.",
+        "section": "colors"
+      },
+      {
+        "name": "The Own Colors Rule",
+        "body": "A product's colors stay on that product's plate, bench row, project page header and share card. The maker's pages never borrow them, and no product wears another's.",
+        "section": "colors"
+      },
+      {
+        "name": "The Legible Colorway Rule",
+        "body": "A new colorway fills every role in the table from the product's real colors, and every text pair passes 4.5:1. When nothing softer passes on the field, soft text stays at full strength, so the Trading Desk's soft text is white on its teal (4.77:1). Summaries in light text on the teal and night fields get a 1.68 line height and 0.01em tracking.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Big Voice Rule",
+        "body": "The name is the largest type on the site, and everything else steps well below it. Nothing outgrows the name's 88px.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cut Width Rule",
+        "body": "Science Gothic's width axis sets how wide each heading is cut. Section titles are widest (125), then page titles (120), marks and section heads (118), plate and bench names (116), the name (112), running titles (108-114) and the role line (106). Reading text never uses Science Gothic.",
+        "section": "typography"
+      },
+      {
+        "name": "The Struck Capitals Rule",
+        "body": "Capitals belong to marks. Headings, buttons and labels stay in mixed case, and open tracking (0.04em and wider) is for marks only. A domain inside a mark keeps its lowercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Full-Bleed Field Rule",
+        "body": "A colorway's field runs edge to edge. Only the content inside it returns to the 1240px frame.",
+        "section": "layout"
+      },
+      {
+        "name": "The 44px Rule",
+        "body": "Every text control is at least 44px tall: nav links, text actions, back links, footer links and the home link. Buttons are 48px, and the masthead CV button is 40px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lifted Proof Rule",
+        "body": "Only a real product screen on a plate casts a shadow. Everything else stays flat, and nothing gets a hard offset shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Cut Corner Rule",
+        "body": "If an object stands alone, cut its corners with a bevel sized to it. If it sits in text, keep it square. Never round a corner.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Struck and Pale Rule",
+        "body": "A struck mark stands out from its field in full color. A pale mark sits one small step off its field, so it reads as not struck yet, but its letters still pass 4.5:1.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do start every hallmark row with the blued SP mark, then the standing, then Code.",
+      "Do give a new live product its own colorway: fill every role in the colorway table from its real colors, and check each text pair at 4.5:1 or better.",
+      "Do mark anything not built yet as pale, and give a pale layer the spoken label \"not built yet\".",
+      "Do use only real, public first screens of live products, taken from their own sites. Ship a phone capture for widths under 760px and a provenance file beside each image.",
+      "Do cut the corners of any standalone object with a bevel sized to it: 5px on marks, 7px on buttons, 8-12px on panels, rows and screens.",
+      "Do put the bevel on an inner face and the link outside it, so the 2px focus ring is never clipped.",
+      "Do keep every text control at least 44px tall.",
+      "Do set reading text in Atkinson Hyperlegible Next at 17px within the 46ch measure."
+    ],
+    "donts": [
+      "Don't round a corner. border-radius stays 0.",
+      "Don't set text in capitals outside marks, and don't space out the letters of a heading.",
+      "Don't put a label, number or kicker above a section or page heading. The only thing above a page title is a back link.",
+      "Don't number page sections. Codes that belong to the content, like the exam's D1 to D5, go inside marks.",
+      "Don't add texture, grain, gradients or glass. Steel is a flat fill.",
+      "Don't draw hairline grids or divider rules between rows. Rows are separated by gaps and tone, and the only 1px lines are the screen frame and the masthead rule.",
+      "Don't lift anything but a product screen on a plate, and never use a hard offset shadow.",
+      "Don't recolor the SP mark, and don't let a product's colors leave its own plate, bench row, page header and share card.",
+      "Don't show the work as a grid of same-size cards or as text-left, image-right feature bands.",
+      "Don't use stock photos, illustrations, device mockups or invented screens. The headshot and real product screens are the only pictures.",
+      "Don't use text glyphs or icon fonts as icons, and don't put the diagonal arrow on a link that stays on the site or opens mail.",
+      "Don't hide a mark in order to animate it in. The strike presses a mark that is already there."
+    ]
+  }
+}

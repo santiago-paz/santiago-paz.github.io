@@ -6,10 +6,9 @@ export const dynamic = 'force-static'
 export function GET() {
   const profile = getProfile()
   return ogCard({
-    eyebrow: profile.role,
     title: profile.name,
-    subtitle: profile.tagline,
-    footer: `${profile.location} · EU work-authorized`,
-    withPhoto: true,
+    subtitle: `${profile.role}. ${profile.tagline}`,
+    marks: [profile.location.split(',')[0], 'EU work permit', '13 yrs'],
+    image: { kind: 'portrait' },
   })
 }

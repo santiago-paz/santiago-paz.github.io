@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Icon } from '@/components/Icon'
 
-// Give the 404 its own title — otherwise it inherits the site title and reads
+// Give the 404 its own title, or it inherits the site title and reads
 // like a real page in search results.
 //
 // The robots override matters: Next emits its own `noindex` for not-found, and
@@ -14,15 +15,23 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="wrap" style={{ paddingBottom: 64 }}>
-      <p className="eyebrow">404</p>
-      <h1 className="page-title">Not found</h1>
-      <p className="page-intro">
-        That page doesn’t exist.{' '}
-        <Link href="/" className="more" style={{ marginTop: 0 }}>
-          Back home →
-        </Link>
+    <main className="page page--reading" id="main-content" tabIndex={-1}>
+      <h1 className="page-title">Page not found</h1>
+      <p className="page-lead">
+        Nothing lives at this address. The link may be old, or the page may have moved.
       </p>
+      <div className="actions">
+        <Link href="/" className="button">
+          <span className="button__face">
+            <Icon name="arrow-left" />
+            Go to the home page
+          </span>
+        </Link>
+        <Link href="/#work" className="text-action">
+          See the work
+          <Icon name="arrow-right" />
+        </Link>
+      </div>
     </main>
   )
 }

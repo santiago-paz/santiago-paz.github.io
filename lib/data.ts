@@ -5,6 +5,8 @@ import experienceData from '@/data/experience.json'
 
 export type ProjectGroup = 'ai-engineering' | 'ai-product' | 'creative-client'
 
+export type RegisterEntry = { mark: string; text: string }
+
 export type Project = {
   slug: string
   title: string
@@ -12,6 +14,15 @@ export type Project = {
   order: number
   summary: string
   role: string
+  /** Layers Santiago built, in build order: the base first, deploy last. */
+  built: string[]
+  /** Layers designed but not built yet. */
+  planned?: string[]
+  /** Set when the project is not simply live or in a public repo. */
+  stage?: 'In progress' | 'Waitlist'
+  /** Real contents for a project with no product screen to show. */
+  register?: RegisterEntry[]
+  registerNote?: string
   stack: string[]
   highlights: string[]
   links: { repo?: string; demo?: string }
@@ -34,6 +45,7 @@ export type Profile = {
   tagline: string
   location: string
   workAuthorization: string
+  availability: string
   languages: Language[]
   email: string
   image: string
@@ -81,8 +93,8 @@ const faq = faqData as unknown as FaqItem[]
 const experience = experienceData as unknown as Experience
 
 export const GROUP_LABELS: Record<ProjectGroup, string> = {
-  'ai-engineering': 'AI engineering',
-  'ai-product': 'AI & product',
+  'ai-engineering': 'Engineering',
+  'ai-product': 'Product',
   'creative-client': 'Creative & client',
 }
 
@@ -94,8 +106,10 @@ export function getProfile(): Profile {
  * Projects in curated order.
  *
  * `order` is global rather than per-group: the CV leads with Contract Lens,
- * Multi-Agent Trading Desk and bedrock-genai-labs, and the site has to open
- * with the same three. `group` is only a label on the detail page.
+ * Reema and Multi-Agent Trading Desk, and the site has to open with the same
+ * three. Those are also the three with a public screen and their own colorway,
+ * so the plates at the top of the home page stay filled. `group` is only a
+ * label on the detail page.
  */
 export function getProjects(): Project[] {
   return [...projects].sort((a, b) => a.order - b.order)

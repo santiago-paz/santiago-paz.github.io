@@ -31,7 +31,7 @@ export function alternates(path = '/') {
  *
  * Pass the page path — `ogImage('/about')` → `/about/og.png`.
  */
-export function ogImage(path = '', alt = `${profile.name} — ${profile.role}`) {
+export function ogImage(path = '', alt = `${profile.name} - ${profile.role}`) {
   const base = path.replace(/\/$/, '')
   return [{ url: `${base}/og.png`, width: 1200, height: 630, alt }]
 }
@@ -119,7 +119,7 @@ export function websiteJsonLd() {
     '@type': 'WebSite',
     '@id': `${SITE.baseUrl}/#website`,
     url: SITE.baseUrl,
-    name: `${profile.name} — ${profile.role}`,
+    name: `${profile.name} - ${profile.role}`,
     description: SITE.description,
     inLanguage: 'en',
     publisher: { '@id': PERSON_ID },
@@ -132,7 +132,7 @@ export function profilePageJsonLd() {
     '@type': 'ProfilePage',
     '@id': `${SITE.baseUrl}/#profilepage`,
     url: SITE.baseUrl,
-    name: `${profile.name} — ${profile.role}`,
+    name: `${profile.name} - ${profile.role}`,
     inLanguage: 'en',
     mainEntity: { '@id': PERSON_ID },
   }
@@ -214,9 +214,9 @@ export function blogJsonLd(posts: PostMeta[]) {
     '@type': 'Blog',
     '@id': `${SITE.baseUrl}/writing#blog`,
     url: absUrl('/writing'),
-    name: `Writing — ${profile.name}`,
+    name: `Writing - ${profile.name}`,
     description:
-      'Essays and notes on building production AI, plus the occasional more personal piece.',
+      'Essays and notes on engineering, plus the occasional more personal piece.',
     inLanguage: 'en',
     author: { '@id': PERSON_ID },
     blogPost: posts.map((post) => ({

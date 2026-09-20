@@ -1,6 +1,6 @@
 # santiagopaz.com
 
-Personal site of Santiago Paz — AI engineer, Berlin.
+Personal site of Santiago Paz, senior full-stack engineer, Berlin.
 
 Next.js (App Router) built as a **static export** and published to GitHub Pages
 at [santiagopaz.com](https://santiagopaz.com).
@@ -14,7 +14,7 @@ pnpm dev          # http://localhost:3000
 
 ```bash
 pnpm lint
-pnpm test         # vitest — unit tests for the data/posts layer
+pnpm test         # vitest, unit tests for the data/posts layer
 pnpm test:e2e     # playwright
 pnpm build        # static export → ./out
 ```
@@ -43,4 +43,4 @@ Two details that matter for Pages:
 
 Because it is a static export, anything requiring a server at request time
 (Server Actions, ISR, dynamic Route Handlers, `next/image` optimization) is
-unavailable — metadata routes are pinned with `export const dynamic = 'force-static'`.
+unavailable. Metadata routes are pinned with `export const dynamic = 'force-static'`.

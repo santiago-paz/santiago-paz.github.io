@@ -1,28 +1,39 @@
 import type { Metadata, Viewport } from 'next'
 import Link from 'next/link'
-import { Crete_Round, Inter_Tight } from 'next/font/google'
+import { Science_Gothic, Atkinson_Hyperlegible_Next } from 'next/font/google'
 import { SITE } from '@/lib/site'
 import { getProfile } from '@/lib/data'
+import { cvSizeLabel } from '@/lib/plates'
 import { JsonLd } from '@/components/JsonLd'
+import { Mark } from '@/components/Mark'
+import { Icon } from '@/components/Icon'
+import { SiteNav } from '@/components/SiteNav'
+import { StrikeObserver } from '@/components/StrikeObserver'
 import { websiteJsonLd, personJsonLd, ogImage } from '@/lib/seo'
 import './globals.css'
 
-const display = Crete_Round({
-  variable: '--font-crete',
+// Squared, struck capitals for names and marks; the width axis sets how wide each mark is cut.
+// next/font has no metric data for either face, so no size-matched fallback is generated.
+const markFace = Science_Gothic({
+  variable: '--font-mark',
   subsets: ['latin'],
-  weight: ['400'],
-  style: ['normal', 'italic'],
+  axes: ['wdth'],
   display: 'swap',
+  adjustFontFallback: false,
+  fallback: ['Arial Narrow', 'Arial', 'sans-serif'],
 })
 
-const body = Inter_Tight({
-  variable: '--font-inter-tight',
+// Built for legibility first, which is the promise the site makes about accessibility.
+const textFace = Atkinson_Hyperlegible_Next({
+  variable: '--font-text',
   subsets: ['latin'],
   display: 'swap',
+  adjustFontFallback: false,
+  fallback: ['system-ui', 'sans-serif'],
 })
 
 const profile = getProfile()
-const siteTitle = `${SITE.name} — ${profile.role}`
+const siteTitle = `${SITE.name} - ${profile.role}`
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
@@ -31,7 +42,7 @@ export const metadata: Metadata = {
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
-  // Feed autodiscovery — lets readers and aggregators find the writing.
+  // Feed autodiscovery - lets readers and aggregators find the writing.
   alternates: {
     types: { 'application/rss+xml': `${SITE.baseUrl}/writing/rss.xml` },
   },
@@ -41,14 +52,15 @@ export const metadata: Metadata = {
   publisher: SITE.name,
   keywords: [
     'Santiago Paz',
-    'AI engineer',
-    'LLM application engineer',
-    'AI engineer Berlin',
-    'production AI',
-    'RAG',
-    'LLM evals',
-    'Next.js',
+    'full-stack engineer',
+    'senior full-stack engineer Berlin',
+    'React developer Berlin',
+    'Next.js developer',
     'TypeScript',
+    'Node.js',
+    'product engineer Berlin',
+    'GraphQL',
+    'multi-tenant SaaS',
     'Python',
   ],
   // Emits <meta name="google-site-verification" ...> for Search Console.
@@ -83,46 +95,58 @@ export const metadata: Metadata = {
   },
 }
 
-// Tints mobile browser chrome to match the page rather than leaving a white bar
-// above a dark site.
+// Matches the mobile browser chrome to the steel ground.
 export const viewport: Viewport = {
-  themeColor: '#0a0f1c',
-  colorScheme: 'dark',
+  themeColor: '#edf0f3',
+  colorScheme: 'light',
 }
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const cvLabel = cvSizeLabel()
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${markFace.variable} ${textFace.variable}`}>
       <body>
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <JsonLd data={[websiteJsonLd(), personJsonLd()]} />
-        <header className="site-header">
-          <div className="bar">
-            <Link href="/" className="home">
-              {profile.name}
+        <header className="masthead">
+          <div className="masthead__bar">
+            <Link href="/" className="maker">
+              <Mark tone="maker" srLabel={`${profile.name}, home`}>SP</Mark>
+              <span className="maker__name" aria-hidden="true" translate="no">
+                {profile.name}
+              </span>
             </Link>
-            <nav>
-              <Link href="/about">About</Link>
-              <Link href="/#work">Work</Link>
-              <Link href="/writing">Writing</Link>
-              <a href={`mailto:${profile.email}`}>Contact</a>
-            </nav>
+            <SiteNav />
+            <a className="button button--small" href={profile.links.cv} download="Santiago-Paz-CV.pdf">
+              <span className="button__face">
+                <Icon name="download" />
+                CV
+                <span className="sr-only"> download ({cvLabel})</span>
+              </span>
+            </a>
           </div>
         </header>
         {children}
         <footer className="site-footer">
-          <div className="bar">
-            <span>© {profile.name}</span>
+          <div className="site-footer__bar">
+            <p className="site-footer__identity">
+              © {new Date().getFullYear()} {profile.name}
+              <span>{profile.location}</span>
+            </p>
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
             <a href={profile.links.github} target="_blank" rel="noreferrer">
-              GitHub
+              GitHub <Icon name="external" />
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
             <a href={profile.links.linkedin} target="_blank" rel="noreferrer">
-              LinkedIn
+              LinkedIn <Icon name="external" />
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
         </footer>
+        <StrikeObserver />
       </body>
     </html>
   )

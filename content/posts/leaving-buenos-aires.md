@@ -9,14 +9,14 @@ I left Buenos Aires with two suitcases and a codebase. The suitcases were the
 easy part.
 
 Rebuilding a career in a new country is a strange kind of humbling. The work you
-did doesn't disappear, but the shorthand for it does — the references who can
+did doesn't disappear, but the shorthand for it does: the references who can
 vouch, the reputation that walked into rooms ahead of you, the sense of where
 you stand. You arrive fluent in your craft and illiterate in the local grammar
 of how it's valued.
 
 So I did the only thing that has ever worked for me: I built. Not to have
 something to show, exactly, but because building is how I think, and thinking is
-how I get my footing back. Every project on this site is partly that — a way of
+how I get my footing back. Every project on this site is partly that: a way of
 saying *here is what I can do*, in a language that doesn't need translation.
 
 Berlin has been generous. Cold, direct, occasionally baffling, but generous.

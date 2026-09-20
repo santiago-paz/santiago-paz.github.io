@@ -5,6 +5,8 @@ import { SITE } from '@/lib/site'
 import { getPost, getPostSlugs, formatDate } from '@/lib/posts'
 import { Markdown } from '@/components/Markdown'
 import { JsonLd } from '@/components/JsonLd'
+import { Mark } from '@/components/Mark'
+import { Icon } from '@/components/Icon'
 import { blogPostingJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 export const dynamicParams = false
@@ -35,7 +37,7 @@ export async function generateMetadata({
       authors: [SITE.name],
       images: ogImage(path, post.title),
     },
-    // See the note in app/projects/[slug]/page.tsx — `card` must be restated.
+    // See the note in app/projects/[slug]/page.tsx: `card` must be restated.
     twitter: {
       card: 'summary_large_image',
       title: post.title,
@@ -55,7 +57,7 @@ export default async function PostPage({
   if (!post) notFound()
 
   return (
-    <main className="wrap">
+    <main className="page page--reading" id="main-content" tabIndex={-1}>
       <JsonLd
         data={[
           blogPostingJsonLd(post),
@@ -66,17 +68,20 @@ export default async function PostPage({
           ]),
         ]}
       />
-      <Link href="/writing" className="backlink">
-        ‹ Writing
+      <Link href="/writing/" className="backlink">
+        <Icon name="arrow-left" />
+        All writing
       </Link>
-      <header
-        className={`post-head${post.kind === 'personal' ? ' personal' : ''}`}
-      >
-        <div className="meta">
-          <span className="kind">{post.kind}</span>
-          <span>{formatDate(post.date)}</span>
+      <header className="post-head">
+        <h1 className="page-title">{post.title}</h1>
+        {/* The date mark sits under the title, the way a plate carries its marks. */}
+        <div className="post-head__meta">
+          <Mark tone="maker" srLabel="By Santiago Paz">SP</Mark>
+          <Mark tone="date">
+            <time dateTime={post.date}>{formatDate(post.date)}</time>
+          </Mark>
+          <span>{post.kind === 'personal' ? 'Personal' : 'Engineering'}</span>
         </div>
-        <h1>{post.title}</h1>
       </header>
       <Markdown>{post.body}</Markdown>
     </main>

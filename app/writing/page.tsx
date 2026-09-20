@@ -2,10 +2,11 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getPosts, formatDate } from '@/lib/posts'
 import { JsonLd } from '@/components/JsonLd'
+import { Mark } from '@/components/Mark'
 import { blogJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
-  'Notes on building production AI, and the occasional more personal piece.'
+  'Notes on engineering, and the occasional more personal piece.'
 
 export const metadata: Metadata = {
   title: 'Writing',
@@ -25,7 +26,7 @@ export default function WritingPage() {
   const posts = getPosts()
 
   return (
-    <main className="wrap">
+    <main className="page" id="main-content" tabIndex={-1}>
       <JsonLd
         data={[
           blogJsonLd(posts),
@@ -35,28 +36,31 @@ export default function WritingPage() {
           ]),
         ]}
       />
-      <Link href="/" className="backlink">
-        ‹ Home
-      </Link>
       <h1 className="page-title">Writing</h1>
-      <p className="page-intro">
-        Notes on building production AI, and the occasional more personal piece.
-      </p>
+      <p className="page-lead">{description}</p>
 
-      <div className="post-list" style={{ marginTop: 32 }}>
-        {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/writing/${post.slug}`}
-            className={`post-item${post.kind === 'personal' ? ' personal' : ''}`}
-          >
-            <span className="date">{formatDate(post.date)}</span>
-            <span className="ptitle">{post.title}</span>
-            <span className="kind">{post.kind}</span>
-            <p className="pdek">{post.summary}</p>
-          </Link>
-        ))}
-      </div>
+      {posts.length ? (
+        <ol className="posts page-section">
+          {posts.map((post, index) => (
+            <li key={post.slug} className="post-row">
+              <Mark tone="date" i={index}>
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+              </Mark>
+              <div>
+                <h2 className="post-row__title">
+                  <Link href={`/writing/${post.slug}`}>{post.title}</Link>
+                </h2>
+                <p className="post-row__summary">{post.summary}</p>
+                <p className="post-row__kind">{post.kind === 'personal' ? 'Personal' : 'Engineering'}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p className="page-section">
+          No posts yet. The <Link href="/writing/rss.xml">RSS feed</Link> will carry the first one.
+        </p>
+      )}
     </main>
   )
 }

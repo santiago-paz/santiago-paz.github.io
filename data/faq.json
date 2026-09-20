@@ -1,22 +1,22 @@
 [
   {
     "q": "Who is Santiago Paz?",
-    "a": "Santiago Paz is an AI engineer based in Berlin, Germany, with 13 years of software engineering experience building high-traffic web platforms. He works on RAG, agents and multi-agent systems — the retrieval, guardrails and evaluation around the model, not just the API call — and is EU work-authorized as an Italian citizen."
+    "a": "Santiago Paz is a senior full-stack engineer based in Berlin, Germany, with 13 years building high-traffic web platforms. He works in TypeScript, React, Next.js and Node.js, with GraphQL, PostgreSQL and Prisma behind them. He is an Italian citizen, so he needs no visa sponsorship to work in the EU."
   },
   {
     "q": "What does Santiago Paz build?",
-    "a": "He ships production AI/LLM systems end-to-end: Contract Lens, a multi-tenant SaaS whose LLM extraction pipeline turns PDF and DOCX contracts into typed, structured data driving a deadline and alert system; Multi-Agent Trading Desk, 12 LLM analyst agents on a LangGraph + FastAPI backend; and bedrock-genai-labs, 26 runnable Amazon Bedrock labs covering RAG, agents, guardrails and LLM-as-judge evaluation. Stack: Python and FastAPI on the back end, TypeScript, React and Next.js on the front end."
+    "a": "Full-stack products, end to end and alone. Contract Lens is a multi-tenant SaaS for German law firms: a contract goes in as a PDF, an LLM extraction step returns typed data, and that data drives deadlines and alerts. Reema adds an embeddable \"listen to this article\" player to media sites, with three text-to-speech providers behind it. Multi-Agent Trading Desk runs against a live broker API and waits for a human to confirm before any order. All three are live. At Dialpad he ships dialpad.com, about 1,900 Next.js pages across five locales, and built most of its blog builder."
   },
   {
     "q": "Where is Santiago Paz based?",
-    "a": "Berlin, Germany. He is EU work-authorized as an Italian citizen and open to senior AI engineering roles across the EU and remotely."
+    "a": "Berlin, Germany. He is an Italian citizen and needs no sponsorship to work in the EU. He is open to senior roles in Berlin, on-site or hybrid, and to fully remote work."
   },
   {
     "q": "What is Santiago Paz's tech stack?",
-    "a": "Python and TypeScript, with LangGraph, the Strands Agents SDK, FastAPI, FAISS and boto3 on the AI side, and React and Next.js on the front end. On AWS he works with Amazon Bedrock — retrieval-augmented generation (RAG), agents and tool use, guardrails, and evaluation harnesses that catch quality drift."
+    "a": "TypeScript first: React, Next.js and Node.js, with GraphQL, PostgreSQL and Prisma behind them, and Tailwind for styling. Contentful is the content back end at Dialpad. He also writes Python and FastAPI. On the AI side he works with LLM APIs directly, including the Anthropic SDK and the Vercel AI SDK, for extraction and drafting inside a product rather than as the product."
   },
   {
     "q": "How can I contact or hire Santiago Paz?",
-    "a": "Email santiago.paz.1992@gmail.com, or reach him on GitHub (github.com/santiago-paz) and LinkedIn. He is open to senior AI/LLM engineering roles."
+    "a": "Email santiago.paz.1992@gmail.com, or reach him on GitHub (github.com/santiago-paz) and LinkedIn. He is open to senior full-stack and product engineering roles."
   }
 ]

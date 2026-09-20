@@ -3,7 +3,7 @@ import { getPosts } from '@/lib/posts'
 import { absUrl } from '@/lib/seo'
 
 // Curated, AI-readable summary of who Santiago Paz is and what he has built.
-// https://llmstxt.org — served at /llms.txt
+// https://llmstxt.org, served at /llms.txt
 export const dynamic = 'force-static'
 
 export function GET() {
@@ -16,15 +16,15 @@ export function GET() {
     '',
     `> ${profile.role} based in ${profile.location} (${profile.workAuthorization}). ${profile.about}`,
     '',
-    `${profile.name} is a senior software engineer who ships production AI/LLM features end-to-end: LLM agents, evaluation harnesses, retrieval pipelines, and the full-stack products around them. Areas of expertise: ${profile.knowsAbout.join(', ')}.`,
+    `${profile.name} is a senior full-stack engineer who ships production software end to end: TypeScript, React and Next.js on the web, with Node.js, GraphQL and PostgreSQL behind them. Areas of expertise: ${profile.knowsAbout.join(', ')}.`,
     '',
     '## Recognition',
-    ...profile.awards.map((a) => `- ${a.title} — ${a.org} (${a.year}).`),
+    ...profile.awards.map((a) => `- ${a.title}. ${a.org} (${a.year}).`),
     '',
     '## Pages',
     `- [Home](${absUrl('/')}): Profile, selected work, and latest writing.`,
     `- [About](${absUrl('/about')}): Full bio, focus, tech stack, and FAQ ("Who is Santiago Paz?").`,
-    `- [Writing](${absUrl('/writing')}): Essays and notes on building production AI.`,
+    `- [Writing](${absUrl('/writing')}): Essays and notes on engineering, plus the occasional personal piece.`,
     `- [llms-full.txt](${absUrl('/llms-full.txt')}): The full text of this site in one file.`,
     '',
     '## Selected work',

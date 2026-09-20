@@ -2,7 +2,7 @@
 title: "Evals are the product, not the model"
 date: "2026-06-15"
 kind: "engineering"
-summary: "Why the evaluation harness — not the base model — decides whether an AI feature ships."
+summary: "Why the evaluation harness, not the base model, decides whether an AI feature ships."
 ---
 
 Every AI feature I have shipped lived or died on one thing: whether I could
@@ -10,7 +10,7 @@ tell, quickly and repeatably, that it was getting *better*. Not the model. The
 harness.
 
 The model is a commodity you rent by the token. Swap it and your prompts mostly
-survive. What does not survive a swap — and what nobody hands you — is a set of
+survive. What does not survive a swap, and what nobody hands you, is a set of
 cases that encodes what "good" means for *your* problem, plus a way to score a
 change against them in seconds.
 
@@ -19,7 +19,7 @@ change against them in seconds.
 You do not need a framework to start. You need:
 
 - **A fixed set of inputs** that covers the boring middle and the scary edges.
-- **A grader** — exact match where you can get it, an LLM judge where you can't,
+- **A grader**: exact match where you can get it, an LLM judge where you can't,
   a human spot-check where it matters.
 - **A number** you trust enough to block a merge on.
 
