@@ -79,7 +79,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - `data/projects.json`: seven projects. Live demos: Contract Lens (trycontractlens.com), Multi-Agent Trading Desk (trading-desk.santiagopaz.com) and Reema (reema.ar). Public repos: contract-lens, multi-agent-trading-desk, bedrock-genai-labs, reddit-idea-miner and DiffCV. Pegala has no public link.
 - `data/faq.json`: five questions and answers, which also feed the FAQPage schema.
 - `content/posts/`: "Evals are the product, not the model" (engineering, 2026-06-15) and "Leaving Buenos Aires" (personal, 2026-02-02).
-- `public/cv/santiago-paz.pdf`: the CV. Its source is not in this repo.
+- `public/cv/santiago-paz.pdf`: the CV. Its source is not in this repo; it is built in the job-search workspace and copied here by hand, which is why it drifts. Copy the **single-column** full-stack build (`cv/main_fullstack.pdf`), never the one-page sidebar. A CV downloaded from a public site often gets fed into an ATS, and the sidebar is two-column, so text extraction interleaves the rail into the body and drops the skills list between job titles and dates. Check two things on every swap: the headline reads Senior Full-Stack Engineer, and Education reads "Computer Science, then Data Science (both unfinished)". No degree was ever conferred.
 - `public/credentials/testgorilla-assessment.pdf`: a TestGorilla assessment (React / Node / AI / Python), 86th percentile overall, completed 2026-08-19. LinkedIn links to it, but the site doesn't.
 - `public/santiago-paz.png`: an 800x800 headshot, taken outdoors.
 - Award: 3rd place globally at the Hack-Nation Global AI Hackathon (2,000+ participants) in 2026, from the YETI Fellowship and Startup Factory boOst in Dresden.
