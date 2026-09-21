@@ -106,7 +106,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const cvLabel = cvSizeLabel()
   return (
-    <html lang="en" className={`${markFace.variable} ${textFace.variable}`}>
+    <html
+      lang="en"
+      className={`${markFace.variable} ${textFace.variable}`}
+      // The stylesheet sets scroll-behavior: smooth for in-page anchors. Since Next.js 16,
+      // this attribute is what makes the router scroll to the top instantly on a route change;
+      // without it the jump becomes a second-long animation that any wheel input cancels midway.
+      data-scroll-behavior="smooth"
+    >
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <JsonLd data={[websiteJsonLd(), personJsonLd()]} />
