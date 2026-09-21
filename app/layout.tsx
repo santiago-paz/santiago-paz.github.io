@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import Link from 'next/link'
-import { Science_Gothic, Atkinson_Hyperlegible_Next } from 'next/font/google'
+import { Mozilla_Headline, Mozilla_Text } from 'next/font/google'
 import { SITE } from '@/lib/site'
 import { getProfile } from '@/lib/data'
 import { cvSizeLabel } from '@/lib/plates'
@@ -12,19 +12,20 @@ import { StrikeObserver } from '@/components/StrikeObserver'
 import { websiteJsonLd, personJsonLd, ogImage } from '@/lib/seo'
 import './globals.css'
 
-// Squared, struck capitals for names and marks; the width axis sets how wide each mark is cut.
+// Struck capitals for names and marks; the width axis sets how wide each mark is cut.
+// Weight tops out at 700, which is the heaviest strike the site has.
 // next/font has no metric data for either face, so no size-matched fallback is generated.
-const markFace = Science_Gothic({
+const markFace = Mozilla_Headline({
   variable: '--font-mark',
   subsets: ['latin'],
   axes: ['wdth'],
   display: 'swap',
   adjustFontFallback: false,
-  fallback: ['Arial Narrow', 'Arial', 'sans-serif'],
+  fallback: ['Arial', 'Helvetica', 'sans-serif'],
 })
 
-// Built for legibility first, which is the promise the site makes about accessibility.
-const textFace = Atkinson_Hyperlegible_Next({
+// The reading face of the same family, drawn for running text rather than for headlines.
+const textFace = Mozilla_Text({
   variable: '--font-text',
   subsets: ['latin'],
   display: 'swap',

@@ -97,9 +97,9 @@ async function screenUri(slug: string) {
 /** The site's single share card design, used by every `og.png` route. */
 export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', image }: CardProps) {
   const [markFace, textFace, textBold] = await Promise.all([
-    readFile(join(process.cwd(), 'assets', 'ScienceGothic-Expanded-ExtraBold.ttf')),
-    readFile(join(process.cwd(), 'assets', 'AtkinsonHyperlegibleNext-Regular.ttf')),
-    readFile(join(process.cwd(), 'assets', 'AtkinsonHyperlegibleNext-Bold.ttf')),
+    readFile(join(process.cwd(), 'assets', 'MozillaHeadline-Wide-Bold.ttf')),
+    readFile(join(process.cwd(), 'assets', 'MozillaText-Regular.ttf')),
+    readFile(join(process.cwd(), 'assets', 'MozillaText-Bold.ttf')),
   ])
   const c = COLORS[colorway]
 
@@ -127,7 +127,7 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
           position: 'relative',
           background: c.field,
           color: c.ink,
-          fontFamily: 'Atkinson Hyperlegible Next',
+          fontFamily: 'Mozilla Text',
         }}
       >
         <div
@@ -143,7 +143,7 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
             <div
               style={{
                 display: 'flex',
-                fontFamily: 'Science Gothic',
+                fontFamily: 'Mozilla Headline',
                 fontSize: titleSize,
                 lineHeight: 1,
                 letterSpacing: -1,
@@ -164,7 +164,7 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
                 padding: '12px 16px 10px',
                 background: BLUED,
                 color: ON_BLUED,
-                fontFamily: 'Science Gothic',
+                fontFamily: 'Mozilla Headline',
                 fontSize: 22,
                 letterSpacing: 2,
                 borderRadius: 3,
@@ -183,7 +183,7 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
                     padding: '12px 16px 10px',
                     background: link ? c.linkBg : c.statusBg,
                     color: link ? c.linkFg : c.statusFg,
-                    fontFamily: 'Science Gothic',
+                    fontFamily: 'Mozilla Headline',
                     fontSize: 22,
                     letterSpacing: 2,
                     textTransform: 'uppercase',
@@ -241,9 +241,9 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
     {
       ...OG_SIZE,
       fonts: [
-        { name: 'Science Gothic', data: markFace, style: 'normal', weight: 800 },
-        { name: 'Atkinson Hyperlegible Next', data: textFace, style: 'normal', weight: 400 },
-        { name: 'Atkinson Hyperlegible Next', data: textBold, style: 'normal', weight: 700 },
+        { name: 'Mozilla Headline', data: markFace, style: 'normal', weight: 700 },
+        { name: 'Mozilla Text', data: textFace, style: 'normal', weight: 400 },
+        { name: 'Mozilla Text', data: textBold, style: 'normal', weight: 700 },
       ],
     },
   )

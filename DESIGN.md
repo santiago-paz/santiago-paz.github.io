@@ -34,97 +34,97 @@ colors:
   reema-frame: "rgb(231 237 240 / 0.16)"
 typography:
   name:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(3rem, 1.9rem + 4.1vw, 5.5rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 0.94
     letterSpacing: "-0.015em"
     fontVariation: "'wdth' 112"
   page-title:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(2.5rem, 1.8rem + 2.8vw, 4.25rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 0.98
     letterSpacing: "-0.015em"
     fontVariation: "'wdth' 120"
   post-title:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(2.25rem, 1.6rem + 2.6vw, 3.75rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 0.98
     letterSpacing: "-0.015em"
     fontVariation: "'wdth' 120"
   section-title:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(2rem, 1.45rem + 1.9vw, 2.75rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1
     letterSpacing: "-0.01em"
     fontVariation: "'wdth' 125"
   plate-name:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1
     letterSpacing: "-0.01em"
     fontVariation: "'wdth' 116"
   subhead:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(1.5rem, 1.25rem + 1vw, 2.125rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1.05
     fontVariation: "'wdth' 118"
   bench-title:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(1.375rem, 1.15rem + 0.9vw, 1.75rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1.05
     fontVariation: "'wdth' 118"
   bench-name:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(1.125rem, 1rem + 0.5vw, 1.375rem)"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1.1
     fontVariation: "'wdth' 116"
   role-line:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "clamp(1.3rem, 1.05rem + 1vw, 1.875rem)"
-    fontWeight: 650
+    fontWeight: 600
     lineHeight: 1.15
     fontVariation: "'wdth' 106"
   lead:
-    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
+    fontFamily: "Mozilla Text, system-ui, sans-serif"
     fontSize: "clamp(1.125rem, 1.02rem + 0.45vw, 1.375rem)"
     fontWeight: 400
     lineHeight: 1.5
   body:
-    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
+    fontFamily: "Mozilla Text, system-ui, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
   reading:
-    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
+    fontFamily: "Mozilla Text, system-ui, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.7
   small:
-    fontFamily: "Atkinson Hyperlegible Next, system-ui, sans-serif"
+    fontFamily: "Mozilla Text, system-ui, sans-serif"
     fontSize: "0.9375rem"
     lineHeight: 1.6
   code:
     fontFamily: "ui-monospace, SF Mono, Menlo, Consolas, monospace"
     fontSize: "0.9em"
   mark:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "0.8125rem"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1
     letterSpacing: "0.06em"
     fontVariation: "'wdth' 118"
   button:
-    fontFamily: "Science Gothic, Arial Narrow, Arial, sans-serif"
+    fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
     fontSize: "0.9375rem"
-    fontWeight: 800
+    fontWeight: 700
     lineHeight: 1
     letterSpacing: "0.015em"
     fontVariation: "'wdth' 110"
@@ -133,7 +133,7 @@ rounded:
 spacing:
   page: "1240px"
   gutter: "clamp(20px, 4vw, 48px)"
-  measure: "46ch"
+  measure: "50ch"
   head-h: "64px"
 components:
   mark-maker:
@@ -255,7 +255,7 @@ components:
 
 The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each live product wears its own real colors wherever it appears. The SP mark stays blued on all of them.
 
-Type does most of the work. Science Gothic, a squared grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Atkinson Hyperlegible Next sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.
+Type does most of the work. Mozilla Headline, a grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Mozilla Text, its reading companion, sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.
 
 Real product screens and the headshot are the only pictures. The site's own surfaces carry no texture, gradient or glass, no hairline grid, no eyebrow labels and no section numbers. Only a product screen casts a shadow. The work never appears as a grid of same-size project cards or as text-left, image-right feature bands.
 
@@ -264,7 +264,7 @@ Real product screens and the headshot are the only pictures. The site's own surf
 - Cut corners on every standalone shape. Nothing is rounded.
 - Struck capitals in marks that certify facts: SP, Live, Code, dates and layers built.
 - Live products in their own colors, on full-bleed plates and bench rows.
-- Science Gothic cut wide or narrow with its width axis, and Atkinson Hyperlegible Next for reading.
+- Mozilla Headline cut wide or narrow with its width axis, and Mozilla Text for reading.
 - One motion, the strike, which presses each mark in turn and never hides it.
 
 ## Colors
@@ -311,30 +311,30 @@ A colorway fills the same roles on every product. The maker's steel colorway is 
 
 ## Typography
 
-**Display Font:** Science Gothic (with Arial Narrow, Arial, sans-serif)
-**Body Font:** Atkinson Hyperlegible Next (with system-ui, sans-serif)
-**Label/Mono Font:** Science Gothic sets the marks too. Inline code uses the system monospace stack (ui-monospace, SF Mono, Menlo, Consolas).
+**Display Font:** Mozilla Headline (with Arial Narrow, Arial, sans-serif)
+**Body Font:** Mozilla Text (with system-ui, sans-serif)
+**Label/Mono Font:** Mozilla Headline sets the marks too. Inline code uses the system monospace stack (ui-monospace, SF Mono, Menlo, Consolas).
 
-**Character:** Science Gothic has squared, struck capitals and a width axis (wdth), so each heading is cut to its own width, the way a die is cut. Atkinson Hyperlegible Next was drawn for legibility first, which suits a site that claims accessibility skill. Science Gothic names and certifies; Atkinson explains.
+**Character:** Mozilla Headline has struck capitals and a width axis (wdth) running 75 to 125, so each heading is cut to its own width, the way a die is cut. Its weight stops at 700, which is therefore the heaviest strike on the site. Mozilla Text is the same family's reading face, drawn for running text rather than for headlines. Mozilla Headline names and certifies; Mozilla Text explains.
 
 ### Hierarchy
-- **Name** (800, 48-88px fluid, line height 0.94, wdth 112): the hero name on the home page, set on two lines. It is the one big voice.
-- **Page title** (800, 40-68px, 0.98, wdth 120): the h1 on inner pages. Post titles step down to 36-60px because they run long.
-- **Section title** (800, 32-44px, 1, wdth 125): Work, Writing and Contact on the home page. It is the widest cut on the site.
-- **Plate name** (800, 24-34px, 1, wdth 116): the product name across the top of a plate. Inner-page section heads such as Role, Stack and Highlights share this step at wdth 118.
-- **Bench title and bench name** (800; 22-28px at wdth 118, 18-22px at wdth 116): "More projects" and the project names in its rows.
-- **Role line** (650, 21-30px, 1.15, wdth 106): the role under the name in the hero.
-- **Running titles** (750-800, wdth 108-114): these borrow existing steps rather than adding sizes. Post titles in lists take the bench-title step (22-28px). Headings inside long text take the section-head step (24-34px) for h2 and the bench-name step (18-22px) for h3. Experience roles and FAQ questions take the bench-name step.
-- **Lead** (Atkinson 400, 18-22px, 1.5): the line under a page title. The hero tagline and the Contact lead use the same size at 1.45.
-- **Body** (Atkinson 400, 17px, 1.6): all running text. Long reading opens to 1.7. The measure is 46ch, about 70 characters, because Atkinson's zero is wide.
-- **Small** (Atkinson, 15px): the footer, list labels, dates and meta lines. Labels at this size go bold (700), never capitals.
-- **Mark** (Science Gothic 800, 13px, 0.06em tracking, capitals, wdth 118): the letters of every hallmark. Bench-row marks keep 13px letters and only tighten their padding. A domain keeps its lowercase, also at 13px, with 0.015em tracking.
-- **Button** (Science Gothic 800, 15px, 0.015em, wdth 110, sentence case): button labels. The masthead CV button keeps the 15px label and only tightens its padding.
+- **Name** (700, 48-88px fluid, line height 0.94, wdth 112): the hero name on the home page, set on two lines. It is the one big voice.
+- **Page title** (700, 40-68px, 0.98, wdth 120): the h1 on inner pages. Post titles step down to 36-60px because they run long.
+- **Section title** (700, 32-44px, 1, wdth 125): Work, Writing and Contact on the home page. It is the widest cut on the site.
+- **Plate name** (700, 24-34px, 1, wdth 116): the product name across the top of a plate. Inner-page section heads such as Role, Stack and Highlights share this step at wdth 118.
+- **Bench title and bench name** (700; 22-28px at wdth 118, 18-22px at wdth 116): "More projects" and the project names in its rows.
+- **Role line** (600, 21-30px, 1.15, wdth 106): the role under the name in the hero.
+- **Running titles** (640-700, wdth 108-114): these borrow existing steps rather than adding sizes. Post titles in lists take the bench-title step (22-28px). Headings inside long text take the section-head step (24-34px) for h2 and the bench-name step (18-22px) for h3. Experience roles and FAQ questions take the bench-name step.
+- **Lead** (Mozilla Text 400, 18-22px, 1.5): the line under a page title. The hero tagline and the Contact lead use the same size at 1.45.
+- **Body** (Mozilla Text 400, 17px, 1.6): all running text. Long reading opens to 1.7. The measure is 50ch, about 69 characters, because Mozilla Text's zero is wide.
+- **Small** (Mozilla Text, 15px): the footer, list labels, dates and meta lines. Labels at this size go bold (700), never capitals.
+- **Mark** (Mozilla Headline 700, 13px, 0.06em tracking, capitals, wdth 118): the letters of every hallmark. Bench-row marks keep 13px letters and only tighten their padding. A domain keeps its lowercase, also at 13px, with 0.015em tracking.
+- **Button** (Mozilla Headline 700, 15px, 0.015em, wdth 110, sentence case): button labels. The masthead CV button keeps the 15px label and only tightens its padding.
 
 ### Named rules
 **The One Big Voice Rule.** The name is the largest type on the site, and everything else steps well below it. Nothing outgrows the name's 88px.
 
-**The Cut Width Rule.** Science Gothic's width axis sets how wide each heading is cut. Section titles are widest (125), then page titles (120), marks and section heads (118), plate and bench names (116), the name (112), running titles (108-114) and the role line (106). Reading text never uses Science Gothic.
+**The Cut Width Rule.** Mozilla Headline's width axis sets how wide each heading is cut. Section titles are widest (125), then page titles (120), marks and section heads (118), plate and bench names (116), the name (112), running titles (108-114) and the role line (106). Reading text never uses Mozilla Headline.
 
 **The Struck Capitals Rule.** Capitals belong to marks. Headings, buttons and labels stay in mixed case, and open tracking (0.04em and wider) is for marks only. A domain inside a mark keeps its lowercase.
 
@@ -348,9 +348,9 @@ A plate reads top to bottom. The title strip puts the name on the left and the h
 
 The bench lists the rest of the work as full-width rows, 10px apart, in one column. A plain row splits its text 5:7, with the name and marks on the left and the summary on the right. A live product on the bench is set like a small plate, with its screen capped at 640px (280px under 760px).
 
-Inner pages use the same frame. Reading pages (posts and the 404) narrow to the 46ch measure plus gutters. A project page opens with the product's plate as its header. Below it, a 36:64 grid puts role and stack on the side and highlights and overview in the main column. The grid stacks under 860px.
+Inner pages use the same frame. Reading pages (posts and the 404) narrow to the 50ch measure plus gutters. A project page opens with the product's plate as its header. Below it, a 36:64 grid puts role and stack on the side and highlights and overview in the main column. The grid stacks under 860px.
 
-Space between bands is large and fluid: 56-96px before the bench and around Writing, 64-120px inside the Contact band, 40-72px above plate content and 56-88px below it. Space inside a group is tight: 6px between hallmarks, 3px between built layers and 12px between register rows. Text caps are 46ch for body and long text, 60ch for plate and bench summaries, 62ch for post summaries, 52ch for page leads and 30ch for the hero tagline (40ch once the hero stacks).
+Space between bands is large and fluid: 56-96px before the bench and around Writing, 64-120px inside the Contact band, 40-72px above plate content and 56-88px below it. Space inside a group is tight: 6px between hallmarks, 3px between built layers and 12px between register rows. Text caps are 50ch for body and long text, 60ch for plate and bench summaries, 62ch for post summaries, 52ch for page leads and 30ch for the hero tagline (40ch once the hero stacks).
 
 Breakpoints: 1020px (the hero stacks), 860px (plates, bench rows, the project grid and the Contact band stack, and the large stamp hides), 760px (phone captures) and 640px (the masthead name hides, register, keyed, post and ledger rows stack, and action buttons go full width).
 
@@ -388,7 +388,7 @@ Icons share the geometry: a 24px grid, a single 1.9 stroke, square caps and mitr
 
 ### Marks
 The world's own component: struck, flat and exact, like a hallmark on silver.
-- **Shape:** a beveled cartouche with a 5px cut, at least 30px tall, padded 0.4rem 0.7rem 0.34rem. Letters are Science Gothic 800 at 13px, in capitals.
+- **Shape:** a beveled cartouche with a 5px cut, at least 30px tall, padded 0.4rem 0.7rem 0.34rem. Letters are Mozilla Headline 700 at 13px, in capitals.
 - **Tones:** maker (the SP mark), status (Live, and plain facts in the fact register), link (Code and the live domain, which open in a new tab and carry the diagonal arrow), layer (a layer that was built), pale (a stage like In progress or Waitlist, or a layer not built yet, which is spoken as "not built yet"), and date (Deep Steel with ink letters and tabular figures). Each tone takes its colors from the colorway.
 - **Hover / Focus:** a link mark underlines its letters (1.5px, 0.22em offset). The focus ring sits on the outer link, outside the clipped mark, so the bevel never cuts it.
 - **Small:** in bench rows, marks shrink to 26px tall; the letters stay 13px.
@@ -406,8 +406,8 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - **Safety:** the mark is fully drawn before, during and after the strike. Under reduced motion the strike is removed and nothing else changes.
 
 ### Buttons
-- **Shape:** cut corners (7px), 48px tall, padded 0.85rem 1.25rem 0.8rem. The label is Science Gothic 800 at 15px in sentence case, with a leading icon.
-- **Primary:** Blued Steel with Blued Paper letters. Download CV adds the file type and size in Atkinson 13px Blued Mist.
+- **Shape:** cut corners (7px), 48px tall, padded 0.85rem 1.25rem 0.8rem. The label is Mozilla Headline 700 at 15px in sentence case, with a leading icon.
+- **Primary:** Blued Steel with Blued Paper letters. Download CV adds the file type and size in Mozilla Text 13px Blued Mist.
 - **Hover / Focus:** hover darkens the face to Deep Blued over 0.18s, and a press moves it down 1px. The 2px focus ring (3px offset) sits on the outer link, so the clipped face never cuts it.
 - **Small:** the masthead CV button, 40px tall with a 6px cut and the 15px label.
 - **Inverse:** on the blued Contact band the button turns steel with blued letters, and white on hover.
@@ -427,12 +427,12 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - **No screen:** a project without a public screen shows real content from its own source instead. bedrock-genai-labs shows its five exam domains in a Deep Steel panel, keyed by D1-D5 layer marks. A plate never shows an invented picture.
 
 ### Bench rows
-- Full-width panels with a 10px cut, padded 24px 28px (22px under 860px), filled with Row Steel or the product's field. The name is Science Gothic, with small hallmarks beside or under it. The summary is Atkinson 17px, the body size.
+- Full-width panels with a 10px cut, padded 24px 28px (22px under 860px), filled with Row Steel or the product's field. The name is Mozilla Headline, with small hallmarks beside or under it. The summary is Mozilla Text 17px, the body size.
 - A live product's row adds its screen, up to 640px wide, flat inside its frame.
 
 ### Navigation
-- **Masthead:** sticky, 64px, Polished Steel with the 1px Steel Rule line below. The SP mark and the name (Science Gothic 750, 17px, wdth 112) sit on the left, then Work, About and Writing, then the small CV button.
-- **Links:** Atkinson bold 15px in Soft Ink. They turn Ink on hover. The current section is Ink with a 2px Blued Steel underline at 0.45em offset.
+- **Masthead:** sticky, 64px, Polished Steel with the 1px Steel Rule line below. The SP mark and the name (Mozilla Headline 640, 17px, wdth 112) sit on the left, then Work, About and Writing, then the small CV button.
+- **Links:** Mozilla Text bold 15px in Soft Ink. They turn Ink on hover. The current section is Ink with a 2px Blued Steel underline at 0.45em offset.
 - **Mobile:** under 640px the name hides and only the SP mark stays. Link padding tightens from 0.8rem to 0.55rem.
 - **Footer:** 15px. The name and location sit on the left, then email, GitHub and LinkedIn as underlined Soft Ink links.
 - **Skip link:** Blued Steel, fixed at the top left, shown on focus.
@@ -441,7 +441,7 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - A full-bleed Blued Steel band with 64-120px of padding. Text is Blued Paper, and details are Blued Mist. It holds the inverse button, a text action and the large SP stamp. Focus rings turn white on it.
 
 ### Lists on inner pages
-- **Ledger:** experience rows with an 11rem period column in bold 15px Soft Ink with tabular figures, then the role in Science Gothic 750 at 20px.
+- **Ledger:** experience rows with an 11rem period column in bold 15px Soft Ink with tabular figures, then the role in Mozilla Headline 640 at 20px.
 - **Keyed list:** one mark and one sentence per row, as in Education and Elsewhere. It stacks under 640px.
 - **Highlights:** each item starts with a 12px Blued Steel square with 3px cut corners.
 
@@ -449,7 +449,7 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - Five inline SVG icons: external, download, arrow left, arrow right and mail. The diagonal arrow means a new tab on another site. Moves inside the site use the straight arrows, mail links use the envelope, and the CV uses the download arrow.
 
 ### Share cards
-- One 1200x630 design serves every page, in the page's colorway. The title is Science Gothic Expanded ExtraBold at 88px, and long titles step down to 72px and 58px. The subtitle is Atkinson 30px in soft text. The marks run along the bottom left, led by the blued SP mark. The right side holds the headshot (360x450, 16px cut) or the product's public screen. The screen is cut on its left corners only (14px) and runs off the right edge.
+- One 1200x630 design serves every page, in the page's colorway. The title is Mozilla Headline Wide Bold at 88px, and long titles step down to 72px and 58px. The subtitle is Mozilla Text 30px in soft text. The marks run along the bottom left, led by the blued SP mark. The right side holds the headshot (360x450, 16px cut) or the product's public screen. The screen is cut on its left corners only (14px) and runs off the right edge.
 
 ## Do's and Don'ts
 
@@ -461,7 +461,7 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - **Do** cut the corners of any standalone object with a bevel sized to it: 5px on marks, 7px on buttons, 8-12px on panels, rows and screens.
 - **Do** put the bevel on an inner face and the link outside it, so the 2px focus ring is never clipped.
 - **Do** keep every text control at least 44px tall.
-- **Do** set reading text in Atkinson Hyperlegible Next at 17px within the 46ch measure.
+- **Do** set reading text in Mozilla Text at 17px within the 50ch measure.
 
 ### Don't:
 - **Don't** round a corner. border-radius stays 0.

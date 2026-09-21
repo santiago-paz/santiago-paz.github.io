@@ -19,14 +19,14 @@
   --on-blued-soft: #d5dcf2;
 
   /* Faces */
-  --face-mark: var(--font-mark), 'Arial Narrow', Arial, sans-serif;
+  --face-mark: var(--font-mark), Arial, Helvetica, sans-serif;
   --face-text: var(--font-text), system-ui, sans-serif;
 
   /* Space */
   --page: 1240px;
   --gutter: clamp(20px, 4vw, 48px);
-  /* Atkinson's zero is wide, so 46ch measures about 70 real characters a line. */
-  --measure: 46ch;
+  /* Mozilla Text's zero is wide, so 50ch measures about 69 real characters a line. */
+  --measure: 50ch;
   --head-h: 64px;
 
   /* Type scale: the name is the one big voice; everything else steps well below it. */
@@ -264,7 +264,7 @@ main:focus {
   color: var(--status-fg);
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 118;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-mark);
   line-height: 1;
   letter-spacing: 0.06em;
@@ -406,7 +406,7 @@ main:focus {
   color: var(--on-blued);
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 110;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 0.9375rem;
   line-height: 1;
   letter-spacing: 0.015em;
@@ -514,7 +514,7 @@ main:focus {
 .maker__name {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 112;
-  font-weight: 750;
+  font-weight: 640;
   font-size: 1.0625rem;
   letter-spacing: 0.005em;
 }
@@ -607,7 +607,7 @@ main:focus {
 .hero__name {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 112;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-name);
   line-height: 0.94;
   letter-spacing: -0.015em;
@@ -621,7 +621,7 @@ main:focus {
   margin-top: 22px;
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 106;
-  font-weight: 650;
+  font-weight: 600;
   font-size: var(--t-role);
   line-height: 1.15;
 }
@@ -710,7 +710,7 @@ main:focus {
 .section-title {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 125;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-h2);
   line-height: 1;
   letter-spacing: -0.01em;
@@ -760,7 +760,7 @@ main:focus {
 .plate__name {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 116;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-plate);
   line-height: 1;
   letter-spacing: -0.01em;
@@ -980,7 +980,7 @@ main:focus {
 .bench__title {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 118;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-bench-title);
   line-height: 1.05;
 }
@@ -1070,7 +1070,7 @@ main:focus {
 .bench__name {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 116;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-bench-name);
   line-height: 1.1;
 }
@@ -1136,7 +1136,7 @@ main:focus {
 .post-row__title {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 110;
-  font-weight: 750;
+  font-weight: 640;
   font-size: var(--t-bench-title);
   line-height: 1.15;
 }
@@ -1223,7 +1223,7 @@ main:focus {
 .page-title {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 120;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-h1);
   line-height: 0.98;
   letter-spacing: -0.015em;
@@ -1256,7 +1256,7 @@ main:focus {
   margin-bottom: 20px;
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 118;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-subhead);
   line-height: 1.05;
 }
@@ -1296,7 +1296,7 @@ main:focus {
   margin-top: 2em;
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 114;
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--t-subhead);
   line-height: 1.1;
 }
@@ -1305,7 +1305,7 @@ main:focus {
   margin-top: 1.6em;
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 110;
-  font-weight: 750;
+  font-weight: 640;
   font-size: var(--t-bench-name);
 }
 
@@ -1449,7 +1449,7 @@ main:focus {
 .ledger__role {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 110;
-  font-weight: 750;
+  font-weight: 640;
   font-size: var(--t-bench-name);
   line-height: 1.2;
 }
@@ -1513,7 +1513,7 @@ main:focus {
 .faq h3 {
   font-family: var(--face-mark);
   font-variation-settings: 'wdth' 108;
-  font-weight: 750;
+  font-weight: 640;
   font-size: var(--t-bench-name);
   line-height: 1.25;
 }
