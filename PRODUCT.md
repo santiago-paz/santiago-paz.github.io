@@ -81,7 +81,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - `content/posts/`: "Evals are the product, not the model" (engineering, 2026-06-15) and "Leaving Buenos Aires" (personal, 2026-02-02).
 - `public/cv/santiago-paz.pdf`: the CV. Its source is not in this repo; it is built in the job-search workspace and copied here by hand, which is why it drifts. Copy the **single-column** full-stack build (`cv/main_fullstack.pdf`), never the one-page sidebar. A CV downloaded from a public site often gets fed into an ATS, and the sidebar is two-column, so text extraction interleaves the rail into the body and drops the skills list between job titles and dates. Check two things on every swap: the headline reads Senior Full-Stack Engineer, and Education reads "Computer Science, then Data Science (both unfinished)". No degree was ever conferred.
 - `public/credentials/testgorilla-assessment.pdf`: a TestGorilla assessment (React / Node / AI / Python), 86th percentile overall, completed 2026-08-19. LinkedIn links to it, but the site doesn't.
-- `public/santiago-paz.png`: an 800x800 headshot, taken outdoors.
+- `public/santiago-paz.png`: an 800x800 headshot, taken indoors against a plain wall. `public/portrait-320.webp` and `portrait-640.webp` are 4:5 crops of it, so cut them again when it changes.
 - Award: 3rd place globally at the Hack-Nation Global AI Hackathon (2,000+ participants) in 2026, from the YETI Fellowship and Startup Factory boOst in Dresden.
 - Icons: an SP monogram set in `app/icon.png`, `app/apple-icon.png` and `app/favicon.ico`.
 - Missing, and never to be made up: testimonials, project screenshots, and usage or revenue numbers for the side products. The three live demos could supply real screenshots.
