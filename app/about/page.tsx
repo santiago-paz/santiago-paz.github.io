@@ -95,7 +95,7 @@ export default function AboutPage() {
         <p>
           Running underneath the last decade is a recurring thread: visual
           builders. The blog builder at Dialpad, a low-code drag-and-drop
-          builder in Angular at Monks, and a campaign page builder at R/GA. All
+          builder in React at Monks, and a campaign page builder at R/GA. All
           of them turn content models into systems non-engineers can drive.
         </p>
         <p>
