@@ -3,6 +3,7 @@ import { SITE } from '@/lib/site'
 import { getProjectSlugs } from '@/lib/data'
 import { getPosts } from '@/lib/posts'
 import { changedAt } from '@/lib/lastmod'
+import { headshotUrls } from '@/lib/seo'
 
 export const dynamic = 'force-static'
 
@@ -33,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ),
       changeFrequency: 'monthly',
       priority: 1,
+      images: headshotUrls(),
     },
     {
       url: url('about'),

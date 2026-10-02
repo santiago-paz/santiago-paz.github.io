@@ -9,7 +9,7 @@ import { Mark } from '@/components/Mark'
 import { Icon } from '@/components/Icon'
 import { SiteNav } from '@/components/SiteNav'
 import { StrikeObserver } from '@/components/StrikeObserver'
-import { websiteJsonLd, personJsonLd, ogImage } from '@/lib/seo'
+import { websiteJsonLd, personJsonLd, ogImage, homeOgImages } from '@/lib/seo'
 import './globals.css'
 
 // Struck capitals for names and marks; the width axis sets how wide each mark is cut.
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     description: SITE.description,
     url: SITE.baseUrl,
     locale: 'en_US',
-    images: ogImage(),
+    images: homeOgImages(),
   },
   twitter: {
     card: 'summary_large_image',

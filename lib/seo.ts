@@ -38,6 +38,52 @@ export function ogImage(path = '', alt = `${profile.name} - ${profile.role}`) {
 }
 
 /**
+ * The two files that hold the headshot.
+ *
+ * `square` is the full frame, and the share cards draw from it. `tall` is the 4:5
+ * crop the home page shows beside the fact register. `lib/seo.test.ts` checks the
+ * size of `square` against the file.
+ */
+const HEADSHOT = {
+  square: { src: profile.image, width: 800, height: 800 },
+  tall: { src: '/portrait-640.webp' },
+}
+
+/** A headshot file as a schema.org image. */
+function headshotImage(src: string) {
+  const url = absUrl(src)
+  return {
+    '@type': 'ImageObject',
+    url,
+    contentUrl: url,
+    caption: `Portrait of ${profile.name}`,
+  }
+}
+
+/** Both crops, so Google can pick the one that fits its thumbnail. */
+function headshotImages() {
+  return [headshotImage(HEADSHOT.square.src), headshotImage(HEADSHOT.tall.src)]
+}
+
+/** Absolute URLs of the headshot files, for the sitemap. */
+export function headshotUrls() {
+  return [HEADSHOT.square.src, HEADSHOT.tall.src].map((src) => absUrl(src))
+}
+
+/**
+ * Open Graph images for the home page, and for any page that sets none of its own.
+ *
+ * The share card goes first, because LinkedIn, Slack and X use the first `og:image`.
+ * The headshot follows for Google, which lists `og:image` as one of three ways to
+ * choose the picture shown beside a result. A card with text on it makes a weaker
+ * thumbnail than a face does.
+ */
+export function homeOgImages() {
+  const { src, width, height } = HEADSHOT.square
+  return [...ogImage(), { url: src, width, height, alt: `Portrait of ${profile.name}` }]
+}
+
+/**
  * Absolute URL for a site path.
  *
  * `trailingSlash: true` means page routes canonicalise with a trailing slash,
@@ -87,7 +133,7 @@ export function personJsonLd() {
     '@id': PERSON_ID,
     name: profile.name,
     url: SITE.baseUrl,
-    ...(profile.image ? { image: absUrl(profile.image) } : {}),
+    image: headshotImages(),
     // The target role first, then whatever the CV lists as the current title —
     // hardcoding the second one lets it drift out of sync with experience.json.
     jobTitle: [profile.role, ...(current ? [current.title] : [])],
@@ -153,6 +199,13 @@ export function websiteJsonLd() {
   }
 }
 
+/**
+ * The home page's markup, built so Google can find the headshot two ways: as the
+ * page's primary image, and as the image on its main entity. Google's profile page
+ * guide puts the Person inside `mainEntity`, so it sits here in full instead of
+ * pointing at the copy in the layout. The shared `@id` lets a reader that merges
+ * nodes join the two copies.
+ */
 export function profilePageJsonLd() {
   return {
     '@context': 'https://schema.org',
@@ -161,7 +214,17 @@ export function profilePageJsonLd() {
     url: SITE.baseUrl,
     name: `${profile.name} - ${profile.role}`,
     inLanguage: 'en',
-    mainEntity: { '@id': PERSON_ID },
+    primaryImageOfPage: headshotImage(HEADSHOT.square.src),
+    mainEntity: {
+      '@type': 'Person',
+      '@id': PERSON_ID,
+      name: profile.name,
+      url: SITE.baseUrl,
+      image: headshotImages(),
+      jobTitle: profile.role,
+      description: profile.about,
+      sameAs: profile.sameAs,
+    },
   }
 }
 
