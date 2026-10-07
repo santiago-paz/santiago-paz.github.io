@@ -84,34 +84,45 @@ export function BuiltStack({ project }: { project: Project }) {
   )
 }
 
-function Screen({ project, lead }: { project: Project; lead?: boolean }) {
+function Screen({ project, lead, detail }: { project: Project; lead?: boolean; detail: boolean }) {
   const screen = screenOf(project.slug)
   if (!screen) return null
+  const image = (
+    <figure className="screen">
+      <picture>
+        <source
+          media="(max-width: 759px)"
+          srcSet={screen.mobile.srcSet ?? screen.mobile.src}
+          sizes="380px"
+          width={screen.mobile.width}
+          height={screen.mobile.height}
+        />
+        {/* A static export serves plain files, so the responsive set is written by hand. */}
+        <img
+          src={screen.src}
+          srcSet={screen.srcSet}
+          sizes="(max-width: 759px) 340px, (max-width: 1240px) 70vw, 900px"
+          width={screen.width}
+          height={screen.height}
+          alt={screen.alt}
+          loading={lead ? 'eager' : 'lazy'}
+          fetchPriority={lead ? 'high' : undefined}
+          decoding="async"
+        />
+      </picture>
+    </figure>
+  )
   return (
     <div className="plate__media">
-      <figure className="screen">
-        <picture>
-          <source
-            media="(max-width: 759px)"
-            srcSet={screen.mobile.srcSet ?? screen.mobile.src}
-            sizes="380px"
-            width={screen.mobile.width}
-            height={screen.mobile.height}
-          />
-          {/* A static export serves plain files, so the responsive set is written by hand. */}
-          <img
-            src={screen.src}
-            srcSet={screen.srcSet}
-            sizes="(max-width: 759px) 340px, (max-width: 1240px) 70vw, 900px"
-            width={screen.width}
-            height={screen.height}
-            alt={screen.alt}
-            loading={lead ? 'eager' : 'lazy'}
-            fetchPriority={lead ? 'high' : undefined}
-            decoding="async"
-          />
-        </picture>
-      </figure>
+      {detail ? image : (
+        <Link
+          href={`/projects/${project.slug}`}
+          className="screen-link"
+          aria-label={`${project.title}: project details`}
+        >
+          {image}
+        </Link>
+      )}
     </div>
   )
 }
@@ -157,7 +168,7 @@ export function Plate({
   if (onDetailPage) classes.push('plate--detail')
   if (bare) classes.push('plate--bare')
   return (
-    <article className={classes.join(' ')} aria-labelledby={headingId}>
+    <article id={onDetailPage ? undefined : project.slug} className={classes.join(' ')} aria-labelledby={headingId}>
       <div className="plate__inner">
         <header className="plate__head">
           {onDetailPage ? (
@@ -182,7 +193,7 @@ export function Plate({
           </div>
         </header>
         <div className="plate__body">
-          <Screen project={project} lead={lead} />
+          <Screen project={project} lead={lead} detail={onDetailPage} />
           <Register project={project} />
           <div className="plate__stack">
             <BuiltStack project={project} />

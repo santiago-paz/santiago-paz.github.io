@@ -10,18 +10,24 @@ export function FactRegister({
   profile,
   portrait,
   strike,
+  variant = 'full',
 }: {
   profile: Profile
   portrait?: boolean
   /** Strike the marks as the register comes into view (the home page only). */
   strike?: boolean
+  variant?: 'full' | 'summary'
 }) {
   const city = profile.location.split(',')[0]
   const languages = profile.languages
     .map((language) => `${language.name} (${language.level.toLowerCase()})`)
     .join(', ')
 
-  const rows = [
+  const rows = variant === 'summary' ? [
+    { mark: '13 yrs', label: '13 years of experience', text: 'Shipping production software.' },
+    { mark: 'EU', label: 'Work permit', text: 'Italian citizen. No sponsorship needed.' },
+    { mark: profile.languages.map((l) => l.code).join(' '), label: 'Languages', text: `${languages}.` },
+  ] : [
     { mark: 'SP', label: 'Maker', text: 'Every project here is solo work, from the data model to the deploy.' },
     { mark: city.slice(0, 3), label: city, text: `Based in ${city}, on-site or hybrid, and open to fully remote work.` },
     { mark: 'EU', label: 'Work permit', text: 'Italian citizen with EU work authorization. No sponsorship needed.' },
@@ -30,14 +36,14 @@ export function FactRegister({
   ]
 
   return (
-    <div className="register">
+    <div className={`register${variant === 'summary' ? ' register--summary' : ''}`}>
       {portrait ? (
         <figure className="register__portrait">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/portrait-320.webp"
             srcSet="/portrait-320.webp 320w, /portrait-640.webp 640w"
-            sizes="104px"
+            sizes={variant === 'summary' ? '88px' : '104px'}
             width={640}
             height={800}
             alt={`Portrait of ${profile.name}`}
@@ -49,7 +55,7 @@ export function FactRegister({
         {rows.map((row, index) => (
           <div className="register__row" key={row.label}>
             <dt>
-              <Mark tone={index === 0 ? 'maker' : 'status'} i={index} srLabel={row.label} code>
+              <Mark tone={row.mark === 'SP' ? 'maker' : 'status'} i={index} srLabel={row.label} code>
                 {row.mark}
               </Mark>
             </dt>

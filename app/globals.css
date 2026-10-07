@@ -444,7 +444,7 @@ main:focus {
 
 .button--small .button__face {
   --cut: 6px;
-  min-height: 2.5rem;
+  min-height: 2.75rem;
   padding: 0.6rem 0.9rem 0.55rem;
 }
 
@@ -613,6 +613,27 @@ main:focus {
   letter-spacing: -0.015em;
 }
 
+.hero__availability {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  max-width: 42ch;
+  margin-bottom: 20px;
+  font-size: var(--t-small);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--blued-deep);
+}
+
+.hero__availability::before {
+  content: '';
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+  background: currentColor;
+  clip-path: polygon(2px 0, 6px 0, 8px 2px, 8px 6px, 6px 8px, 2px 8px, 0 6px, 0 2px);
+}
+
 .hero__name span {
   display: block;
 }
@@ -705,6 +726,34 @@ main:focus {
   line-height: 1.45;
 }
 
+.register--summary .register__portrait {
+  float: right;
+  margin: 0 0 12px 18px;
+}
+
+.register--summary .register__portrait img {
+  width: 88px;
+}
+
+.register--summary .register__row {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.register--summary .register__row dt {
+  flex: none;
+}
+
+.register--summary .register__row dd {
+  padding-top: 0;
+  font-size: var(--t-small);
+  line-height: 1.5;
+}
+
+.register--summary .register__row + .register__row {
+  margin-top: 16px;
+}
+
 /* ---------- Work: specimen plates ---------- */
 
 .section-title {
@@ -730,6 +779,51 @@ main:focus {
 .work__head p {
   font-size: var(--t-lead);
   color: var(--ink-soft);
+}
+
+.work-index {
+  max-width: var(--page);
+  margin-inline: auto;
+  padding: 0 var(--gutter) 24px;
+}
+
+.work-index ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.work-index a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 3.5rem;
+  height: 100%;
+  padding-block: 12px;
+  border-top: 1px solid var(--steel-rule);
+  color: var(--ink-soft);
+  font-size: var(--t-small);
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.work-index a:hover,
+.work-index a:focus-visible {
+  border-color: var(--blued);
+  color: var(--blued);
+}
+
+.work-index__number {
+  color: var(--blued);
+  font-family: var(--face-mark);
+  font-variant-numeric: tabular-nums;
+}
+
+.work-index .icon {
+  margin-left: auto;
 }
 
 .plate {
@@ -894,6 +988,15 @@ main:focus {
     0 calc(100% - var(--cut)),
     0 var(--cut)
   );
+}
+
+.screen-link {
+  display: block;
+  text-decoration: none;
+}
+
+.screen-link:hover .screen {
+  background: var(--underline);
 }
 
 .screen img {
@@ -1613,6 +1716,29 @@ main:focus {
     padding-inline: 0.55rem;
   }
 
+  .hero__actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 20px;
+  }
+
+  .hero__actions .button {
+    grid-column: 1 / -1;
+  }
+
+  .hero__actions .text-action {
+    font-size: var(--t-small);
+  }
+
+  .work-index ol {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .work-index a {
+    min-height: 2.75rem;
+  }
+
   .mark--link {
     letter-spacing: 0.03em;
   }
@@ -1643,6 +1769,10 @@ main:focus {
     margin-top: 16px;
   }
 
+  .register--summary .register__row + .register__row {
+    clear: right;
+  }
+
   .domains__list,
   .keyed {
     grid-template-columns: minmax(0, 1fr);
@@ -1670,6 +1800,21 @@ main:focus {
 
   .actions .button__face {
     justify-content: center;
+  }
+}
+
+@media (max-width: 359px) {
+  .masthead__bar {
+    gap: 6px;
+  }
+
+  .nav a {
+    padding-inline: 0.35rem;
+    font-size: 0.875rem;
+  }
+
+  .button--small .button__face {
+    padding-inline: 0.65rem;
   }
 }
 

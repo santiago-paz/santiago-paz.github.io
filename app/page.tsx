@@ -17,10 +17,9 @@ export default function HomePage() {
   const projects = getProjects()
   const posts = getPosts().slice(0, 3)
   const cvLabel = cvSizeLabel()
-  const [first, ...rest] = projects
   // The CV opens with three projects, so the site does too; the rest follow on the bench.
-  const featured = rest.slice(0, 2)
-  const bench = rest.slice(2)
+  const featured = projects.slice(0, 3)
+  const bench = projects.slice(3)
   const liveCount = projects.filter((project) => project.links.demo).length
   const [firstName, ...lastNames] = profile.name.split(' ')
 
@@ -30,18 +29,23 @@ export default function HomePage() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__who">
+          <p className="hero__availability">{profile.availability.split('. ')[0]}.</p>
           <h1 className="hero__name" id="hero-title" translate="no">
             <span>{firstName}</span> <span>{lastNames.join(' ')}</span>
           </h1>
           <p className="hero__role">{profile.role} in {profile.location.split(',')[0]}.</p>
           <p className="hero__tagline">{profile.tagline}</p>
           <div className="actions hero__actions">
-            <a className="button" href={profile.links.cv} download="Santiago-Paz-CV.pdf">
+            <a className="button" href="#work">
               <span className="button__face">
-                <Icon name="download" />
-                Download CV
-                <span className="button__meta">{cvLabel}</span>
+                View work
+                <Icon name="arrow-right" />
               </span>
+            </a>
+            <a className="text-action" href={profile.links.cv} download="Santiago-Paz-CV.pdf">
+              <Icon name="download" />
+              Download CV
+              <span className="sr-only"> ({cvLabel})</span>
             </a>
             <a className="text-action" href={`mailto:${profile.email}`}>
               <Icon name="mail" />
@@ -50,7 +54,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero__facts">
-          <FactRegister profile={profile} portrait strike />
+          <FactRegister profile={profile} portrait strike variant="summary" />
         </div>
       </section>
 
@@ -62,9 +66,22 @@ export default function HomePage() {
           </p>
         </div>
 
-        <Plate project={first} lead />
-        {featured.map((project) => (
-          <Plate key={project.slug} project={project} />
+        <nav className="work-index" aria-label="Featured projects">
+          <ol>
+            {featured.map((project, index) => (
+              <li key={project.slug}>
+                <a href={`#${project.slug}`}>
+                  <span className="work-index__number" aria-hidden="true">0{index + 1}</span>
+                  <span translate="no">{project.title}</span>
+                  <Icon name="arrow-right" />
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        {featured.map((project, index) => (
+          <Plate key={project.slug} project={project} lead={index === 0} />
         ))}
 
         <div className="bench">
@@ -148,7 +165,7 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      <section className="close" aria-labelledby="contact-title">
+      <section id="contact" className="close" aria-labelledby="contact-title">
         <div className="close__inner">
           <div>
             <h2 className="section-title" id="contact-title">Contact</h2>
