@@ -42,7 +42,7 @@ const SCREENS: Record<string, Screen> = {
       width: 1170,
       height: 1992,
     },
-    alt: 'The Contract Lens landing page: "Upload a contract. Get the facts and the deadlines back." A demo below reads a sample service agreement into a contract record.',
+    alt: 'The Contract Lens landing page: "Upload a contract. Get the facts and the deadlines back." A demo beside it reads a sample service agreement into a contract record.',
   },
   'multi-agent-trading-desk': {
     src: '/work/multi-agent-trading-desk/screen-810.webp',
