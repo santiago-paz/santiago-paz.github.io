@@ -16,7 +16,7 @@ export function colorwayOf(slug: string): Colorway {
 }
 
 /**
- * Public first screens of the live products, captured from their own sites
+ * Public first screens of the products, captured from their own public sites
  * (provenance sits in each file's .json sidecar). Nothing behind a login.
  */
 export type Screen = {
@@ -65,6 +65,20 @@ const SCREENS: Record<string, Screen> = {
       height: 1992,
     },
     alt: 'The Reema landing page in Spanish. A sample article plays through the "listen to this article" player, which highlights the word being read.',
+  },
+  pegala: {
+    src: '/work/pegala/screen-1200.webp',
+    srcSet:
+      '/work/pegala/screen-1200.webp 1200w, /work/pegala/screen-2400.webp 2400w, /work/pegala/screen-3600.webp 3600w',
+    width: 3600,
+    height: 2250,
+    mobile: {
+      src: '/work/pegala/screen-mobile.webp',
+      srcSet: '/work/pegala/screen-mobile.webp 780w, /work/pegala/screen-mobile-1170.webp 1170w',
+      width: 1170,
+      height: 1992,
+    },
+    alt: 'The Pegala landing page in Spanish: "No buscamos que tengas suerte. Buscamos que la pegues." A pasted job ad and a sample CV sit beside an email field for the waitlist.',
   },
 }
 

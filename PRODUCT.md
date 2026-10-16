@@ -54,7 +54,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - Contact is a `mailto:` link. There is no form and no backend.
 - The site is in English only.
 - A project has a slug, title, group, global order, summary, role, stack, highlights, repo and demo links, an optional disclosure and a Markdown description. A post has a title, date, kind (`engineering` or `personal`) and summary.
-- Project order is global and should match the CV. Since 2026-10-16 the site leads with Contract Lens, Reema and Pegala. The CV PDF still leads with Contract Lens, Reema and Multi-Agent Trading Desk, which is now fourth on the site, so rebuild the CV to match. Contract Lens and Reema have a public screen and their own colorway. Pegala has neither, so its plate shows no media and wears the maker's steel.
+- Project order is global and should match the CV. Since 2026-10-16 the site leads with Contract Lens, Reema and Pegala. The CV PDF still leads with Contract Lens, Reema and Multi-Agent Trading Desk, which is now fourth on the site, so rebuild the CV to match. Contract Lens and Reema have a public screen and their own colorway. Pegala has a public screen from its landing page, but no colorway, so its plate wears the maker's steel.
 - The repo is public. Salary, rates and notice periods stay out of it and off the site. The TestGorilla report lost its fourth page for this reason.
 - Names to keep exact: Senior Full-Stack Engineer, Contract Lens, Multi-Agent Trading Desk, bedrock-genai-labs (lowercase, like the repo), Reema, Pegala, Reddit Idea Miner.
 
@@ -76,7 +76,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 
 - `data/profile.json`: role, tagline, location, work authorization, languages, bio, skills, links and the award.
 - `data/experience.json`: nine roles at eight companies from 2011 to today, plus education and the AWS certification in progress.
-- `data/projects.json`: six projects. Live demos: Contract Lens (trycontractlens.com), Multi-Agent Trading Desk (trading-desk.santiagopaz.com) and Reema (reema.ar). Public repos: contract-lens, multi-agent-trading-desk, bedrock-genai-labs and reddit-idea-miner. Pegala has no public link.
+- `data/projects.json`: six projects. Live demos: Contract Lens (trycontractlens.com), Multi-Agent Trading Desk (trading-desk.santiagopaz.com) and Reema (reema.ar). Public repos: contract-lens, multi-agent-trading-desk, bedrock-genai-labs and reddit-idea-miner. Pegala has no link on the site. Its public landing page, www.pegala.ar, supplies the screen.
 - `data/faq.json`: five questions and answers, which also feed the FAQPage schema.
 - `content/posts/`: "Evals are the product, not the model" (engineering, 2026-06-15) and "Leaving Buenos Aires" (personal, 2026-02-02).
 - `public/cv/santiago-paz.pdf`: the CV. Its source is not in this repo; it is built in the job-search workspace and copied here by hand, which is why it drifts. Copy the **single-column** full-stack build (`cv/main_fullstack.pdf`), never the one-page sidebar. A CV downloaded from a public site often gets fed into an ATS, and the sidebar is two-column, so text extraction interleaves the rail into the body and drops the skills list between job titles and dates. Check two things on every swap: the headline reads Senior Full-Stack Engineer, and Education reads "Computer Science, then Data Science (both unfinished)". No degree was ever conferred.
