@@ -342,7 +342,7 @@ A colorway fills the same roles on every product. The maker's steel colorway is 
 
 Content sits in a 1240px frame with a fluid side gutter (20-48px). Color runs edge to edge: plates and the Contact band are full-bleed bands, and their content returns to the same frame. The masthead sticks to the top at 64px, and in-page jumps stop 16px below it.
 
-The home page is one column of bands: the hero, the Work head, three plates in CV order, the bench, Writing, the blued Contact band and the footer. The hero splits into two equal columns. The name, role, tagline and actions sit on the left, and the fact register sits on the right. At 1020px and below the hero stacks.
+The home page is one column of bands: the hero, the Work head, three plates in project order, the bench, Writing, the blued Contact band and the footer. The hero splits into two equal columns. The name, role, tagline and actions sit on the left, and the fact register sits on the right. At 1020px and below the hero stacks.
 
 A plate reads top to bottom. The title strip puts the name on the left and the hallmarks on the right, aligned on their bottom edge. The lede follows: the summary, up to 60ch, with the live domain mark on its own line to the right. In the body, the product screen and the Layers built stack stand side by side on one ground line. Under 860px each part stacks. Under 760px the screen switches to a phone capture, capped at 380px wide.
 

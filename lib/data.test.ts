@@ -19,11 +19,11 @@ describe('data', () => {
     expect(new Set(orders).size).toBe(orders.length)
   })
 
-  it('leads with the three projects the CV opens with', () => {
+  it('leads with Contract Lens, Reema and Pegala', () => {
     expect(getProjects().slice(0, 3).map((p) => p.slug)).toEqual([
       'contract-lens',
       'reema',
-      'multi-agent-trading-desk',
+      'pegala',
     ])
   })
 

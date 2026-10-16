@@ -17,7 +17,7 @@ export default function HomePage() {
   const projects = getProjects()
   const posts = getPosts().slice(0, 3)
   const cvLabel = cvSizeLabel()
-  // The CV opens with three projects, so the site does too; the rest follow on the bench.
+  // The first three projects get a plate; the rest follow on the bench.
   const featured = projects.slice(0, 3)
   const bench = projects.slice(3)
   const liveCount = projects.filter((project) => project.links.demo).length

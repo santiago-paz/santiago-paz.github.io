@@ -105,11 +105,9 @@ export function getProfile(): Profile {
 /**
  * Projects in curated order.
  *
- * `order` is global rather than per-group: the CV leads with Contract Lens,
- * Reema and Multi-Agent Trading Desk, and the site has to open with the same
- * three. Those are also the three with a public screen and their own colorway,
- * so the plates at the top of the home page stay filled. `group` is only a
- * label on the detail page.
+ * `order` is global rather than per-group. The first three get the plates at
+ * the top of the home page, and the CV PDF should lead with the same three.
+ * `group` is only a label on the detail page.
  */
 export function getProjects(): Project[] {
   return [...projects].sort((a, b) => a.order - b.order)
