@@ -124,14 +124,40 @@
   --row-bg: #00131f;
 }
 
+/*
+ * Pegala: the violet field, the lime highlight, the deep navy ink and the white cards.
+ * Lime reaches only 4.12:1 on the violet, enough for a line, so it never carries letters here.
+ */
+.cw-pegala {
+  --field: #6c4cf1;
+  --field-ink: #f8f7fd;
+  --field-soft: #f8f7fd;
+  --status-bg: #c8f169;
+  --status-fg: #2b2352;
+  --link-bg: #ffffff;
+  --link-fg: #2b2352;
+  --layer-bg: #2b2352;
+  --layer-fg: #f8f7fd;
+  --pale-bg: #5336c9;
+  --pale-fg: #d5d1e8;
+  --underline: #c8f169;
+  --focus: #c8f169;
+  --frame: rgb(248 247 253 / 0.25);
+  --shadow: rgb(27 21 64 / 0.5);
+  --shadow-near: rgb(27 21 64 / 0.3);
+  --row-bg: #6c4cf1;
+}
+
 .cw-maker {
   --row-bg: var(--steel-row);
 }
 
-/* Light text on the teal and night fields gets a touch more air and tracking. */
+/* Light text on the teal, night and violet fields gets a touch more air and tracking. */
 .cw-trading-desk .plate__summary,
 .cw-reema .plate__summary,
-.cw-reema .bench__summary {
+.cw-reema .bench__summary,
+.cw-pegala .plate__summary,
+.cw-pegala .bench__summary {
   line-height: 1.68;
   letter-spacing: 0.01em;
 }

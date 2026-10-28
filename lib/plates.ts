@@ -2,13 +2,14 @@ import fs from 'node:fs'
 import path from 'node:path'
 import type { Project } from './data'
 
-/** Each live product's plate wears that product's own colors. */
-export type Colorway = 'maker' | 'contract-lens' | 'trading-desk' | 'reema'
+/** Each product with a public site wears its own colors on its plate. */
+export type Colorway = 'maker' | 'contract-lens' | 'trading-desk' | 'reema' | 'pegala'
 
 const COLORWAYS: Record<string, Colorway> = {
   'contract-lens': 'contract-lens',
   'multi-agent-trading-desk': 'trading-desk',
   reema: 'reema',
+  pegala: 'pegala',
 }
 
 export function colorwayOf(slug: string): Colorway {

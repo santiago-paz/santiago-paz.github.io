@@ -20,7 +20,9 @@ export async function GET(
     subtitle: project.role,
     // Standing and code only: a long domain would wrap off the card.
     marks: [
-      ...hallmarksOf(project).statuses.map((status) => status.label),
+      ...hallmarksOf(project).statuses.map((status) =>
+        status.pale ? { label: status.label, pale: true as const } : status.label,
+      ),
       ...(project.links.repo ? [{ label: 'Code', link: true as const }] : []),
     ],
     colorway: colorwayOf(project.slug),

@@ -1,6 +1,6 @@
 ---
 name: Santiago Paz
-description: Polished steel, ink and blued steel for the maker; each live product struck on a plate in its own colors.
+description: Polished steel, ink and blued steel for the maker; each product with a public site struck on a plate in its own colors.
 colors:
   blued: "#2a44a8"
   blued-deep: "#1d3183"
@@ -32,6 +32,13 @@ colors:
   reema-layer: "#0b3a45"
   reema-pale: "#0a2a33"
   reema-frame: "rgb(231 237 240 / 0.16)"
+  pegala-violet: "#6c4cf1"
+  pegala-lime: "#c8f169"
+  pegala-paper: "#f8f7fd"
+  pegala-ink: "#2b2352"
+  pegala-deep: "#5336c9"
+  pegala-lavender: "#d5d1e8"
+  pegala-frame: "rgb(248 247 253 / 0.25)"
 typography:
   name:
     fontFamily: "Mozilla Headline, Arial, Helvetica, sans-serif"
@@ -236,6 +243,9 @@ components:
   plate-reema:
     backgroundColor: "{colors.reema-night}"
     textColor: "{colors.reema-ink}"
+  plate-pegala:
+    backgroundColor: "{colors.pegala-violet}"
+    textColor: "{colors.pegala-paper}"
   bench-row:
     backgroundColor: "{colors.steel-row}"
     textColor: "{colors.ink}"
@@ -253,7 +263,7 @@ components:
 
 **Creative North Star: "The Maker's Mark"**
 
-The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each live product wears its own real colors wherever it appears. The SP mark stays blued on all of them.
+The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each product with a public site wears its own real colors wherever it appears. The SP mark stays blued on all of them.
 
 Type does most of the work. Mozilla Headline, a grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Mozilla Text, its reading companion, sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.
 
@@ -263,13 +273,13 @@ Real product screens and the headshot are the only pictures. The site's own surf
 - Polished steel ground, ink text and one accent, blued steel.
 - Cut corners on every standalone shape. Nothing is rounded.
 - Struck capitals in marks that certify facts: SP, Live, Code, dates and layers built.
-- Live products in their own colors, on full-bleed plates and bench rows.
+- Products with a public site in their own colors, on full-bleed plates and bench rows.
 - Mozilla Headline cut wide or narrow with its width axis, and Mozilla Text for reading.
 - One motion, the strike, which presses each mark in turn and never hides it.
 
 ## Colors
 
-The maker's register is cool steel and near-black ink with one blue accent. Each live product brings its own palette and uses it only on its own surfaces.
+The maker's register is cool steel and near-black ink with one blue accent. Each product with a public site brings its own palette and uses it only on its own surfaces.
 
 ### Primary
 - **Blued Steel** (#2a44a8): the maker's color. It fills the SP mark on every page, plate and share card, the primary button, and link marks on steel. It also draws the focus ring, the current nav underline, text selection, the scrollbar thumb, the highlight bullets and the Contact band.
@@ -289,25 +299,25 @@ The maker's register is cool steel and near-black ink with one blue accent. Each
 ### Product colorways
 A colorway fills the same roles on every product. The maker's steel colorway is the default. Each product overrides it on its plate, bench row, project page header and share card.
 
-| Role | Maker | Contract Lens | Multi-Agent Trading Desk | Reema |
-|---|---|---|---|---|
-| Field | Polished Steel | White | Desktop Teal (#008080) | Reema Night (#00131f) |
-| Text | Ink | Lens Ink (#16181d) | White | Reema Mist (#e7edf0) |
-| Soft text | Soft Ink | Lens Soft (#4b505a) | White | Reema Soft (#b4c2c8) |
-| Status mark | Ink, steel letters | Seal Red (#a3202f), white letters | Title-bar Navy (#000080), white letters | Reema Aqua (#25ffcd), night letters |
-| Link mark | Blued Steel, Blued Paper letters | Lens Ink, white letters | Button Grey (#c0c0c0), black letters (#000000) | Reema Mist, night letters |
-| Layer mark | Soft Ink, white letters | Lens Slate (#3d434d), white letters | Deep Teal (#005f5f), white letters | Reema Deep (#0b3a45), mist letters |
-| Pale mark | Deep Steel, Soft Ink letters | Lens Pale (#e8edf3), slate letters | Shaded Teal (#006b6b), white letters | Reema Shade (#0a2a33), soft letters |
-| Underline and focus | Blued Steel | Seal Red | White | Reema Aqua |
-| Screen frame | Steel Rule | Lens Frame (#d5dbe3) | none | Reema Mist at 16% |
-| Bench row | Row Steel | White | Desktop Teal | Reema Night |
+| Role | Maker | Contract Lens | Multi-Agent Trading Desk | Reema | Pegala |
+|---|---|---|---|---|---|
+| Field | Polished Steel | White | Desktop Teal (#008080) | Reema Night (#00131f) | Pegala Violet (#6c4cf1) |
+| Text | Ink | Lens Ink (#16181d) | White | Reema Mist (#e7edf0) | Pegala Paper (#f8f7fd) |
+| Soft text | Soft Ink | Lens Soft (#4b505a) | White | Reema Soft (#b4c2c8) | Pegala Paper |
+| Status mark | Ink, steel letters | Seal Red (#a3202f), white letters | Title-bar Navy (#000080), white letters | Reema Aqua (#25ffcd), night letters | Pegala Lime (#c8f169), Pegala Ink letters (#2b2352) |
+| Link mark | Blued Steel, Blued Paper letters | Lens Ink, white letters | Button Grey (#c0c0c0), black letters (#000000) | Reema Mist, night letters | White, Pegala Ink letters |
+| Layer mark | Soft Ink, white letters | Lens Slate (#3d434d), white letters | Deep Teal (#005f5f), white letters | Reema Deep (#0b3a45), mist letters | Pegala Ink, Pegala Paper letters |
+| Pale mark | Deep Steel, Soft Ink letters | Lens Pale (#e8edf3), slate letters | Shaded Teal (#006b6b), white letters | Reema Shade (#0a2a33), soft letters | Pegala Deep (#5336c9), Pegala Lavender letters (#d5d1e8) |
+| Underline and focus | Blued Steel | Seal Red | White | Reema Aqua | Pegala Lime |
+| Screen frame | Steel Rule | Lens Frame (#d5dbe3) | none | Reema Mist at 16% | Pegala Paper at 25% |
+| Bench row | Row Steel | White | Desktop Teal | Reema Night | Pegala Violet |
 
 ### Named rules
 **The Maker's Mark Rule.** The SP mark is always Blued Steel with Blued Paper letters, on every colorway, page and share card. A product may recolor every other mark but never this one. The Contact band is the one exception: it is blued itself, so its SP stamp turns steel with blued letters.
 
-**The Own Colors Rule.** A product's colors stay on that product's plate, bench row, project page header and share card. The maker's pages never borrow them, and no product wears another's.
+**The Own Colors Rule.** A product's colors stay on that product's plate, bench row, project page header and share card. The maker's pages never borrow them, and no product wears another's. A product earns its colors from a public site it already runs, so Pegala wears its own while it is still on the waitlist.
 
-**The Legible Colorway Rule.** A new colorway fills every role in the table from the product's real colors, and every text pair passes 4.5:1. When nothing softer passes on the field, soft text stays at full strength, so the Trading Desk's soft text is white on its teal (4.77:1). Summaries in light text on the teal and night fields get a 1.68 line height and 0.01em tracking.
+**The Legible Colorway Rule.** A new colorway fills every role in the table from the product's real colors, and every text pair passes 4.5:1. When nothing softer passes on the field, soft text stays at full strength, so the Trading Desk's soft text is white on its teal (4.77:1) and Pegala's is paper on its violet (5.00:1). Summaries in light text on the teal, night and violet fields get a 1.68 line height and 0.01em tracking. Pegala's other pairs are ink on lime (11.09:1), ink on white (14.33:1), paper on ink (13.46:1) and lavender on deep violet (5.15:1). Lime reaches only 4.12:1 on the violet. That is enough for a line (3:1) and too little for letters, so lime draws the underline and the focus ring and never sets text on the violet. `lib/plates.test.ts` checks every pair.
 
 ## Typography
 
@@ -366,7 +376,7 @@ The system is flat. Marks, buttons, panels, rows and plates are solid fills with
 The masthead is set apart by a 1px Steel Rule line along its bottom edge, drawn as a zero-blur box-shadow (0 1px 0). It is a line, not a shadow.
 
 ### Shadow vocabulary
-- **Screen lift** (`filter: drop-shadow(0 28px 36px var(--shadow)) drop-shadow(0 2px 4px var(--shadow-near))`): under each product screen on a plate. It pairs a long soft fall with a tight contact shadow. It is a filter on the screen's wrapper, not a box-shadow, so it follows the cut corners that clip the screen. The color comes from the plate's own ink: rgb(17 20 24 / 0.2) and 0.12 on steel, rgb(22 24 29 / 0.16) and 0.1 on Contract Lens, and rgb(0 0 0 / 0.45) and 0.3 on Reema night.
+- **Screen lift** (`filter: drop-shadow(0 28px 36px var(--shadow)) drop-shadow(0 2px 4px var(--shadow-near))`): under each product screen on a plate. It pairs a long soft fall with a tight contact shadow. It is a filter on the screen's wrapper, not a box-shadow, so it follows the cut corners that clip the screen. The color comes from the plate's own ink: rgb(17 20 24 / 0.2) and 0.12 on steel, rgb(22 24 29 / 0.16) and 0.1 on Contract Lens, rgb(0 0 0 / 0.45) and 0.3 on Reema night, and rgb(27 21 64 / 0.5) and 0.3 on Pegala violet, from its deepest ink. Pegala's capture is violet like its plate, so the paper frame and this shadow are what draw the edge of its screen.
 - **No lift:** the Trading Desk dialog already floats on its own teal desktop, so it takes no frame and no shadow. The exam-domains panel is text and stays flat. Screens on bench rows sit flat inside their frame.
 
 ### Named rules
@@ -449,13 +459,13 @@ The world's own component: struck, flat and exact, like a hallmark on silver.
 - Five inline SVG icons: external, download, arrow left, arrow right and mail. The diagonal arrow means a new tab on another site. Moves inside the site use the straight arrows, mail links use the envelope, and the CV uses the download arrow.
 
 ### Share cards
-- One 1200x630 design serves every page, in the page's colorway. The title is Mozilla Headline Wide Bold at 88px, and long titles step down to 72px and 58px. The subtitle is Mozilla Text 30px in soft text. The marks run along the bottom left, led by the blued SP mark. The right side holds the headshot (360x450, 16px cut) or the product's public screen. The screen is cut on its left corners only (14px) and runs off the right edge.
+- One 1200x630 design serves every page, in the page's colorway. The title is Mozilla Headline Wide Bold at 88px, and long titles step down to 72px and 58px. The subtitle is Mozilla Text 30px in soft text. The marks run along the bottom left, led by the blued SP mark. The card strikes every standing in the status colors, except Pegala's Waitlist, which takes the pale colors so it never reads as live. The right side holds the headshot (360x450, 16px cut) or the product's public screen. The screen is cut on its left corners only (14px) and runs off the right edge.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** start every hallmark row with the blued SP mark, then the standing, then Code.
-- **Do** give a new live product its own colorway: fill every role in the colorway table from its real colors, and check each text pair at 4.5:1 or better.
+- **Do** give a new product with a public site its own colorway: fill every role in the colorway table from its real colors, and check each text pair at 4.5:1 or better.
 - **Do** mark anything not built yet as pale, and give a pale layer the spoken label "not built yet".
 - **Do** use only real, public first screens of live products, taken from their own sites. Ship a phone capture for widths under 760px and a provenance file beside each image.
 - **Do** cut the corners of any standalone object with a bevel sized to it: 5px on marks, 7px on buttons, 8-12px on panels, rows and screens.

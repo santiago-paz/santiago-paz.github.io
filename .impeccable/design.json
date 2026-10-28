@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-19T10:57:50.830Z",
+  "generatedAt": "2026-10-16T09:48:55.261Z",
   "title": "Design System: Santiago Paz",
   "extensions": {
     "colorMeta": {
@@ -217,7 +217,8 @@
           "trading-desk --pale-fg",
           "trading-desk --underline",
           "trading-desk --focus",
-          "contact band --focus"
+          "contact band --focus",
+          "pegala --link-bg"
         ],
         "tonalRamp": [
           "oklch(15% 0.000 0.0)",
@@ -603,6 +604,146 @@
           "oklch(84% 0.008 228.9)",
           "oklch(95% 0.008 228.9)"
         ]
+      },
+      "pegala-violet": {
+        "role": "colorway",
+        "displayName": "Pegala Violet",
+        "canonical": "#6c4cf1",
+        "colorway": "pegala",
+        "usedAs": [
+          "--field",
+          "--row-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.233 284.7)",
+          "oklch(26% 0.233 284.7)",
+          "oklch(38% 0.233 284.7)",
+          "oklch(49% 0.233 284.7)",
+          "oklch(61% 0.233 284.7)",
+          "oklch(72% 0.233 284.7)",
+          "oklch(84% 0.233 284.7)",
+          "oklch(95% 0.233 284.7)"
+        ]
+      },
+      "pegala-lime": {
+        "role": "colorway",
+        "displayName": "Pegala Lime",
+        "canonical": "#c8f169",
+        "colorway": "pegala",
+        "usedAs": [
+          "--status-bg",
+          "--underline",
+          "--focus"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.169 123.8)",
+          "oklch(26% 0.169 123.8)",
+          "oklch(38% 0.169 123.8)",
+          "oklch(49% 0.169 123.8)",
+          "oklch(61% 0.169 123.8)",
+          "oklch(72% 0.169 123.8)",
+          "oklch(84% 0.169 123.8)",
+          "oklch(95% 0.169 123.8)"
+        ]
+      },
+      "pegala-paper": {
+        "role": "colorway",
+        "displayName": "Pegala Paper",
+        "canonical": "#f8f7fd",
+        "colorway": "pegala",
+        "usedAs": [
+          "--field-ink",
+          "--field-soft",
+          "--layer-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.008 293.9)",
+          "oklch(26% 0.008 293.9)",
+          "oklch(38% 0.008 293.9)",
+          "oklch(49% 0.008 293.9)",
+          "oklch(61% 0.008 293.9)",
+          "oklch(72% 0.008 293.9)",
+          "oklch(84% 0.008 293.9)",
+          "oklch(95% 0.008 293.9)"
+        ]
+      },
+      "pegala-ink": {
+        "role": "colorway",
+        "displayName": "Pegala Ink",
+        "canonical": "#2b2352",
+        "colorway": "pegala",
+        "usedAs": [
+          "--status-fg",
+          "--link-fg",
+          "--layer-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.083 288.0)",
+          "oklch(26% 0.083 288.0)",
+          "oklch(38% 0.083 288.0)",
+          "oklch(49% 0.083 288.0)",
+          "oklch(61% 0.083 288.0)",
+          "oklch(72% 0.083 288.0)",
+          "oklch(84% 0.083 288.0)",
+          "oklch(95% 0.083 288.0)"
+        ]
+      },
+      "pegala-deep": {
+        "role": "colorway",
+        "displayName": "Pegala Deep",
+        "canonical": "#5336c9",
+        "colorway": "pegala",
+        "usedAs": [
+          "--pale-bg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.213 283.5)",
+          "oklch(26% 0.213 283.5)",
+          "oklch(38% 0.213 283.5)",
+          "oklch(49% 0.213 283.5)",
+          "oklch(61% 0.213 283.5)",
+          "oklch(72% 0.213 283.5)",
+          "oklch(84% 0.213 283.5)",
+          "oklch(95% 0.213 283.5)"
+        ]
+      },
+      "pegala-lavender": {
+        "role": "colorway",
+        "displayName": "Pegala Lavender",
+        "canonical": "#d5d1e8",
+        "colorway": "pegala",
+        "usedAs": [
+          "--pale-fg"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.032 293.7)",
+          "oklch(26% 0.032 293.7)",
+          "oklch(38% 0.032 293.7)",
+          "oklch(49% 0.032 293.7)",
+          "oklch(61% 0.032 293.7)",
+          "oklch(72% 0.032 293.7)",
+          "oklch(84% 0.032 293.7)",
+          "oklch(95% 0.032 293.7)"
+        ]
+      },
+      "pegala-frame": {
+        "role": "colorway",
+        "displayName": "Pegala Frame",
+        "canonical": "rgb(248 247 253 / 0.25)",
+        "colorway": "pegala",
+        "usedAs": [
+          "--frame"
+        ],
+        "tonalRamp": [
+          "oklch(15% 0.008 293.9)",
+          "oklch(26% 0.008 293.9)",
+          "oklch(38% 0.008 293.9)",
+          "oklch(49% 0.008 293.9)",
+          "oklch(61% 0.008 293.9)",
+          "oklch(72% 0.008 293.9)",
+          "oklch(84% 0.008 293.9)",
+          "oklch(95% 0.008 293.9)"
+        ]
       }
     },
     "typographyMeta": {
@@ -652,7 +793,7 @@
       },
       "reading": {
         "displayName": "Reading",
-        "purpose": "Long text in posts, project overviews and the About page, within the 46ch measure."
+        "purpose": "Long text in posts, project overviews and the About page, within the 50ch measure."
       },
       "small": {
         "displayName": "Small",
@@ -660,11 +801,11 @@
       },
       "mark": {
         "displayName": "Mark",
-        "purpose": "Hallmark letters, set in capitals. 12px in bench rows. A domain keeps its lowercase at 14px with 0.015em tracking."
+        "purpose": "Hallmark letters, set in capitals. Bench-row marks keep 13px letters. A domain keeps its lowercase, also at 13px, with 0.015em tracking."
       },
       "button": {
         "displayName": "Button",
-        "purpose": "Button labels in sentence case. 14px in the masthead CV button."
+        "purpose": "Button labels in sentence case. The masthead CV button keeps the 15px label."
       }
     },
     "shadows": [
@@ -685,6 +826,12 @@
         "property": "filter",
         "value": "drop-shadow(0 28px 36px rgb(0 0 0 / 0.45)) drop-shadow(0 2px 4px rgb(0 0 0 / 0.3))",
         "purpose": "The same lift on the Reema night field."
+      },
+      {
+        "name": "screen-lift-pegala",
+        "property": "filter",
+        "value": "drop-shadow(0 28px 36px rgb(27 21 64 / 0.5)) drop-shadow(0 2px 4px rgb(27 21 64 / 0.3))",
+        "purpose": "The same lift on the Pegala violet field, tinted with its deepest ink. Its capture is violet too, so this shadow and the paper frame draw the screen's edge."
       },
       {
         "name": "masthead-rule",
@@ -900,6 +1047,27 @@
         "rowBg": "reema-night",
         "shadow": "rgb(0 0 0 / 0.45)",
         "shadowNear": "rgb(0 0 0 / 0.3)"
+      },
+      "pegala": {
+        "cssClass": "cw-pegala",
+        "field": "pegala-violet",
+        "fieldInk": "pegala-paper",
+        "fieldSoft": "pegala-paper",
+        "statusBg": "pegala-lime",
+        "statusFg": "pegala-ink",
+        "linkBg": "white",
+        "linkFg": "pegala-ink",
+        "layerBg": "pegala-ink",
+        "layerFg": "pegala-paper",
+        "paleBg": "pegala-deep",
+        "paleFg": "pegala-lavender",
+        "underline": "pegala-lime",
+        "focus": "pegala-lime",
+        "frame": "pegala-frame",
+        "rowBg": "pegala-violet",
+        "shadow": "rgb(27 21 64 / 0.5)",
+        "shadowNear": "rgb(27 21 64 / 0.3)",
+        "note": "Nothing softer than Pegala Paper passes on the violet, so soft text stays at full strength. Pegala Lime reaches 4.12:1 there, so it draws lines and never sets text."
       }
     }
   },
@@ -910,7 +1078,7 @@
       "refersTo": "mark-maker",
       "description": "SP first, then the standing, then Code. Struck once on render: each mark presses in turn with a flash of its own ink.",
       "html": "<ul class=\"ds-hallmarks\" data-struck aria-label=\"Marks\"><li><span class=\"ds-hm ds-hm--maker\" style=\"--i:0\"><span aria-hidden=\"true\">SP</span><span class=\"ds-hm-sr\">Built by Santiago Paz</span></span></li><li><span class=\"ds-hm ds-hm--status\" style=\"--i:1\">Live</span></li><li><a class=\"ds-hm-link\" href=\"#\"><span class=\"ds-hm ds-hm--link\" style=\"--i:2\">Code<svg class=\"ds-hm-icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg><span class=\"ds-hm-sr\"> (opens in a new tab)</span></span></a></li></ul>",
-      "css": ".ds-hallmarks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-hm{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-hm::after{content:'';position:absolute;inset:0;background:currentColor;opacity:0;pointer-events:none}.ds-hm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm--status{background:var(--ink,#111418);color:var(--steel,#edf0f3)}.ds-hm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm-icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-hm-link{display:inline-flex;text-decoration:none}.ds-hm-link:hover .ds-hm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-hm-link:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-hm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@keyframes ds-strike-press{0%{transform:none}18%{transform:translateY(2px) scale(.86)}100%{transform:none}}@keyframes ds-strike-flash{0%{opacity:0}14%{opacity:.62}100%{opacity:0}}.ds-hallmarks[data-struck] .ds-hm{animation:ds-strike-press .52s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}.ds-hallmarks[data-struck] .ds-hm::after{animation:ds-strike-flash .6s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}@media (prefers-reduced-motion:reduce){.ds-hallmarks[data-struck] .ds-hm,.ds-hallmarks[data-struck] .ds-hm::after{animation:none}}"
+      "css": ".ds-hallmarks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-hm{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-hm::after{content:'';position:absolute;inset:0;background:currentColor;opacity:0;pointer-events:none}.ds-hm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm--status{background:var(--ink,#111418);color:var(--steel,#edf0f3)}.ds-hm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-hm-icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-hm-link{display:inline-flex;text-decoration:none}.ds-hm-link:hover .ds-hm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-hm-link:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-hm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@keyframes ds-strike-press{0%{transform:none}18%{transform:translateY(2px) scale(.86)}100%{transform:none}}@keyframes ds-strike-flash{0%{opacity:0}14%{opacity:.62}100%{opacity:0}}.ds-hallmarks[data-struck] .ds-hm{animation:ds-strike-press .52s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}.ds-hallmarks[data-struck] .ds-hm::after{animation:ds-strike-flash .6s cubic-bezier(.16,1,.3,1) calc(var(--i,0)*90ms) both}@media (prefers-reduced-motion:reduce){.ds-hallmarks[data-struck] .ds-hm,.ds-hallmarks[data-struck] .ds-hm::after{animation:none}}"
     },
     {
       "name": "Mark tones",
@@ -918,7 +1086,7 @@
       "refersTo": "mark-layer",
       "description": "Layer (built), pale (not built yet, or a stage) and date marks in the maker colorway.",
       "html": "<div class=\"ds-tones\"><span class=\"ds-tone ds-tone--layer\">Web app</span><span class=\"ds-tone ds-tone--pale\">In progress</span><span class=\"ds-tone ds-tone--date\">Jun 2026</span></div>",
-      "css": ".ds-tones{display:flex;flex-wrap:wrap;gap:6px}.ds-tone{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-tone--layer{background:var(--ink-soft,#4a5360);color:#ffffff}.ds-tone--pale{background:var(--steel-deep,#dce2e8);color:var(--ink-soft,#4a5360)}.ds-tone--date{background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);font-variant-numeric:tabular-nums}"
+      "css": ".ds-tones{display:flex;flex-wrap:wrap;gap:6px}.ds-tone{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-tone--layer{background:var(--ink-soft,#4a5360);color:#ffffff}.ds-tone--pale{background:var(--steel-deep,#dce2e8);color:var(--ink-soft,#4a5360)}.ds-tone--date{background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);font-variant-numeric:tabular-nums}"
     },
     {
       "name": "Primary button",
@@ -926,7 +1094,7 @@
       "refersTo": "button-primary",
       "description": "Download CV: blued face with cut corners, the file type and size in Blued Mist.",
       "html": "<a class=\"ds-btn\" href=\"#\"><span class=\"ds-btn__face\"><svg class=\"ds-btn__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>Download CV<span class=\"ds-btn__meta\">PDF, 127 KB</span></span></a>",
-      "css": ".ds-btn{display:inline-flex;text-decoration:none}.ds-btn__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn__meta{margin-left:.2em;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-weight:400;font-size:.8125rem;letter-spacing:0;color:var(--on-blued-soft,#d5dcf2)}.ds-btn:hover .ds-btn__face{background:var(--blued-deep,#1d3183)}.ds-btn:active .ds-btn__face{transform:translateY(1px)}.ds-btn:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn__face{transition:none}}"
+      "css": ".ds-btn{display:inline-flex;text-decoration:none}.ds-btn__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 110;font-weight:700;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn__meta{margin-left:.2em;font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-weight:400;font-size:.8125rem;letter-spacing:0;color:var(--on-blued-soft,#d5dcf2)}.ds-btn:hover .ds-btn__face{background:var(--blued-deep,#1d3183)}.ds-btn:active .ds-btn__face{transform:translateY(1px)}.ds-btn:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn__face{transition:none}}"
     },
     {
       "name": "Small button",
@@ -934,7 +1102,7 @@
       "refersTo": "button-small",
       "description": "The masthead CV button: 40px tall, 6px cut, 14px label.",
       "html": "<a class=\"ds-btn-sm\" href=\"#\"><span class=\"ds-btn-sm__face\"><svg class=\"ds-btn-sm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>CV</span></a>",
-      "css": ".ds-btn-sm{display:inline-flex;text-decoration:none}.ds-btn-sm__face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-sm__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-sm:hover .ds-btn-sm__face{background:var(--blued-deep,#1d3183)}.ds-btn-sm:active .ds-btn-sm__face{transform:translateY(1px)}.ds-btn-sm:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-sm__face{transition:none}}"
+      "css": ".ds-btn-sm{display:inline-flex;text-decoration:none}.ds-btn-sm__face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 110;font-weight:700;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-sm__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-sm:hover .ds-btn-sm__face{background:var(--blued-deep,#1d3183)}.ds-btn-sm:active .ds-btn-sm__face{transform:translateY(1px)}.ds-btn-sm:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-sm__face{transition:none}}"
     },
     {
       "name": "Inverse button",
@@ -942,7 +1110,7 @@
       "refersTo": "button-inverse",
       "description": "On the blued Contact band: steel face with blued letters, white on hover, white focus ring.",
       "html": "<div class=\"ds-band\"><a class=\"ds-btn-inv\" href=\"#\"><span class=\"ds-btn-inv__face\"><svg class=\"ds-btn-inv__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.5 5.5h17v13h-17zM3.5 6.5 12 13l8.5-6.5\"/></svg>Email me</span></a></div>",
-      "css": ".ds-band{padding:24px;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-btn-inv{display:inline-flex;text-decoration:none}.ds-btn-inv__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--steel,#edf0f3);color:var(--blued,#2a44a8);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-inv__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-inv:hover .ds-btn-inv__face{background:#ffffff}.ds-btn-inv:active .ds-btn-inv__face{transform:translateY(1px)}.ds-btn-inv:focus-visible{outline:2px solid #ffffff;outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-inv__face{transition:none}}"
+      "css": ".ds-band{padding:24px;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-btn-inv{display:inline-flex;text-decoration:none}.ds-btn-inv__face{display:inline-flex;align-items:center;gap:.55em;min-height:3rem;padding:.85rem 1.25rem .8rem;background:var(--steel,#edf0f3);color:var(--blued,#2a44a8);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 110;font-weight:700;font-size:.9375rem;line-height:1;letter-spacing:.015em;--cut:7px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));transition:background-color .18s ease-out,transform .12s ease-out}.ds-btn-inv__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-btn-inv:hover .ds-btn-inv__face{background:#ffffff}.ds-btn-inv:active .ds-btn-inv__face{transform:translateY(1px)}.ds-btn-inv:focus-visible{outline:2px solid #ffffff;outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-inv__face{transition:none}}"
     },
     {
       "name": "Text action",
@@ -950,7 +1118,7 @@
       "refersTo": "text-action",
       "description": "The second action beside a button: bold text, 2px underline in the colorway underline color, at least 44px tall.",
       "html": "<a class=\"ds-text-action\" href=\"#\"><svg class=\"ds-text-action__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.5 5.5h17v13h-17zM3.5 6.5 12 13l8.5-6.5\"/></svg>Email me</a>",
-      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:.5em;min-height:2.75rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;font-weight:700;color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-text-action__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-text-action:hover{text-decoration-color:currentColor}.ds-text-action:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}"
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:.5em;min-height:2.75rem;font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-size:1.0625rem;font-weight:700;color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-text-action__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-text-action:hover{text-decoration-color:currentColor}.ds-text-action:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}"
     },
     {
       "name": "Masthead",
@@ -958,7 +1126,7 @@
       "refersTo": "nav-link",
       "description": "Sticky 64px steel bar with a 1px Steel Rule line: SP mark and name, three links, the small CV button.",
       "html": "<header class=\"ds-mast\"><div class=\"ds-mast__bar\"><a class=\"ds-mast__maker\" href=\"#\"><span class=\"ds-mast__mark\" aria-hidden=\"true\">SP</span><span class=\"ds-mast__name\">Santiago Paz</span></a><nav class=\"ds-mast__nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\">Work</a><a href=\"#\">About</a><a href=\"#\">Writing</a></nav><a class=\"ds-mast__cv\" href=\"#\"><span class=\"ds-mast__cv-face\"><svg class=\"ds-mast__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v11m-5-5 5 5 5-5M5 20h14\"/></svg>CV</span></a></div></header>",
-      "css": ".ds-mast{background:var(--steel,#edf0f3);color:var(--ink,#111418);box-shadow:0 1px 0 var(--steel-rule,#c4ccd4)}.ds-mast__bar{display:flex;align-items:center;gap:clamp(8px,2.5vw,28px);min-height:64px;padding-inline:clamp(20px,4vw,48px)}.ds-mast__maker{display:inline-flex;align-items:center;gap:12px;min-height:2.75rem;color:var(--ink,#111418);text-decoration:none}.ds-mast__mark{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__name{font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 112;font-weight:750;font-size:1.0625rem;letter-spacing:.005em}.ds-mast__maker:hover .ds-mast__name{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__nav{display:flex;align-items:center;gap:2px;margin-left:auto}.ds-mast__nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding-inline:.8rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-weight:700;font-size:.9375rem;color:var(--ink-soft,#4a5360);text-decoration:none}.ds-mast__nav a:hover{color:var(--ink,#111418)}.ds-mast__nav a[aria-current=page]{color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.45em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__cv{display:inline-flex;text-decoration:none}.ds-mast__cv-face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 110;font-weight:800;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__cv:hover .ds-mast__cv-face{background:var(--blued-deep,#1d3183)}.ds-mast__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-mast a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (max-width:639px){.ds-mast__name{display:none}.ds-mast__nav a{padding-inline:.55rem}}"
+      "css": ".ds-mast{background:var(--steel,#edf0f3);color:var(--ink,#111418);box-shadow:0 1px 0 var(--steel-rule,#c4ccd4)}.ds-mast__bar{display:flex;align-items:center;gap:clamp(8px,2.5vw,28px);min-height:64px;padding-inline:clamp(20px,4vw,48px)}.ds-mast__maker{display:inline-flex;align-items:center;gap:12px;min-height:2.75rem;color:var(--ink,#111418);text-decoration:none}.ds-mast__mark{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__name{font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 112;font-weight:640;font-size:1.0625rem;letter-spacing:.005em}.ds-mast__maker:hover .ds-mast__name{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__nav{display:flex;align-items:center;gap:2px;margin-left:auto}.ds-mast__nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding-inline:.8rem;font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-weight:700;font-size:.9375rem;color:var(--ink-soft,#4a5360);text-decoration:none}.ds-mast__nav a:hover{color:var(--ink,#111418)}.ds-mast__nav a[aria-current=page]{color:var(--ink,#111418);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.45em;text-decoration-color:var(--blued,#2a44a8)}.ds-mast__cv{display:inline-flex;text-decoration:none}.ds-mast__cv-face{display:inline-flex;align-items:center;gap:.55em;min-height:2.5rem;padding:.6rem .9rem .55rem;background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 110;font-weight:700;font-size:.875rem;line-height:1;letter-spacing:.015em;--cut:6px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-mast__cv:hover .ds-mast__cv-face{background:var(--blued-deep,#1d3183)}.ds-mast__icon{width:1.1em;height:1.1em;flex-shrink:0}.ds-mast a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}@media (max-width:639px){.ds-mast__name{display:none}.ds-mast__nav a{padding-inline:.55rem}}"
     },
     {
       "name": "Fact register",
@@ -966,7 +1134,7 @@
       "refersTo": "fact-register",
       "description": "Deep Steel panel with a 12px cut. Each row pairs a struck mark with one plain sentence; the first mark is the blued SP.",
       "html": "<div class=\"ds-register\"><dl class=\"ds-register__rows\"><div class=\"ds-register__row\"><dt><span class=\"ds-rm ds-rm--maker\">SP</span></dt><dd>Every project here is solo work, from the data model to the deploy.</dd></div><div class=\"ds-register__row\"><dt><span class=\"ds-rm\">BUE</span></dt><dd>Based in Buenos Aires, open to roles across the EU and remote.</dd></div><div class=\"ds-register__row\"><dt><span class=\"ds-rm\">EU</span></dt><dd>Italian citizen with EU work authorization. No sponsorship needed.</dd></div></dl></div>",
-      "css": ".ds-register{padding:clamp(18px,2vw,24px);background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);--cut:12px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-register__rows{margin:0}.ds-register__row{display:flex;align-items:flex-start;gap:14px}.ds-register__row+.ds-register__row{margin-top:12px}.ds-register__row dt{flex:0 0 7.25rem}.ds-register__row dd{flex:1;min-width:0;margin:0;padding-top:.2rem;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1rem;line-height:1.45}.ds-rm{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--ink,#111418);color:var(--steel,#edf0f3);font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-rm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}@media (max-width:639px){.ds-register__row{flex-direction:column;gap:6px}.ds-register__row dt{flex:none}.ds-register__row dd{padding-top:0}}"
+      "css": ".ds-register{padding:clamp(18px,2vw,24px);background:var(--steel-deep,#dce2e8);color:var(--ink,#111418);--cut:12px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-register__rows{margin:0}.ds-register__row{display:flex;align-items:flex-start;gap:14px}.ds-register__row+.ds-register__row{margin-top:12px}.ds-register__row dt{flex:0 0 7.25rem}.ds-register__row dd{flex:1;min-width:0;margin:0;padding-top:.2rem;font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-size:1rem;line-height:1.45}.ds-rm{display:inline-flex;align-items:center;min-height:1.875rem;padding:.4rem .7rem .34rem;background:var(--ink,#111418);color:var(--steel,#edf0f3);font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-rm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}@media (max-width:639px){.ds-register__row{flex-direction:column;gap:6px}.ds-register__row dt{flex:none}.ds-register__row dd{padding-top:0}}"
     },
     {
       "name": "Plate (Contract Lens colorway)",
@@ -974,7 +1142,7 @@
       "refersTo": "plate-contract-lens",
       "description": "A product plate in its own colors: name and hallmarks across the top, the summary with the live domain beside it, and the layers built stacked base-first. The SP mark stays blued. The real screen is left out here because snippets carry no images.",
       "html": "<article class=\"ds-plate\"><div class=\"ds-plate__title\"><h3 class=\"ds-plate__name\"><a href=\"#\">Contract Lens</a></h3><ul class=\"ds-plate__marks\" aria-label=\"Marks\"><li><span class=\"ds-pm ds-pm--maker\">SP</span></li><li><span class=\"ds-pm ds-pm--status\">Live</span></li><li><a class=\"ds-pm-link\" href=\"#\"><span class=\"ds-pm ds-pm--link\">Code<svg class=\"ds-pm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></li></ul></div><div class=\"ds-plate__lede\"><p class=\"ds-plate__summary\">A deployed multi-tenant SaaS where an LLM extraction pipeline turns PDF and DOCX contracts into typed, structured data that drives a deadline and alert system.</p><p class=\"ds-plate__assay\"><a class=\"ds-pm-link\" href=\"#\"><span class=\"ds-pm ds-pm--link ds-pm--domain\">trycontractlens.com<svg class=\"ds-pm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></p></div><div class=\"ds-plate__built\"><p class=\"ds-plate__label\">Layers built</p><ol class=\"ds-plate__stack\"><li><span class=\"ds-pm ds-pm--layer\">Data model</span></li><li><span class=\"ds-pm ds-pm--layer\">Encryption</span></li><li><span class=\"ds-pm ds-pm--layer\">AI extraction</span></li><li><span class=\"ds-pm ds-pm--layer\">Web app</span></li><li><span class=\"ds-pm ds-pm--layer\">Deploy</span></li></ol></div></article>",
-      "css": ".ds-plate{--field:#ffffff;--field-ink:#16181d;--field-soft:#4b505a;--status-bg:#a3202f;--status-fg:#ffffff;--link-bg:#16181d;--link-fg:#ffffff;--layer-bg:#3d434d;--layer-fg:#ffffff;--underline:#a3202f;--focus:#a3202f;padding:clamp(40px,5vw,72px) clamp(20px,4vw,48px) clamp(56px,6vw,88px);background:var(--field);color:var(--field-ink);font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.6}.ds-plate__title{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 32px}.ds-plate__name{margin:0;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 116;font-weight:800;font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem);line-height:1;letter-spacing:-.01em}.ds-plate__name a{color:inherit;text-decoration:none}.ds-plate__name a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.14em;text-decoration-color:var(--underline)}.ds-plate__marks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-plate__lede{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 32px;margin-top:16px}.ds-plate__summary{max-width:60ch;margin:0;color:var(--field-soft)}.ds-plate__assay{margin:0}.ds-pm{display:inline-flex;align-items:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-pm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-pm--status{background:var(--status-bg);color:var(--status-fg)}.ds-pm--link{background:var(--link-bg);color:var(--link-fg)}.ds-pm--domain{font-size:.875rem;letter-spacing:.015em;text-transform:none}.ds-pm--layer{width:100%;justify-content:flex-start;background:var(--layer-bg);color:var(--layer-fg)}.ds-pm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-pm-link{display:inline-flex;text-decoration:none}.ds-pm-link:hover .ds-pm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-plate a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-plate__built{margin-top:clamp(24px,3vw,36px)}.ds-plate__label{margin:0;font-size:.9375rem;font-weight:700;color:var(--field-soft)}.ds-plate__stack{display:inline-flex;flex-direction:column-reverse;align-items:stretch;gap:3px;margin:10px 0 0;padding:0;list-style:none}@media (max-width:859px){.ds-plate__title,.ds-plate__lede{flex-direction:column;align-items:flex-start}}"
+      "css": ".ds-plate{--field:#ffffff;--field-ink:#16181d;--field-soft:#4b505a;--status-bg:#a3202f;--status-fg:#ffffff;--link-bg:#16181d;--link-fg:#ffffff;--layer-bg:#3d434d;--layer-fg:#ffffff;--underline:#a3202f;--focus:#a3202f;padding:clamp(40px,5vw,72px) clamp(20px,4vw,48px) clamp(56px,6vw,88px);background:var(--field);color:var(--field-ink);font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.6}.ds-plate__title{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 32px}.ds-plate__name{margin:0;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 116;font-weight:700;font-size:clamp(1.5rem,1.2rem + 1.2vw,2.125rem);line-height:1;letter-spacing:-.01em}.ds-plate__name a{color:inherit;text-decoration:none}.ds-plate__name a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.14em;text-decoration-color:var(--underline)}.ds-plate__marks{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.ds-plate__lede{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 32px;margin-top:16px}.ds-plate__summary{max-width:60ch;margin:0;color:var(--field-soft)}.ds-plate__assay{margin:0}.ds-pm{display:inline-flex;align-items:center;gap:.4em;min-height:1.875rem;padding:.4rem .7rem .34rem;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-pm--maker{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-pm--status{background:var(--status-bg);color:var(--status-fg)}.ds-pm--link{background:var(--link-bg);color:var(--link-fg)}.ds-pm--domain{font-size:.8125rem;letter-spacing:.015em;text-transform:none}.ds-pm--layer{width:100%;justify-content:flex-start;background:var(--layer-bg);color:var(--layer-fg)}.ds-pm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-pm-link{display:inline-flex;text-decoration:none}.ds-pm-link:hover .ds-pm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-plate a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-plate__built{margin-top:clamp(24px,3vw,36px)}.ds-plate__label{margin:0;font-size:.9375rem;font-weight:700;color:var(--field-soft)}.ds-plate__stack{display:inline-flex;flex-direction:column-reverse;align-items:stretch;gap:3px;margin:10px 0 0;padding:0;list-style:none}@media (max-width:859px){.ds-plate__title,.ds-plate__lede{flex-direction:column;align-items:flex-start}}"
     },
     {
       "name": "Bench row",
@@ -982,18 +1150,18 @@
       "refersTo": "bench-row",
       "description": "A full-width Row Steel panel with a 10px cut: name and small hallmarks on the left, summary on the right, split 5:7.",
       "html": "<div class=\"ds-bench\"><div><h4 class=\"ds-bench__name\"><a href=\"#\">Reddit Idea Miner</a></h4><ul class=\"ds-bench__marks\" aria-label=\"Marks\"><li><span class=\"ds-bm ds-bm--maker\">SP</span></li><li><a class=\"ds-bm-link\" href=\"#\"><span class=\"ds-bm ds-bm--link\">Code<svg class=\"ds-bm__icon\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M9 7h8v8\"/></svg></span></a></li></ul></div><p class=\"ds-bench__summary\">A daily pipeline that scans job-search subreddits and Hacker News, extracts actionable product ideas with Claude in a single structured call, and emails a ranked digest.</p></div>",
-      "css": ".ds-bench{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:14px 40px;align-items:center;padding:24px 28px;background:var(--steel-row,#e2e7ec);color:var(--ink,#111418);--cut:10px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bench__name{margin:0;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 116;font-weight:800;font-size:clamp(1.125rem,1rem + .5vw,1.375rem);line-height:1.1}.ds-bench__name a{color:inherit;text-decoration:none}.ds-bench__name a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em;text-decoration-color:var(--blued,#2a44a8)}.ds-bench__marks{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}.ds-bm{display:inline-flex;align-items:center;gap:.4em;min-height:1.625rem;padding:.33rem .55rem .28rem;font-family:var(--face-mark,\"Science Gothic\",\"Arial Narrow\",Arial,sans-serif);font-variation-settings:'wdth' 118;font-weight:800;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bm--maker,.ds-bm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-bm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-bm-link{display:inline-flex;text-decoration:none}.ds-bm-link:hover .ds-bm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-bench a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-bench__summary{margin:0;font-family:var(--face-text,\"Atkinson Hyperlegible Next\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.55;color:var(--ink-soft,#4a5360)}@media (max-width:859px){.ds-bench{grid-template-columns:minmax(0,1fr);padding:22px}}"
+      "css": ".ds-bench{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:14px 40px;align-items:center;padding:24px 28px;background:var(--steel-row,#e2e7ec);color:var(--ink,#111418);--cut:10px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bench__name{margin:0;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 116;font-weight:700;font-size:clamp(1.125rem,1rem + .5vw,1.375rem);line-height:1.1}.ds-bench__name a{color:inherit;text-decoration:none}.ds-bench__name a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em;text-decoration-color:var(--blued,#2a44a8)}.ds-bench__marks{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}.ds-bm{display:inline-flex;align-items:center;gap:.4em;min-height:1.625rem;padding:.33rem .55rem .28rem;font-family:var(--face-mark,\"Mozilla Headline\",Arial,Helvetica,sans-serif);font-variation-settings:'wdth' 118;font-weight:700;font-size:.8125rem;line-height:1;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;--cut:5px;clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));}.ds-bm--maker,.ds-bm--link{background:var(--blued,#2a44a8);color:var(--on-blued,#f5f7fa)}.ds-bm__icon{width:1.15em;height:1.15em;flex-shrink:0}.ds-bm-link{display:inline-flex;text-decoration:none}.ds-bm-link:hover .ds-bm{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.22em}.ds-bench a:focus-visible{outline:2px solid var(--blued,#2a44a8);outline-offset:3px}.ds-bench__summary{margin:0;font-family:var(--face-text,\"Mozilla Text\",system-ui,sans-serif);font-size:1.0625rem;line-height:1.55;color:var(--ink-soft,#4a5360)}@media (max-width:859px){.ds-bench{grid-template-columns:minmax(0,1fr);padding:22px}}"
     }
   ],
   "narrative": {
     "northStar": "The Maker's Mark",
-    "overview": "The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each live product wears its own real colors wherever it appears. The SP mark stays blued on all of them.\n\nType does most of the work. Science Gothic, a squared grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Atkinson Hyperlegible Next sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.\n\nReal product screens and the headshot are the only pictures. The site's own surfaces carry no texture, gradient or glass, no hairline grid, no eyebrow labels and no section numbers. Only a product screen casts a shadow. The work never appears as a grid of same-size project cards or as text-left, image-right feature bands.",
+    "overview": "The site reads like an assay register. One maker stamps every piece of work with the same SP mark. Each piece carries a row of hallmarks that anyone can check: whether it runs live, where its code is, and the domain where it runs. The maker's own pages are polished steel and ink, and blued steel is the maker's color. Each product with a public site wears its own real colors wherever it appears. The SP mark stays blued on all of them.\n\nType does most of the work. Mozilla Headline, a grotesque with a width axis, cuts the name, the headings, the marks and the buttons. Mozilla Text, its reading companion, sets every line meant for reading. Marks are flat cartouches with cut corners. A mark is struck solid when the thing it names is built, and pale when it is not built yet. The density is calm: wide bands of color, a 1240px frame, and tight gaps inside each group of marks.\n\nReal product screens and the headshot are the only pictures. The site's own surfaces carry no texture, gradient or glass, no hairline grid, no eyebrow labels and no section numbers. Only a product screen casts a shadow. The work never appears as a grid of same-size project cards or as text-left, image-right feature bands.",
     "keyCharacteristics": [
       "Polished steel ground, ink text and one accent, blued steel.",
       "Cut corners on every standalone shape. Nothing is rounded.",
       "Struck capitals in marks that certify facts: SP, Live, Code, dates and layers built.",
-      "Live products in their own colors, on full-bleed plates and bench rows.",
-      "Science Gothic cut wide or narrow with its width axis, and Atkinson Hyperlegible Next for reading.",
+      "Products with a public site in their own colors, on full-bleed plates and bench rows.",
+      "Mozilla Headline cut wide or narrow with its width axis, and Mozilla Text for reading.",
       "One motion, the strike, which presses each mark in turn and never hides it."
     ],
     "rules": [
@@ -1004,12 +1172,12 @@
       },
       {
         "name": "The Own Colors Rule",
-        "body": "A product's colors stay on that product's plate, bench row, project page header and share card. The maker's pages never borrow them, and no product wears another's.",
+        "body": "A product's colors stay on that product's plate, bench row, project page header and share card. The maker's pages never borrow them, and no product wears another's. A product earns its colors from a public site it already runs, so Pegala wears its own while it is still on the waitlist.",
         "section": "colors"
       },
       {
         "name": "The Legible Colorway Rule",
-        "body": "A new colorway fills every role in the table from the product's real colors, and every text pair passes 4.5:1. When nothing softer passes on the field, soft text stays at full strength, so the Trading Desk's soft text is white on its teal (4.77:1). Summaries in light text on the teal and night fields get a 1.68 line height and 0.01em tracking.",
+        "body": "A new colorway fills every role in the table from the product's real colors, and every text pair passes 4.5:1. When nothing softer passes on the field, soft text stays at full strength, so the Trading Desk's soft text is white on its teal (4.77:1) and Pegala's is paper on its violet (5.00:1). Summaries in light text on the teal, night and violet fields get a 1.68 line height and 0.01em tracking. Pegala's other pairs are ink on lime (11.09:1), ink on white (14.33:1), paper on ink (13.46:1) and lavender on deep violet (5.15:1). Lime reaches only 4.12:1 on the violet. That is enough for a line (3:1) and too little for letters, so lime draws the underline and the focus ring and never sets text on the violet. `lib/plates.test.ts` checks every pair.",
         "section": "colors"
       },
       {
@@ -1019,7 +1187,7 @@
       },
       {
         "name": "The Cut Width Rule",
-        "body": "Science Gothic's width axis sets how wide each heading is cut. Section titles are widest (125), then page titles (120), marks and section heads (118), plate and bench names (116), the name (112), running titles (108-114) and the role line (106). Reading text never uses Science Gothic.",
+        "body": "Mozilla Headline's width axis sets how wide each heading is cut. Section titles are widest (125), then page titles (120), marks and section heads (118), plate and bench names (116), the name (112), running titles (108-114) and the role line (106). Reading text never uses Mozilla Headline.",
         "section": "typography"
       },
       {
@@ -1055,13 +1223,13 @@
     ],
     "dos": [
       "Do start every hallmark row with the blued SP mark, then the standing, then Code.",
-      "Do give a new live product its own colorway: fill every role in the colorway table from its real colors, and check each text pair at 4.5:1 or better.",
+      "Do give a new product with a public site its own colorway: fill every role in the colorway table from its real colors, and check each text pair at 4.5:1 or better.",
       "Do mark anything not built yet as pale, and give a pale layer the spoken label \"not built yet\".",
       "Do use only real, public first screens of live products, taken from their own sites. Ship a phone capture for widths under 760px and a provenance file beside each image.",
       "Do cut the corners of any standalone object with a bevel sized to it: 5px on marks, 7px on buttons, 8-12px on panels, rows and screens.",
       "Do put the bevel on an inner face and the link outside it, so the 2px focus ring is never clipped.",
       "Do keep every text control at least 44px tall.",
-      "Do set reading text in Atkinson Hyperlegible Next at 17px within the 46ch measure."
+      "Do set reading text in Mozilla Text at 17px within the 50ch measure."
     ],
     "donts": [
       "Don't round a corner. border-radius stays 0.",

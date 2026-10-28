@@ -54,7 +54,7 @@ The four surfaces drift apart on their own. A change to one means checking the o
 - Contact is a `mailto:` link. There is no form and no backend.
 - The site is in English only.
 - A project has a slug, title, group, global order, summary, role, stack, highlights, repo and demo links, an optional disclosure and a Markdown description. A post has a title, date, kind (`engineering` or `personal`) and summary.
-- Project order is global and should match the CV. Since 2026-10-16 the site leads with Contract Lens, Reema and Pegala. The CV PDF still leads with Contract Lens, Reema and Multi-Agent Trading Desk, which is now fourth on the site, so rebuild the CV to match. Contract Lens and Reema have a public screen and their own colorway. Pegala has a public screen from its landing page, but no colorway, so its plate wears the maker's steel.
+- Project order is global and should match the CV. Since 2026-10-16 the site leads with Contract Lens, Reema and Pegala. The CV PDF still leads with Contract Lens, Reema and Multi-Agent Trading Desk, which is now fourth on the site, so rebuild the CV to match. Contract Lens, Reema, Pegala and Multi-Agent Trading Desk each have a public screen and their own colorway. Pegala's screen and colors come from its public landing page.
 - The repo is public. Salary, rates and notice periods stay out of it and off the site. The TestGorilla report lost its fourth page for this reason.
 - Names to keep exact: Senior Full-Stack Engineer, Contract Lens, Multi-Agent Trading Desk, bedrock-genai-labs (lowercase, like the repo), Reema, Pegala, Reddit Idea Miner.
 

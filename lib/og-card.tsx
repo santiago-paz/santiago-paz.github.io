@@ -6,20 +6,22 @@ import type { Colorway } from './plates'
 export const OG_SIZE = { width: 1200, height: 630 }
 export const OG_CONTENT_TYPE = 'image/png'
 
+type CardColors = {
+  field: string
+  ink: string
+  soft: string
+  statusBg: string
+  statusFg: string
+  linkBg: string
+  linkFg: string
+  /** A standing that is not live yet, like Waitlist. Without these it is struck like a status. */
+  paleBg?: string
+  paleFg?: string
+  frame?: string
+}
+
 // The same colorways as the plates in globals.css, as plain values for Satori.
-const COLORS: Record<
-  Colorway,
-  {
-    field: string
-    ink: string
-    soft: string
-    statusBg: string
-    statusFg: string
-    linkBg: string
-    linkFg: string
-    frame?: string
-  }
-> = {
+const COLORS: Record<Colorway, CardColors> = {
   maker: {
     field: '#edf0f3',
     ink: '#111418',
@@ -58,10 +60,32 @@ const COLORS: Record<
     linkFg: '#00131f',
     frame: '#1d3139',
   },
+  pegala: {
+    field: '#6c4cf1',
+    ink: '#f8f7fd',
+    soft: '#f8f7fd',
+    statusBg: '#c8f169',
+    statusFg: '#2b2352',
+    linkBg: '#ffffff',
+    linkFg: '#2b2352',
+    paleBg: '#5336c9',
+    paleFg: '#d5d1e8',
+    // The plate's frame, paper at 25%, laid over the violet.
+    frame: '#8f77f4',
+  },
 }
 
 const BLUED = '#2a44a8'
 const ON_BLUED = '#f5f7fa'
+
+type CardMark = string | { label: string; link: true } | { label: string; pale: true }
+
+/** The colors a mark is struck in. A pale standing is struck like a status where the colorway has no pale tone. */
+function markColors(mark: CardMark, c: CardColors) {
+  if (typeof mark !== 'string' && 'link' in mark) return { bg: c.linkBg, fg: c.linkFg }
+  if (typeof mark !== 'string' && 'pale' in mark && c.paleBg && c.paleFg) return { bg: c.paleBg, fg: c.paleFg }
+  return { bg: c.statusBg, fg: c.statusFg }
+}
 
 // Satori does not accept calc() inside polygon points, so bevels are written in pixels.
 function fixedBevel(w: number, h: number, cut: number) {
@@ -76,8 +100,8 @@ type CardProps = {
   title: string
   /** One line under the title. */
   subtitle?: string
-  /** Hallmarks after the SP maker's mark; a link mark (Code) takes the link colors. */
-  marks?: (string | { label: string; link: true })[]
+  /** Hallmarks after the SP maker's mark: a link mark (Code) takes the link colors, a pale one (Waitlist) the pale colors. */
+  marks?: CardMark[]
   colorway?: Colorway
   /** The approved headshot, or a live product's public screen. */
   image?: { kind: 'portrait' } | { kind: 'screen'; slug: string }
@@ -174,15 +198,15 @@ export async function ogCard({ title, subtitle, marks = [], colorway = 'maker', 
             </div>
             {marks.map((mark) => {
               const label = typeof mark === 'string' ? mark : mark.label
-              const link = typeof mark !== 'string'
+              const { bg, fg } = markColors(mark, c)
               return (
                 <div
                   key={label}
                   style={{
                     display: 'flex',
                     padding: '12px 16px 10px',
-                    background: link ? c.linkBg : c.statusBg,
-                    color: link ? c.linkFg : c.statusFg,
+                    background: bg,
+                    color: fg,
                     fontFamily: 'Mozilla Headline',
                     fontSize: 22,
                     letterSpacing: 2,
