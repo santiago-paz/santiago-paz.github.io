@@ -1,6 +1,6 @@
 # santiagopaz.com
 
-Personal site of Santiago Paz, senior full-stack engineer, Berlin.
+Personal site of Santiago Paz, senior full-stack engineer, Buenos Aires.
 
 Next.js (App Router) built as a **static export** and published to GitHub Pages
 at [santiagopaz.com](https://santiagopaz.com).

@@ -9,7 +9,7 @@ import { Icon } from '@/components/Icon'
 import { aboutPageJsonLd, faqPageJsonLd, breadcrumbJsonLd, ogImage, alternates } from '@/lib/seo'
 
 const description =
-  'Santiago Paz is a senior full-stack engineer based in Berlin: TypeScript, React, Next.js and Node.js. 13 years shipping software at Dialpad, Monks, R/GA and Globant. Background, experience, tech stack, and how to get in touch.'
+  'Santiago Paz is a senior full-stack engineer based in Buenos Aires: TypeScript, React, Next.js and Node.js. 13 years shipping software at Dialpad, Monks, R/GA and Globant. Background, experience, tech stack, and how to get in touch.'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -50,8 +50,9 @@ export default function AboutPage() {
           I&rsquo;m Santiago Paz, a full-stack engineer with 13 years shipping
           production software, most of it on high-traffic web platforms. I work
           in TypeScript, React, Next.js and Node.js, with GraphQL, PostgreSQL
-          and Prisma behind them. I&rsquo;m based in Berlin, and I&rsquo;m an
-          Italian citizen, so I need no sponsorship to work in the EU.
+          and Prisma behind them. I&rsquo;m based in Buenos Aires, and
+          I&rsquo;m an Italian citizen, so I need no sponsorship to work in
+          the EU.
         </p>
         <p>
           What I build on my own time, I build alone and take all the way to
@@ -106,7 +107,8 @@ export default function AboutPage() {
           with custom skills and parallel subagents.
         </p>
         <p>
-          Before Berlin I was in Buenos Aires. I wrote about the move in{' '}
+          I lived in Berlin, then moved back to Buenos Aires. I wrote about the
+          move to Berlin in{' '}
           <Link href="/writing/leaving-buenos-aires">Leaving Buenos Aires</Link>.
           I&rsquo;m currently open to senior full-stack and product engineering
           roles.

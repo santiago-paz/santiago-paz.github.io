@@ -18,7 +18,7 @@ The site is for employers only. It doesn't market Santiago's services to clients
 
 ## Product Purpose
 
-The site at santiagopaz.com holds Santiago Paz's CV, portfolio and writing. It exists to get Santiago hired into a senior engineering role in Berlin, elsewhere in the EU, or remote. It works when a recruiter or hiring manager gets in touch.
+The site at santiagopaz.com holds Santiago Paz's CV, portfolio and writing. It exists to get Santiago hired into a senior engineering role in Buenos Aires, in the EU, or remote. It works when a recruiter or hiring manager gets in touch.
 
 Santiago shows up in four places: LinkedIn, this site, the GitHub profile README and the CV PDF. The site carries the most depth, with project pages, writing and an FAQ.
 
@@ -36,7 +36,7 @@ The claim to protect: live products Santiago built alone, AI included, with demo
 
 ## Operating Context
 
-The site targets jobs in Berlin, across the EU, or remote. Santiago is an Italian citizen and needs no visa sponsor to work in the EU. Languages: Spanish (native), English (full professional), German (elementary).
+The site targets jobs in Buenos Aires, across the EU, or remote. Santiago is an Italian citizen and needs no visa sponsor to work in the EU. Languages: Spanish (native), English (full professional), German (elementary).
 
 Every page ships its own share card because links to the site get shared on LinkedIn, Slack and X. Google Search Console is verified for the domain.
 

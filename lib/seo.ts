@@ -97,7 +97,7 @@ export function absUrl(path = '/'): string {
 }
 
 function countryCode(country: string): string {
-  const map: Record<string, string> = { Germany: 'DE', Italy: 'IT' }
+  const map: Record<string, string> = { Argentina: 'AR', Germany: 'DE', Italy: 'IT' }
   return map[country] ?? country
 }
 
@@ -154,9 +154,9 @@ export function personJsonLd() {
       addressLocality: city,
       addressCountry: countryCode(country),
     },
-    // Berlin is where he lives; Italy is what lets him work anywhere in the EU
-    // without sponsorship. A recruiter's first filter, so it gets stated twice:
-    // once in the FAQ prose, once here where a machine can read it.
+    // Buenos Aires is where he lives; Italy is what lets him work anywhere in
+    // the EU without sponsorship. A recruiter's first filter, so it gets stated
+    // twice: once in the FAQ prose, once here where a machine can read it.
     nationality: { '@type': 'Country', name: 'Italy' },
     // The whole employment history, as schema.org's role pattern: a Role stands
     // where the plain value would go, and repeats the property it stands for —
